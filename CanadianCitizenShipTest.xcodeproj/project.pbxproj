@@ -15,6 +15,8 @@
 		7C7EDE0C1D8096320078B04C /* ProvincesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE0B1D8096320078B04C /* ProvincesViewController.swift */; };
 		7C7EDE111D8099310078B04C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE101D8099310078B04C /* Colors.swift */; };
 		7C7EDE131D809A6D0078B04C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE121D809A6D0078B04C /* Fonts.swift */; };
+		7C7EDE151D80E34D0078B04C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */; };
+		7C7EDE171D80E3B10078B04C /* NumberQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7C7EDE0B1D8096320078B04C /* ProvincesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvincesViewController.swift; sourceTree = "<group>"; };
 		7C7EDE101D8099310078B04C /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7C7EDE121D809A6D0078B04C /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberQuestionsViewController.swift; path = ../NumberQuestionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				7C7EDDF91D80959E0078B04C /* AppDelegate.swift */,
+				7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */,
+				7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */,
 				7C7EDE0B1D8096320078B04C /* ProvincesViewController.swift */,
 				7C7EDDFB1D80959E0078B04C /* ViewController.swift */,
 				7C7EDE0F1D8099210078B04C /* Standards */,
@@ -153,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7EDE171D80E3B10078B04C /* NumberQuestionsViewController.swift in Sources */,
 				7C7EDE111D8099310078B04C /* Colors.swift in Sources */,
 				7C7EDE131D809A6D0078B04C /* Fonts.swift in Sources */,
+				7C7EDE151D80E34D0078B04C /* QuestionViewController.swift in Sources */,
 				7C7EDE0C1D8096320078B04C /* ProvincesViewController.swift in Sources */,
 				7C7EDDFC1D80959E0078B04C /* ViewController.swift in Sources */,
 				7C7EDDFA1D80959E0078B04C /* AppDelegate.swift in Sources */,
