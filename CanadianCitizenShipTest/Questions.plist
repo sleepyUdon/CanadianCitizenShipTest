@@ -3,10 +3,8 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>province</key>
-		<string>general</string>
 		<key>question</key>
-		<string>Question1</string>
+		<string>Who is the Prime Minister?</string>
 		<key>ans1</key>
 		<string>Justin Trudeau</string>
 		<key>ans2</key>
@@ -19,10 +17,8 @@
 		<string>1</string>
 	</dict>
 	<dict>
-		<key>province</key>
-		<string>general</string>
 		<key>question</key>
-		<string>Question2</string>
+		<string>Who are the aboriginal people?</string>
 		<key>ans1</key>
 		<string>The first European settlers to arrive in Canada</string>
 		<key>ans2</key>
@@ -35,10 +31,8 @@
 		<string>3</string>
 	</dict>
 	<dict>
-		<key>province</key>
-		<string>Ontario</string>
 		<key>question</key>
-		<string>Question3</string>
+		<string>What is the capital of Canada?</string>
 		<key>ans1</key>
 		<string>Toronto</string>
 		<key>ans2</key>
@@ -51,10 +45,8 @@
 		<string>2</string>
 	</dict>
 	<dict>
-		<key>province</key>
-		<string>general</string>
 		<key>question</key>
-		<string>Question4</string>
+		<string>Who are the aboriginal people?</string>
 		<key>ans1</key>
 		<string>The first European settlers to arrive in Canada</string>
 		<key>ans2</key>
@@ -67,10 +59,8 @@
 		<string>3</string>
 	</dict>
 	<dict>
-		<key>province</key>
-		<string>Ontario</string>
 		<key>question</key>
-		<string>Question5</string>
+		<string>What is the capital of Canada?</string>
 		<key>ans1</key>
 		<string>Toronto</string>
 		<key>ans2</key>
@@ -83,10 +73,8 @@
 		<string>2</string>
 	</dict>
 	<dict>
-		<key>province</key>
-		<string>general</string>
 		<key>question</key>
-		<string>Question6</string>
+		<string>Who are the aboriginal people?</string>
 		<key>ans1</key>
 		<string>The first European settlers to arrive in Canada</string>
 		<key>ans2</key>
@@ -99,10 +87,8 @@
 		<string>3</string>
 	</dict>
 	<dict>
-		<key>province</key>
-		<string>Ontario</string>
 		<key>question</key>
-		<string>Question7</string>
+		<string>What is the capital of Canada?</string>
 		<key>ans1</key>
 		<string>Toronto</string>
 		<key>ans2</key>

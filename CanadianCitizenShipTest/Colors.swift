@@ -18,5 +18,6 @@ public struct Color{
     static var black = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 100)
     static var green = UIColor(red: 118/255, green: 255/255, blue: 3/255, alpha: 100)
     static var white = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 100)
+    static var red = UIColor(red: 244/255, green: 67/255, blue: 54/255, alpha: 100)
 
 }
