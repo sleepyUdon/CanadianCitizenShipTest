@@ -6,7 +6,7 @@
 		<key>province</key>
 		<string>general</string>
 		<key>question</key>
-		<string>Who is the Prime Minister?</string>
+		<string>Question1</string>
 		<key>ans1</key>
 		<string>Justin Trudeau</string>
 		<key>ans2</key>
@@ -22,7 +22,7 @@
 		<key>province</key>
 		<string>general</string>
 		<key>question</key>
-		<string>Who are the Aboriginal people of Canada?</string>
+		<string>Question2</string>
 		<key>ans1</key>
 		<string>The first European settlers to arrive in Canada</string>
 		<key>ans2</key>
@@ -33,6 +33,86 @@
 		<string>The first settlers of Newfoundland</string>
 		<key>answer</key>
 		<string>3</string>
+	</dict>
+	<dict>
+		<key>province</key>
+		<string>Ontario</string>
+		<key>question</key>
+		<string>Question3</string>
+		<key>ans1</key>
+		<string>Toronto</string>
+		<key>ans2</key>
+		<string>Ottawa</string>
+		<key>ans3</key>
+		<string>Vancouver</string>
+		<key>ans4</key>
+		<string>Calgary</string>
+		<key>answer</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>province</key>
+		<string>general</string>
+		<key>question</key>
+		<string>Question4</string>
+		<key>ans1</key>
+		<string>The first European settlers to arrive in Canada</string>
+		<key>ans2</key>
+		<string>The descendants of the first Australian immigrants to Canada</string>
+		<key>ans3</key>
+		<string>The first people to live in Canada</string>
+		<key>ans4</key>
+		<string>The first settlers of Newfoundland</string>
+		<key>answer</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>province</key>
+		<string>Ontario</string>
+		<key>question</key>
+		<string>Question5</string>
+		<key>ans1</key>
+		<string>Toronto</string>
+		<key>ans2</key>
+		<string>Ottawa</string>
+		<key>ans3</key>
+		<string>Vancouver</string>
+		<key>ans4</key>
+		<string>Calgary</string>
+		<key>answer</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>province</key>
+		<string>general</string>
+		<key>question</key>
+		<string>Question6</string>
+		<key>ans1</key>
+		<string>The first European settlers to arrive in Canada</string>
+		<key>ans2</key>
+		<string>The descendants of the first Australian immigrants to Canada</string>
+		<key>ans3</key>
+		<string>The first people to live in Canada</string>
+		<key>ans4</key>
+		<string>The first settlers of Newfoundland</string>
+		<key>answer</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>province</key>
+		<string>Ontario</string>
+		<key>question</key>
+		<string>Question7</string>
+		<key>ans1</key>
+		<string>Toronto</string>
+		<key>ans2</key>
+		<string>Ottawa</string>
+		<key>ans3</key>
+		<string>Vancouver</string>
+		<key>ans4</key>
+		<string>Calgary</string>
+		<key>answer</key>
+		<string>2</string>
 	</dict>
 </array>
 </plist>

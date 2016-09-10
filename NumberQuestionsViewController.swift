@@ -17,7 +17,7 @@ class NumberQuestionsViewController: UIViewController {
     
     /// ViewDid Load
     override func viewDidLoad() {
-        prepareView()
+    prepareView()
     }
 
     /// Prepare View
@@ -134,7 +134,8 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 10 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 10
+        numberOfQuestions = 1
+        questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
@@ -142,7 +143,8 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 20 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 20
+        numberOfQuestions = 3
+        questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
 
     }
@@ -151,7 +153,8 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 30 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 30
+        numberOfQuestions = 7
+        questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
@@ -160,6 +163,7 @@ class NumberQuestionsViewController: UIViewController {
         // fetch an array of 50 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
         numberOfQuestions = 50
+        questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
@@ -168,6 +172,7 @@ class NumberQuestionsViewController: UIViewController {
         // fetch an array of 100 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
         numberOfQuestions = 100
+        questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
@@ -175,7 +180,8 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch all unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 500
+        numberOfQuestions = 200
+        questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }
 
