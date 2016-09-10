@@ -17,6 +17,8 @@
 		7C7EDE131D809A6D0078B04C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE121D809A6D0078B04C /* Fonts.swift */; };
 		7C7EDE151D80E34D0078B04C /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */; };
 		7C7EDE171D80E3B10078B04C /* NumberQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */; };
+		7CE2F6101D8381940043D3D1 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2F60F1D8381940043D3D1 /* Questions.plist */; };
+		7CE2F6121D838F350043D3D1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2F6111D838F350043D3D1 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		7C7EDE121D809A6D0078B04C /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberQuestionsViewController.swift; path = ../NumberQuestionsViewController.swift; sourceTree = "<group>"; };
+		7CE2F60F1D8381940043D3D1 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
+		7CE2F6111D838F350043D3D1 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,7 @@
 				7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */,
 				7C7EDE0B1D8096320078B04C /* ProvincesViewController.swift */,
 				7C7EDDFB1D80959E0078B04C /* ViewController.swift */,
+				7CE2F6111D838F350043D3D1 /* Question.swift */,
 				7C7EDE0F1D8099210078B04C /* Standards */,
 				7C7EDDFD1D80959E0078B04C /* Main.storyboard */,
 				7C7EDE001D80959E0078B04C /* Assets.xcassets */,
@@ -83,6 +88,7 @@
 			children = (
 				7C7EDE101D8099310078B04C /* Colors.swift */,
 				7C7EDE121D809A6D0078B04C /* Fonts.swift */,
+				7CE2F60F1D8381940043D3D1 /* Questions.plist */,
 			);
 			name = Standards;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE2F6101D8381940043D3D1 /* Questions.plist in Resources */,
 				7C7EDE041D80959E0078B04C /* LaunchScreen.storyboard in Resources */,
 				7C7EDE011D80959E0078B04C /* Assets.xcassets in Resources */,
 				7C7EDDFF1D80959E0078B04C /* Main.storyboard in Resources */,
@@ -160,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C7EDE171D80E3B10078B04C /* NumberQuestionsViewController.swift in Sources */,
+				7CE2F6121D838F350043D3D1 /* Question.swift in Sources */,
 				7C7EDE111D8099310078B04C /* Colors.swift in Sources */,
 				7C7EDE131D809A6D0078B04C /* Fonts.swift in Sources */,
 				7C7EDE151D80E34D0078B04C /* QuestionViewController.swift in Sources */,
@@ -319,6 +327,7 @@
 				7C7EDE0A1D80959E0078B04C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

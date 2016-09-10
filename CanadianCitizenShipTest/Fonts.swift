@@ -14,7 +14,8 @@ public struct Fonts{
     
     
     static let header =  UIFont (name: "Avenir-Heavy", size: 18)
-    static let provinceName =  UIFont (name: "Avenir-Heavy", size: 16)
+    static let answers =  UIFont (name: "Avenir-Book", size: 16)
+    static let provinceName =  UIFont (name: "Avenir-Heavy", size: 14)
     static let number =  UIFont (name: "Avenir-Heavy", size: 28)
 
 }

@@ -10,22 +10,26 @@ import UIKit
 
 class NumberQuestionsViewController: UIViewController {
     
+    /// declare properties
+    var dict = NSDictionary()
+    var numberOfQuestions = Int()
+    
+    
     /// ViewDid Load
     override func viewDidLoad() {
         prepareView()
     }
 
-    
     /// Prepare View
 
     func prepareView()
     {
-        
+
         // set variables
         
         let iconSize = CGFloat(80.0) // heigth and width of icons
         let verticalSpacing = CGFloat(150.0) // vertical spacing between icons
-        let horizontalSpacing = CGFloat(135.0) // horizontal spacing between icons
+        let horizontalSpacing = CGFloat(100.0) // horizontal spacing between icons
 
         view.backgroundColor = UIColor.whiteColor()
         
@@ -37,7 +41,7 @@ class NumberQuestionsViewController: UIViewController {
         
         /// 10 Button
         
-        let button10 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 - horizontalSpacing, y: verticalSpacing*2 - 30.0, width: iconSize, height: iconSize))
+        let button10 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 - horizontalSpacing, y: verticalSpacing, width: iconSize, height: iconSize))
         button10.backgroundColor = Color.lightgrey
         button10.layer.cornerRadius = iconSize/2
         button10.setTitle("10", forState: .Normal)
@@ -49,7 +53,7 @@ class NumberQuestionsViewController: UIViewController {
         
         // 20 Button
         
-        let button20 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2, y: verticalSpacing*2 - 30.0, width: iconSize, height: iconSize))
+        let button20 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2, y: verticalSpacing, width: iconSize, height: iconSize))
         button20.backgroundColor = Color.lightgrey
         button20.layer.cornerRadius = iconSize/2
         button20.setTitle("20", forState: .Normal)
@@ -61,7 +65,7 @@ class NumberQuestionsViewController: UIViewController {
         
         // 30 Button
         
-        let button30 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 + horizontalSpacing, y: verticalSpacing*2 - 30.0, width: iconSize, height: iconSize))
+        let button30 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 + horizontalSpacing, y: verticalSpacing, width: iconSize, height: iconSize))
         button30.backgroundColor = Color.lightgrey
         button30.layer.cornerRadius = iconSize/2
         button30.setTitle("30", forState: .Normal)
@@ -74,7 +78,7 @@ class NumberQuestionsViewController: UIViewController {
         
         // 50 Button
         
-        let button50 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 - horizontalSpacing, y: verticalSpacing*3 - 30.0, width: iconSize, height: iconSize))
+        let button50 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 - horizontalSpacing, y: verticalSpacing*2 - 30.0, width: iconSize, height: iconSize))
         button50.backgroundColor = Color.lightgrey
         button50.layer.cornerRadius = iconSize/2
         button50.setTitle("50", forState: .Normal)
@@ -87,7 +91,7 @@ class NumberQuestionsViewController: UIViewController {
         
         // 100 Button
         
-        let button100 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2, y: verticalSpacing*3 - 30.0, width: iconSize, height: iconSize))
+        let button100 = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2, y: verticalSpacing*2 - 30.0, width: iconSize, height: iconSize))
         button100.backgroundColor = Color.lightgrey
         button100.layer.cornerRadius = iconSize/2
         button100.setTitle("100", forState: .Normal)
@@ -100,7 +104,7 @@ class NumberQuestionsViewController: UIViewController {
         
         // Unlimited Button
         
-        let buttonUnlimited = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 + horizontalSpacing, y: verticalSpacing*3 - 30.0, width: iconSize, height: iconSize))
+        let buttonUnlimited = UIButton(frame: CGRect(x: view.frame.width/2 - iconSize/2 + horizontalSpacing, y: verticalSpacing*2 - 30.0, width: iconSize, height: iconSize))
         buttonUnlimited.backgroundColor = Color.lightgrey
         buttonUnlimited.layer.cornerRadius = iconSize/2
         buttonUnlimited.titleLabel?.numberOfLines = 0
@@ -120,7 +124,7 @@ class NumberQuestionsViewController: UIViewController {
         landscapeView.image = lakeImage
         landscapeView.alpha = 0
 
-        UIImageView.animateWithDuration(3.0, animations: {
+        UIImageView.animateWithDuration(2.5, animations: {
             landscapeView.alpha = 1
             }, completion: nil)
     }
@@ -128,26 +132,51 @@ class NumberQuestionsViewController: UIViewController {
     
     func handleButton10()
     {
+        // fetch an array of 10 unindentical questions from database for that province
+        let questionsViewController = QuestionViewController()
+        numberOfQuestions = 10
+        presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
     func handleButton20()
     {
+        // fetch an array of 20 unindentical questions from database for that province
+        let questionsViewController = QuestionViewController()
+        numberOfQuestions = 20
+        presentViewController(questionsViewController, animated: true, completion: nil)
+
     }
     
     func handleButton30()
     {
+        // fetch an array of 30 unindentical questions from database for that province
+        let questionsViewController = QuestionViewController()
+        numberOfQuestions = 30
+        presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
     func handleButton50()
     {
+        // fetch an array of 50 unindentical questions from database for that province
+        let questionsViewController = QuestionViewController()
+        numberOfQuestions = 50
+        presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
     func handleButton100()
     {
+        // fetch an array of 100 unindentical questions from database for that province
+        let questionsViewController = QuestionViewController()
+        numberOfQuestions = 100
+        presentViewController(questionsViewController, animated: true, completion: nil)
     }
     
     func handleButtonunlimited()
     {
+        // fetch all unindentical questions from database for that province
+        let questionsViewController = QuestionViewController()
+        numberOfQuestions = 500
+        presentViewController(questionsViewController, animated: true, completion: nil)
     }
 
 }
