@@ -32,6 +32,7 @@ class QuestionViewController: UIViewController {
     var plistPathInDocument:String = String()
     
     var questionNumber = 1
+    var score = 0
     
 
     /// ViewDid Load
@@ -78,6 +79,8 @@ class QuestionViewController: UIViewController {
 
     func prepareQuestions()
     {
+        
+        if self.questionNumber <= numberOfQuestions {
         // Question
         
         let label = UITextView(frame: CGRect(x: 33, y: 30, width: 200, height: 30))
@@ -111,6 +114,7 @@ class QuestionViewController: UIViewController {
         // Button 1
 
         let button1 = UIButton(frame: CGRect(x: 33, y: 150, width: self.view.frame.width-66, height: 70))
+        button1.titleLabel?.textAlignment = .Center
         button1.clipsToBounds = true
         button1.layer.cornerRadius = 35.0
         button1.backgroundColor = Color.lightgrey
@@ -120,14 +124,14 @@ class QuestionViewController: UIViewController {
         button1.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
         button1.titleLabel?.font = Fonts.answers
         button1.titleEdgeInsets = UIEdgeInsets(top: 0, left: 31, bottom: 0, right: 31)
-        button1.titleLabel?.textAlignment = .Left
         self.button1 = button1
         self.view.addSubview(button1)
-        button1.addTarget(self, action:  #selector(handleButton1), forControlEvents: .TouchDown)
+        button1.addTarget(self, action:  #selector(handleButton1), forControlEvents: .TouchUpInside)
 
         // Button 2
 
         let button2 = UIButton(frame: CGRect(x: 33, y: 230, width: self.view.frame.width-66, height: 70))
+        button2.titleLabel?.textAlignment = .Center
         button2.clipsToBounds = true
         button2.layer.cornerRadius = 35.0
         button2.backgroundColor = Color.lightgrey
@@ -137,14 +141,14 @@ class QuestionViewController: UIViewController {
         button2.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
         button2.titleLabel?.font = Fonts.answers
         button2.titleEdgeInsets = UIEdgeInsets(top: 0, left: 31, bottom: 0, right: 31)
-        button2.titleLabel?.textAlignment = .Left
         self.button2 = button2
         self.view.addSubview(button2)
-        button2.addTarget(self, action:  #selector(handleButton2), forControlEvents: .TouchDown)
+        button2.addTarget(self, action:  #selector(handleButton2), forControlEvents: .TouchUpInside)
 
         // Button 3
         
         let button3 = UIButton(frame: CGRect(x: 33, y: 310, width: self.view.frame.width-66, height: 70))
+        button3.titleLabel?.textAlignment = .Center
         button3.clipsToBounds = true
         button3.layer.cornerRadius = 35.0
         button3.backgroundColor = Color.lightgrey
@@ -153,15 +157,15 @@ class QuestionViewController: UIViewController {
         button3.setTitleColor(Color.black, forState: .Normal)
         button3.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
         button3.titleLabel?.font = Fonts.answers
-        button3.titleLabel?.textAlignment = .Left
         button3.titleEdgeInsets = UIEdgeInsets(top: 0, left: 31, bottom: 0, right: 31)
         self.button3 = button3
         self.view.addSubview(button3)
-        button3.addTarget(self, action:  #selector(handleButton3), forControlEvents: .TouchDown)
+        button3.addTarget(self, action:  #selector(handleButton3), forControlEvents: .TouchUpInside)
 
         // Button 4
         
         let button4 = UIButton(frame: CGRect(x: 33, y: 390, width: self.view.frame.width-66, height: 70))
+        button4.titleLabel?.textAlignment = .Center
         button4.clipsToBounds = true
         button4.layer.cornerRadius = 35.0
         button4.backgroundColor = Color.lightgrey
@@ -170,11 +174,10 @@ class QuestionViewController: UIViewController {
         button4.setTitleColor(Color.black, forState: .Normal)
         button4.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
         button4.titleLabel?.font = Fonts.answers
-        button4.titleLabel?.textAlignment = .Left
         button4.titleEdgeInsets = UIEdgeInsets(top: 0, left: 31, bottom: 0, right: 31)
         self.button4 = button4
         self.view.addSubview(button4)
-        button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchDown)
+        button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchUpInside)
         
         // Check Button
 
@@ -187,7 +190,7 @@ class QuestionViewController: UIViewController {
         checkButton.alpha = 0
         self.checkButton = checkButton
         self.view.addSubview(checkButton)
-        checkButton.addTarget(self, action:  #selector(handleCheckButton), forControlEvents: .TouchDown)
+        checkButton.addTarget(self, action:  #selector(handleCheckButton), forControlEvents: .TouchUpInside)
 
         // Next Button
         
@@ -200,8 +203,18 @@ class QuestionViewController: UIViewController {
         nextButton.alpha = 0
         self.nextButton = nextButton
         self.view.addSubview(nextButton)
-        nextButton.addTarget(self, action:  #selector(handleNextButton), forControlEvents: .TouchDown)
+        nextButton.addTarget(self, action:  #selector(handleNextButton), forControlEvents: .TouchUpInside)
+        } else {
+            let scoreViewController = ScoreViewController()
+            scoreViewController.score = self.score
+            scoreViewController.numberOfQuestions = self.numberOfQuestions
+            
+            NSUserDefaults.standardUserDefaults().setInteger(self.score, forKey: "userScore")
+            NSUserDefaults.standardUserDefaults().setInteger(self.numberOfQuestions, forKey: "numberOfQuestions")
 
+            presentViewController(scoreViewController, animated: true, completion: nil)
+        }
+        
     }
     
     // Handle Next Button Action
@@ -240,6 +253,7 @@ class QuestionViewController: UIViewController {
                 
                 self.checkButton.backgroundColor = Color.green
                 self.checkButton.setTitle("Correct!", forState: .Normal)
+                self.score = self.score + 1
                 
                 UIView.animateKeyframesWithDuration(0.5, delay: 0.0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
                     
@@ -255,12 +269,7 @@ class QuestionViewController: UIViewController {
                 self.button3.enabled = false
                 self.button4.enabled = false
                 self.checkButton.setTitle("Incorrect!", forState: .Normal)
-                UIView.animateKeyframesWithDuration(1.0, delay: 0.0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
-                    
-                    UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: {
                         self.nextButton.alpha = 1
-                    })
-                    }, completion:nil)
             }
         }
     }

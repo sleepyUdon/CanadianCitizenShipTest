@@ -14,6 +14,13 @@ class NumberQuestionsViewController: UIViewController {
     var dict = NSDictionary()
     var numberOfQuestions = Int()
     
+    var button10 = UIButton()
+    var button20 = UIButton()
+    var button30 = UIButton()
+    var button50 = UIButton()
+    var button100 = UIButton()
+    var buttonUnlimited = UIButton()
+
     
     /// ViewDid Load
     override func viewDidLoad() {
@@ -48,6 +55,7 @@ class NumberQuestionsViewController: UIViewController {
         button10.setTitleColor(Color.black, forState: UIControlState.Normal)
         button10.titleLabel!.font = Fonts.number
         button10.titleLabel?.textAlignment = .Center
+        self.button10 = button10
         view.addSubview(button10)
         button10.addTarget(self, action:  #selector(handleButton10), forControlEvents: .TouchUpInside)
         
@@ -60,6 +68,7 @@ class NumberQuestionsViewController: UIViewController {
         button20.setTitleColor(Color.black, forState: UIControlState.Normal)
         button20.titleLabel!.font = Fonts.number
         button20.titleLabel?.textAlignment = .Center
+        self.button20 = button20
         view.addSubview(button20)
         button20.addTarget(self, action:  #selector(handleButton20), forControlEvents: .TouchUpInside)
         
@@ -72,6 +81,7 @@ class NumberQuestionsViewController: UIViewController {
         button30.setTitleColor(Color.black, forState: UIControlState.Normal)
         button30.titleLabel!.font = Fonts.number
         button30.titleLabel?.textAlignment = .Center
+        self.button30 = button30
         view.addSubview(button30)
         button30.addTarget(self, action:  #selector(handleButton30), forControlEvents: .TouchUpInside)
         
@@ -85,6 +95,7 @@ class NumberQuestionsViewController: UIViewController {
         button50.setTitleColor(Color.black, forState: UIControlState.Normal)
         button50.titleLabel!.font = Fonts.number
         button50.titleLabel?.textAlignment = .Center
+        self.button50 = button50
         view.addSubview(button50)
         button50.addTarget(self, action:  #selector(handleButton50), forControlEvents: .TouchUpInside)
         
@@ -98,6 +109,7 @@ class NumberQuestionsViewController: UIViewController {
         button100.setTitleColor(Color.black, forState: UIControlState.Normal)
         button100.titleLabel!.font = Fonts.number
         button100.titleLabel?.textAlignment = .Center
+        self.button100 = button100
         view.addSubview(button100)
         button100.addTarget(self, action:  #selector(handleButton100), forControlEvents: .TouchUpInside)
         
@@ -112,6 +124,7 @@ class NumberQuestionsViewController: UIViewController {
         buttonUnlimited.setTitleColor(Color.black, forState: UIControlState.Normal)
         buttonUnlimited.titleLabel!.font = UIFont (name: "Avenir-Heavy", size: 14)
         buttonUnlimited.titleLabel?.textAlignment = .Center
+        self.buttonUnlimited = buttonUnlimited
         view.addSubview(buttonUnlimited)
         buttonUnlimited.addTarget(self, action:  #selector(handleButtonunlimited), forControlEvents: .TouchUpInside)
         
@@ -135,8 +148,10 @@ class NumberQuestionsViewController: UIViewController {
         // fetch an array of 10 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
         numberOfQuestions = 1
+        self.button10.backgroundColor = Color.green
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
+        
     }
     
     func handleButton20()
@@ -144,6 +159,7 @@ class NumberQuestionsViewController: UIViewController {
         // fetch an array of 20 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
         numberOfQuestions = 3
+        self.button20.backgroundColor = Color.green
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
 
@@ -154,6 +170,7 @@ class NumberQuestionsViewController: UIViewController {
         // fetch an array of 30 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
         numberOfQuestions = 7
+        self.button30.backgroundColor = Color.green
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }
@@ -162,6 +179,7 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 50 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
+        self.button50.backgroundColor = Color.green
         numberOfQuestions = 50
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
@@ -171,6 +189,7 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 100 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
+        self.button100.backgroundColor = Color.green
         numberOfQuestions = 100
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
@@ -180,6 +199,7 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch all unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
+        self.buttonUnlimited.backgroundColor = Color.green
         numberOfQuestions = 200
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)

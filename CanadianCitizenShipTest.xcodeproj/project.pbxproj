@@ -18,6 +18,8 @@
 		7C7EDE171D80E3B10078B04C /* NumberQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */; };
 		7CE2F6101D8381940043D3D1 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CE2F60F1D8381940043D3D1 /* Questions.plist */; };
 		7CE2F6121D838F350043D3D1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2F6111D838F350043D3D1 /* Question.swift */; };
+		7CE2F6141D84D6670043D3D1 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2F6131D84D6670043D3D1 /* ScoreViewController.swift */; };
+		7CE2F6161D84E2D60043D3D1 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE2F6151D84E2D60043D3D1 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberQuestionsViewController.swift; path = ../NumberQuestionsViewController.swift; sourceTree = "<group>"; };
 		7CE2F60F1D8381940043D3D1 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
 		7CE2F6111D838F350043D3D1 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		7CE2F6131D84D6670043D3D1 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		7CE2F6151D84E2D60043D3D1 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +71,11 @@
 			isa = PBXGroup;
 			children = (
 				7C7EDDF91D80959E0078B04C /* AppDelegate.swift */,
-				7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */,
-				7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */,
 				7C7EDE0B1D8096320078B04C /* ProvincesViewController.swift */,
+				7C7EDE161D80E3B10078B04C /* NumberQuestionsViewController.swift */,
+				7C7EDE141D80E34D0078B04C /* QuestionViewController.swift */,
+				7CE2F6131D84D6670043D3D1 /* ScoreViewController.swift */,
+				7CE2F6151D84E2D60043D3D1 /* CounterView.swift */,
 				7CE2F6111D838F350043D3D1 /* Question.swift */,
 				7C7EDE0F1D8099210078B04C /* Standards */,
 				7C7EDDFD1D80959E0078B04C /* Main.storyboard */,
@@ -170,6 +176,8 @@
 				7C7EDE151D80E34D0078B04C /* QuestionViewController.swift in Sources */,
 				7C7EDE0C1D8096320078B04C /* ProvincesViewController.swift in Sources */,
 				7C7EDDFA1D80959E0078B04C /* AppDelegate.swift in Sources */,
+				7CE2F6141D84D6670043D3D1 /* ScoreViewController.swift in Sources */,
+				7CE2F6161D84E2D60043D3D1 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
