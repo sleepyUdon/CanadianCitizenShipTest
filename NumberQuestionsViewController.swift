@@ -127,7 +127,9 @@ class NumberQuestionsViewController: UIViewController {
         self.buttonUnlimited = buttonUnlimited
         view.addSubview(buttonUnlimited)
         buttonUnlimited.addTarget(self, action:  #selector(handleButtonunlimited), forControlEvents: .TouchUpInside)
-        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         
         // Landscape Image
         
@@ -143,11 +145,13 @@ class NumberQuestionsViewController: UIViewController {
     }
     
     
+    
+    
     func handleButton10()
     {
         // fetch an array of 10 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 1
+        numberOfQuestions = 10
         self.button10.backgroundColor = Color.green
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
@@ -158,7 +162,7 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 20 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 3
+        numberOfQuestions = 20
         self.button20.backgroundColor = Color.green
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
@@ -169,7 +173,7 @@ class NumberQuestionsViewController: UIViewController {
     {
         // fetch an array of 30 unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
-        numberOfQuestions = 7
+        numberOfQuestions = 30
         self.button30.backgroundColor = Color.green
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
@@ -200,7 +204,7 @@ class NumberQuestionsViewController: UIViewController {
         // fetch all unindentical questions from database for that province
         let questionsViewController = QuestionViewController()
         self.buttonUnlimited.backgroundColor = Color.green
-        numberOfQuestions = 200
+        numberOfQuestions = 150
         questionsViewController.numberOfQuestions = numberOfQuestions
         presentViewController(questionsViewController, animated: true, completion: nil)
     }

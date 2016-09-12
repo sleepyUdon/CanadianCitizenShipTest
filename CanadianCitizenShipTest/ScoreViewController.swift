@@ -24,7 +24,7 @@ class ScoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareView()
-        if var score = score as Int! {
+        if let score = score as Int! {
             label.text = "\(score)"+"/"+"\(numberOfQuestions)"
         } else {
             print ("crashed")
@@ -46,7 +46,7 @@ class ScoreViewController: UIViewController {
         view.addSubview(counterView)
         
         
-        let label = UILabel(frame: CGRect(x: view.bounds.width/2 - 50, y: 175, width: 100, height: 50))
+        let label = UILabel(frame: CGRect(x: view.bounds.width/2 - 75, y: 175, width: 150, height: 50))
         label.font = Fonts.score
         label.textAlignment = .Center
         self.label = label
@@ -61,23 +61,33 @@ class ScoreViewController: UIViewController {
         gradeLabel.text = String(format:"You scored %.0f %%", grade)
         self.view.addSubview(gradeLabel)
         
-        let commentLabel = UILabel(frame: CGRect(x: view.frame.width/2 - 200, y: 350, width: 400, height: 50))
+        let commentLabel = UILabel(frame: CGRect(x: 50, y: 350, width: view.bounds.width - 100, height: 90))
         commentLabel.textAlignment = .Center
         commentLabel.font = Fonts.header
-        commentLabel.text = "You can do better!"
+        commentLabel.numberOfLines = 0
+        if grade == 100 {
+            commentLabel.text = "Perfect!"
+        } else if  grade > 85 {
+            commentLabel.text = "Good job!"
+        } else if  grade > 75 {
+            commentLabel.text = "Nice, keep practicing!"
+        } else  {
+            commentLabel.text = "Needs more work, keep practicing!"
+        }
+        
         self.view.addSubview(commentLabel)
 
 
         // Retake Test Button
 
-        let button = UIButton(frame: CGRect(x: view.frame.width/2 - 75, y: 400, width: 150, height: 40))
+        let button = UIButton(frame: CGRect(x: view.frame.width/2 - 100, y: 450, width: 200, height: 40))
         button.clipsToBounds = true
         button.layer.cornerRadius = 20.0
         button.backgroundColor = Color.lightgrey
         button.setTitle( "Retake Test", forState: .Normal)
-        button.setTitleColor(Color.black, forState: .Normal)
+        button.setTitleColor(Color.white, forState: .Normal)
         button.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
-        button.titleLabel?.font = Fonts.answers
+        button.titleLabel?.font = Fonts.header
         button.titleLabel?.textAlignment = .Left
         button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 31, bottom: 0, right: 31)
         self.button = button
@@ -87,7 +97,9 @@ class ScoreViewController: UIViewController {
 
     func handleButton()
     {
-        
+        self.button.backgroundColor = Color.green
+        let provinceViewController = ProvincesViewController()
+        presentViewController(provinceViewController, animated: true, completion: nil)    
     }
 
 }

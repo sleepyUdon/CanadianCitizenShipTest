@@ -13,6 +13,7 @@ class ProvincesViewController: UIViewController {
     
     /// Set properties
   
+    var province = ""
 
     
     /// ViewDid Load
@@ -202,69 +203,81 @@ class ProvincesViewController: UIViewController {
     func handleAlbertaButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
+        self.province = "Alberta"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
 
     func handleBritishColumbiaButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "BritishColumbia"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleManitobaButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "Manitoba"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNFLButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "NewfoundlandLabrador"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNBButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "NewBrunswick"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNTButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "NorthernTerritories"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNunavutButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "Nunavut"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNSButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "NovaScotia"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleOntarioButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
-
+        self.province = "Ontario"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleYukonButton()
     {
         let numberQuestionVC = NumberQuestionsViewController()
-        self.navigationController!.pushViewController(numberQuestionVC, animated: true)
+        self.province = "Yukon"
+        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
+        presentViewController(numberQuestionVC, animated: true, completion: nil)
 
     }
     
