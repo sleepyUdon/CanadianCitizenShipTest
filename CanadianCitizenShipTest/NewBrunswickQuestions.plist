@@ -790,7 +790,7 @@
             <key>ans4</key>
             <string>The first phone in Canada, invented by Alexander Graham Bell</string>
             <key>answer</key>
-            <string>4</string>
+            <string>3</string>
         </dict>
         <dict>
             <key>question</key>
@@ -910,21 +910,6 @@
             <string>Hull</string>
             <key>answer</key>
             <string>1</string>
-        </dict>
-        
-        <dict>
-            <key>question</key>
-            <string>What is the difference between the role of the Sovereign and that of the Prime Minister?</string>
-            <key>ans1</key>
-            <string>The Sovereign is Head of State, the Prime Minister oversees provincial policies</string>
-            <key>ans2</key>
-            <string>The Sovereign is the guardian of Constitutional freedoms, the Prime Minister selects the Cabinet ministers and is responsible for operations and policy of government</string>
-            <key>ans3</key>
-            <string>The Sovereign links Canada to 52 other nations and the Prime Minister is the guardian of Constitutional freedoms</string>
-            <key>ans4</key>
-            <string>The Sovereign is the symbol of Canadian sovereignty and the Prime Minister is her aide</string>
-            <key>answer</key>
-            <string>2</string>
         </dict>
         
         <dict>
