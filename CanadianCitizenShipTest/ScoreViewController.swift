@@ -63,12 +63,12 @@ class ScoreViewController: UIViewController {
         
         let commentLabel = UILabel(frame: CGRect(x: 50, y: 350, width: view.bounds.width - 100, height: 90))
         commentLabel.textAlignment = .Center
-        commentLabel.font = Fonts.header
+        commentLabel.font = Fonts.provinceHeader
         commentLabel.numberOfLines = 0
         if grade == 100 {
             commentLabel.text = "Perfect!"
         } else if  grade > 85 {
-            commentLabel.text = "Good job!"
+            commentLabel.text = "Great job!"
         } else if  grade > 75 {
             commentLabel.text = "Nice, keep practicing!"
         } else  {

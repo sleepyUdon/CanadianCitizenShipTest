@@ -77,6 +77,7 @@ class QuestionViewController: UIViewController {
     
     func prepareView()
     {
+        self.title = "Canadian Citizenship Test"
         view.backgroundColor = UIColor.whiteColor()
     }
     
@@ -88,6 +89,7 @@ class QuestionViewController: UIViewController {
         
         if self.questionNumber <= numberOfQuestions {
             // Question index
+            
             
             let label = UITextView(frame: CGRect(x: 20, y: 30, width: 200, height: 30))
             label.editable = false
@@ -260,13 +262,19 @@ class QuestionViewController: UIViewController {
             self.checkButtonSelected = false
             self.checkButton.setTitle("Check", forState: .Normal)
             
+            self.nextButton.backgroundColor = Color.lightgrey
+
+            
             
 
             self.label.text = "Question "+"\(self.questionNumber)"+"/"+"\(self.numberOfQuestions)"
             
             // Progress Bar Green
             
-            self.progressBarGreen = UIView(frame: CGRect(x: 20, y: 69, width: (self.view.frame.width-40)/CGFloat(self.numberOfQuestions) * CGFloat(self.questionNumber), height: 8.0))
+            let progressBarGreen = UIView(frame: CGRect(x: 20, y: 69, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
+            progressBarGreen.backgroundColor = Color.green
+            self.progressBarGreen = progressBarGreen
+            self.view.addSubview(progressBarGreen)
             
             // Question Index from random array
             let questionIndex = self.currentQuestionsArray[questionNumber-1]
@@ -324,7 +332,9 @@ class QuestionViewController: UIViewController {
         self.nextButton.alpha = 0
         self.checkButton.alpha = 0
         
-        questionNumber = questionNumber + 1
+        self.progressBarGreen.removeFromSuperview()
+        
+        self.questionNumber = questionNumber + 1
         updateQuestions()
     }
     

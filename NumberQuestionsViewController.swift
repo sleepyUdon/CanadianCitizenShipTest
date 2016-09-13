@@ -20,6 +20,9 @@ class NumberQuestionsViewController: UIViewController {
     var button50 = UIButton()
     var button100 = UIButton()
     var buttonUnlimited = UIButton()
+    
+    var province = ""
+    var landscapeImage = UIImage()
 
     
     /// ViewDid Load
@@ -31,20 +34,51 @@ class NumberQuestionsViewController: UIViewController {
 
     func prepareView()
     {
-
         // set variables
         
-        let iconSize = CGFloat(80.0) // heigth and width of icons
-        let verticalSpacing = CGFloat(150.0) // vertical spacing between icons
-        let horizontalSpacing = CGFloat(100.0) // horizontal spacing between icons
-
         view.backgroundColor = UIColor.whiteColor()
+
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+            
+            let redtopBar = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 20))
+            redtopBar.backgroundColor = Color.red
+            view.addSubview(redtopBar)
+            
+            let navigationBar = UILabel(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 40))
+            navigationBar.text = "\(self.province)"
+            navigationBar.textColor = Color.white
+            navigationBar.textAlignment = .Center
+            navigationBar.backgroundColor = Color.red
+            navigationBar.font = Fonts.canada
+            view.addSubview(navigationBar)
+            let label = UILabel(frame: CGRect(x: 0, y: 60, width: view.frame.width, height: 30))
+            label.text = "Select Number of Questions:"
+            label.textAlignment = .Center
+            label.font = Fonts.header
+            view.addSubview(label)
+        } else {
+            let redtopBar = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 20))
+            redtopBar.backgroundColor = Color.red
+            view.addSubview(redtopBar)
+            
+            let navigationBar = UILabel(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 60))
+            navigationBar.text = "\(self.province)"
+            navigationBar.textColor = Color.white
+            navigationBar.textAlignment = .Center
+            navigationBar.backgroundColor = Color.red
+            navigationBar.font = Fonts.canadaLarge
+            view.addSubview(navigationBar)
+            let label = UILabel(frame: CGRect(x: 0, y: 60, width: view.frame.width, height: 100))
+            label.text = "Select Number of Questions:"
+            label.textAlignment = .Center
+            label.font = Fonts.headerLarge
+            view.addSubview(label)
+        }
         
-        let label = UILabel(frame: CGRect(x: 33, y: 94, width: 400, height: 30))
-        label.text = "Select Number of Questions"
-        label.font = Fonts.header
-        view.addSubview(label)
         
+        let iconSize = view.frame.width/6.4 // heigth and width of icons
+        let verticalSpacing = view.frame.height/5 // vertical spacing between icons
+        let horizontalSpacing = view.frame.width/4 // horizontal spacing between icons
         
         /// 10 Button
         
@@ -133,10 +167,30 @@ class NumberQuestionsViewController: UIViewController {
         
         // Landscape Image
         
-        let landscapeView = UIImageView(frame: CGRect(x: 0, y: view.frame.height - 200.0, width: view.frame.width, height: 200.0))
+        let landscapeView = UIImageView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width * 0.625, width: view.frame.width, height: view.frame.width * 0.625))
         view.addSubview(landscapeView)
-        let lakeImage = UIImage(named:"lake.png")
-        landscapeView.image = lakeImage
+        if self.province == "Alberta"
+        { self.landscapeImage = UIImage(named:"LakeView.png")!}
+        else if self.province == "British Columbia"
+        { self.landscapeImage = UIImage(named:"LakeView.png")!}
+        else if self.province == "Manitoba"
+        { self.landscapeImage = UIImage(named:"PrairiesView.png")!}
+        else if self.province == "Newfoundland and Labrador"
+        { self.landscapeImage = UIImage(named:"EastView.png")!}
+        else if self.province == "New Brunswick"
+        { self.landscapeImage = UIImage(named:"EastView.png")!}
+        else if self.province == "Northern Territories"
+        { self.landscapeImage = UIImage(named:"NorthView.png")!}
+        else if self.province == "Nunavut"
+        { self.landscapeImage = UIImage(named:"NorthView.png")!}
+        else if self.province == "Nova Scotia"
+        { self.landscapeImage = UIImage(named:"EastView.png")!}
+        else if self.province == "Ontario"
+        { self.landscapeImage = UIImage(named:"TorontoView.png")!}
+        else if self.province == "Yukon"
+        { self.landscapeImage = UIImage(named:"NorthView.png")!}
+
+        landscapeView.image = self.landscapeImage
         landscapeView.alpha = 0
 
         UIImageView.animateWithDuration(2.5, animations: {

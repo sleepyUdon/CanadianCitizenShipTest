@@ -16,13 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
-        let provincesViewController = ProvincesViewController ()
-        let navigationVC: UINavigationController = UINavigationController (rootViewController: provincesViewController)
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = navigationVC
-        window!.makeKeyAndVisible()
-        window!.tintColor = Color.black
-
+//        let landingPageViewController = LandingPageViewController()
+//        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+//        window!.rootViewController = landingPageViewController
+//        window!.makeKeyAndVisible()
+//
         return true
     }
 
