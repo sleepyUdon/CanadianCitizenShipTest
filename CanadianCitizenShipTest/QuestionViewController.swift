@@ -86,10 +86,10 @@ class QuestionViewController: UIViewController {
 
     func prepareQuestions()
     {
-        
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+
         if self.questionNumber <= numberOfQuestions {
             // Question index
-            
             
             let label = UITextView(frame: CGRect(x: 20, y: 30, width: 200, height: 30))
             label.editable = false
@@ -108,7 +108,7 @@ class QuestionViewController: UIViewController {
             
             // Progress Bar Green
             
-            let progressBarGreen = UIView(frame: CGRect(x: 20, y: 69, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
+            let progressBarGreen = UIView(frame: CGRect(x: 20, y: 70, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
             progressBarGreen.backgroundColor = Color.green
             self.progressBarGreen = progressBarGreen
             self.view.addSubview(progressBarGreen)
@@ -221,7 +221,144 @@ class QuestionViewController: UIViewController {
             self.view.addSubview(nextButton)
             nextButton.addTarget(self, action:  #selector(handleNextButton), forControlEvents: .TouchUpInside)
         }
-        
+        } else
+            
+            // for iPad
+        {
+            if self.questionNumber <= numberOfQuestions {
+                // Question index
+                
+                let label = UITextView(frame: CGRect(x: 40, y: 60, width: 400, height: 60))
+                label.editable = false
+                label.text = "Question "+"\(questionNumber)"+"/"+"\(numberOfQuestions)"
+                label.font = Fonts.headerLarge
+                self.label = label
+                self.view.addSubview(label)
+                
+                
+                // Progress Bar Grey
+                
+                let progressBarGrey = UIView(frame: CGRect(x: 40, y: 140, width: self.view.frame.width-88, height: 16))
+                progressBarGrey.layer.cornerRadius = 6.0
+                progressBarGrey.backgroundColor = Color.lightgrey
+                self.view.addSubview(progressBarGrey)
+                
+                // Progress Bar Green
+                
+                let progressBarGreen = UIView(frame: CGRect(x: 40, y: 140, width: (self.view.frame.width-80)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 16.0))
+                progressBarGreen.backgroundColor = Color.green
+                self.progressBarGreen = progressBarGreen
+                self.view.addSubview(progressBarGreen)
+                
+                // Question Index from random array
+                let questionIndex = currentQuestionsArray[questionNumber-1]
+                self.questionIndex = questionIndex
+                
+                // Questions label
+                
+                let questionlabel = UITextView(frame: CGRect(x: 40, y: 160, width: self.view.frame.width-88, height: 300))
+                questionlabel.editable = false
+                if let question = questionsArray[self.questionIndex]["question"] as! String! {
+                    questionlabel.text = "\(question)"}
+                questionlabel.font = Fonts.headerLarge
+                self.questionlabel = questionlabel
+                self.view.addSubview(questionlabel)
+                
+                // Button 1
+                
+                let button1 = UIButton(frame: CGRect(x: 40, y: 280, width: self.view.frame.width-88, height: 140))
+                button1.titleLabel?.textAlignment = .Center
+                button1.clipsToBounds = true
+                button1.layer.cornerRadius = 20.0
+                button1.backgroundColor = Color.lightgrey
+                if let ans1 = questionsArray[self.questionIndex]["ans1"] as! String! {
+                    button1.setTitle( "\(ans1)", forState: .Normal)}
+                button1.setTitleColor(Color.black, forState: .Normal)
+                button1.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                button1.titleLabel?.font = Fonts.answersLarge
+                button1.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+                self.button1 = button1
+                self.view.addSubview(button1)
+                button1.addTarget(self, action:  #selector(handleButton1), forControlEvents: .TouchUpInside)
+                
+                // Button 2
+                
+                let button2 = UIButton(frame: CGRect(x: 40, y: 440, width: self.view.frame.width-80, height: 140))
+                button2.titleLabel?.textAlignment = .Center
+                button2.clipsToBounds = true
+                button2.layer.cornerRadius = 20.0
+                button2.backgroundColor = Color.lightgrey
+                if let ans2 = questionsArray[self.questionIndex]["ans2"] as! String! {
+                    button2.setTitle( "\(ans2)", forState: .Normal)}
+                button2.setTitleColor(Color.black, forState: .Normal)
+                button2.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                button2.titleLabel?.font = Fonts.answersLarge
+                button2.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+                self.button2 = button2
+                self.view.addSubview(button2)
+                button2.addTarget(self, action:  #selector(handleButton2), forControlEvents: .TouchUpInside)
+                
+                // Button 3
+                
+                let button3 = UIButton(frame: CGRect(x: 40, y: 600, width: self.view.frame.width-80, height: 140))
+                button3.titleLabel?.textAlignment = .Center
+                button3.clipsToBounds = true
+                button3.layer.cornerRadius = 20.0
+                button3.backgroundColor = Color.lightgrey
+                if let ans3 = questionsArray[self.questionIndex]["ans3"] as! String! {
+                    button3.setTitle( "\(ans3)", forState: .Normal)}
+                button3.setTitleColor(Color.black, forState: .Normal)
+                button3.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                button3.titleLabel?.font = Fonts.answersLarge
+                button3.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+                self.button3 = button3
+                self.view.addSubview(button3)
+                button3.addTarget(self, action:  #selector(handleButton3), forControlEvents: .TouchUpInside)
+                
+                // Button 4
+                
+                let button4 = UIButton(frame: CGRect(x: 40, y: 760, width: self.view.frame.width-80, height: 140))
+                button4.titleLabel?.textAlignment = .Center
+                button4.clipsToBounds = true
+                button4.layer.cornerRadius = 20.0
+                button4.backgroundColor = Color.lightgrey
+                if let ans4 = questionsArray[self.questionIndex]["ans4"] as! String! {
+                    button4.setTitle( "\(ans4)", forState: .Normal)}
+                button4.setTitleColor(Color.black, forState: .Normal)
+                button4.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                button4.titleLabel?.font = Fonts.answersLarge
+                button4.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+                self.button4 = button4
+                self.view.addSubview(button4)
+                button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchUpInside)
+                
+                // Check Button
+                
+                let checkButton = UIButton(frame: CGRect(x: 40, y: 920, width: 300, height: 80))
+                checkButton.clipsToBounds = true
+                checkButton.layer.cornerRadius = 20.0
+                checkButton.setTitle("Check", forState: .Normal)
+                checkButton.titleLabel?.font = Fonts.headerLarge
+                checkButton.backgroundColor = Color.lightgrey
+                checkButton.alpha = 0
+                self.checkButton = checkButton
+                self.view.addSubview(checkButton)
+                checkButton.addTarget(self, action:  #selector(handleCheckButton), forControlEvents: .TouchUpInside)
+                
+                // Next Button
+                
+                let nextButton = UIButton(frame: CGRect(x: 380, y: 920, width: view.bounds.width - 300 - 120, height: 80))
+                nextButton.clipsToBounds = true
+                nextButton.layer.cornerRadius = 20.0
+                nextButton.setTitle("Next", forState: .Normal)
+                nextButton.titleLabel?.font = Fonts.headerLarge
+                nextButton.backgroundColor = Color.lightgrey
+                nextButton.alpha = 0
+                self.nextButton = nextButton
+                self.view.addSubview(nextButton)
+                nextButton.addTarget(self, action:  #selector(handleNextButton), forControlEvents: .TouchUpInside)
+            }
+        }
     }
     
     // Update Questions
@@ -248,10 +385,19 @@ class QuestionViewController: UIViewController {
             self.button3.backgroundColor = Color.lightgrey
             self.button4.backgroundColor = Color.lightgrey
             
+            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+
             self.button1.titleLabel?.font = Fonts.answers
             self.button2.titleLabel?.font = Fonts.answers
             self.button3.titleLabel?.font = Fonts.answers
             self.button4.titleLabel?.font = Fonts.answers
+            } else {
+                self.button1.titleLabel?.font = Fonts.answersLarge
+                self.button2.titleLabel?.font = Fonts.answersLarge
+                self.button3.titleLabel?.font = Fonts.answersLarge
+                self.button4.titleLabel?.font = Fonts.answersLarge
+            }
+            
 
             self.button1.setTitleColor(Color.black, forState:.Normal)
             self.button2.setTitleColor(Color.black, forState:.Normal)
@@ -270,11 +416,18 @@ class QuestionViewController: UIViewController {
             self.label.text = "Question "+"\(self.questionNumber)"+"/"+"\(self.numberOfQuestions)"
             
             // Progress Bar Green
-            
-            let progressBarGreen = UIView(frame: CGRect(x: 20, y: 69, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
-            progressBarGreen.backgroundColor = Color.green
-            self.progressBarGreen = progressBarGreen
-            self.view.addSubview(progressBarGreen)
+            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+
+                let progressBarGreen = UIView(frame: CGRect(x: 20, y: 70, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
+                progressBarGreen.backgroundColor = Color.green
+                self.progressBarGreen = progressBarGreen
+                self.view.addSubview(progressBarGreen)
+            } else {
+                let progressBarGreen = UIView(frame: CGRect(x: 40, y: 140, width: (self.view.frame.width-80)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 16.0))
+                progressBarGreen.backgroundColor = Color.green
+                self.progressBarGreen = progressBarGreen
+                self.view.addSubview(progressBarGreen)
+            }
             
             // Question Index from random array
             let questionIndex = self.currentQuestionsArray[questionNumber-1]
@@ -312,6 +465,7 @@ class QuestionViewController: UIViewController {
                 button4.setTitle( "\(ans4)", forState: .Normal)}
             button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchUpInside)
         }
+            
         else {
             let scoreViewController = ScoreViewController()
             scoreViewController.score = self.score
@@ -341,6 +495,7 @@ class QuestionViewController: UIViewController {
     // Handle CheckButton Action
     func handleCheckButton()
     {
+        
         if button1Selected == true || button2Selected == true || button3Selected == true || button4Selected == true {
             if self.checkButtonSelected == false {
                 self.checkButton.backgroundColor = Color.green
@@ -369,6 +524,9 @@ class QuestionViewController: UIViewController {
                 
             
             } else {
+                
+
+
                 self.checkButton.backgroundColor =  Color.red
                 self.button1.enabled = false
                 self.button2.enabled = false
@@ -378,23 +536,30 @@ class QuestionViewController: UIViewController {
                 self.nextButton.alpha = 1
                 
                 if let answer = questionsArray[self.questionIndex]["answer"] as! String! {
+                    
                     if answer == "1" {
                         if self.button1Selected == true
                         {self.button1.backgroundColor = Color.red
                             self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            
                         else if self.button2Selected == true
                         {self.button2.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button2.setTitleColor(Color.black, forState: .Normal)}
                         else if self.button3Selected == true
                         {self.button3.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button3.setTitleColor(Color.black, forState: .Normal)}
                         else if self.button4Selected == true
                         {self.button4.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button4.setTitleColor(Color.black, forState: .Normal)}
                         
                         self.button1.setTitleColor(Color.red, forState: .Normal)
                         self.button1.titleLabel!.font = Fonts.wrongAnswers
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                            self.button1.titleLabel?.font = Fonts.answers}
+                        else {
+                            self.button1.titleLabel?.font = Fonts.answersLarge}
                     }
+                    
                     if answer == "2" {
                         if self.button1Selected == true
                         {self.button1.backgroundColor = Color.red
@@ -411,6 +576,11 @@ class QuestionViewController: UIViewController {
                         
                         self.button2.setTitleColor(Color.red, forState: .Normal)
                         self.button2.titleLabel!.font = Fonts.wrongAnswers
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                            self.button2.titleLabel?.font = Fonts.answers}
+                        else {
+                            self.button2.titleLabel?.font = Fonts.answersLarge}
+
                     }
                     if answer == "3" {
                         if self.button1Selected == true
@@ -428,6 +598,11 @@ class QuestionViewController: UIViewController {
                         
                         self.button3.setTitleColor(Color.red, forState: .Normal)
                         self.button3.titleLabel!.font = Fonts.wrongAnswers
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                            self.button3.titleLabel?.font = Fonts.answers}
+                        else {
+                            self.button3.titleLabel?.font = Fonts.answersLarge}
+
                     }
                     if answer == "4" {
                         if self.button1Selected == true
@@ -445,6 +620,11 @@ class QuestionViewController: UIViewController {
                         
                         self.button4.setTitleColor(Color.red, forState: .Normal)
                         self.button4.titleLabel!.font = Fonts.wrongAnswers
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                            self.button4.titleLabel?.font = Fonts.answers}
+                        else {
+                            self.button4.titleLabel?.font = Fonts.answersLarge}
+
                     }
                 }
             }

@@ -38,8 +38,11 @@ class ScoreViewController: UIViewController {
     
     func prepareView()
     {
+    
         view.backgroundColor = UIColor.whiteColor()
         
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+
         let counterView = CounterView(frame: CGRect(x: view.bounds.width/2 - 100, y: 100, width: 200, height: 200))
         counterView.backgroundColor = UIColor.whiteColor()
         self.counterView = counterView
@@ -93,6 +96,63 @@ class ScoreViewController: UIViewController {
         self.button = button
         self.view.addSubview(button)
         button.addTarget(self, action:  #selector(handleButton), forControlEvents: .TouchUpInside)
+            
+        } else {
+            
+            let counterView = CounterView(frame: CGRect(x: view.bounds.width/2 - 200, y: 200, width: 400, height: 400))
+            counterView.backgroundColor = UIColor.whiteColor()
+            self.counterView = counterView
+            view.addSubview(counterView)
+            
+            
+            let label = UILabel(frame: CGRect(x: view.bounds.width/2 - 150, y: 350, width: 300, height: 100))
+            label.font = Fonts.score
+            label.textAlignment = .Center
+            self.label = label
+            view.addSubview(label)
+            
+            // Grade Label
+            
+            let gradeLabel = UILabel(frame: CGRect(x: view.frame.width/2 - 400, y: 600, width: 800, height: 100))
+            let grade = (Float(self.score) / Float(self.numberOfQuestions)) * 200
+            gradeLabel.textAlignment = .Center
+            gradeLabel.font = Fonts.headerLarge
+            gradeLabel.text = String(format:"You scored %.0f %%", grade)
+            self.view.addSubview(gradeLabel)
+            
+            let commentLabel = UILabel(frame: CGRect(x: 100, y: 700, width: view.bounds.width - 200, height: 180))
+            commentLabel.textAlignment = .Center
+            commentLabel.font = Fonts.provinceHeaderLarge
+            commentLabel.numberOfLines = 0
+            if grade == 100 {
+                commentLabel.text = "Perfect!"
+            } else if  grade > 85 {
+                commentLabel.text = "Great job!"
+            } else if  grade > 75 {
+                commentLabel.text = "Nice, keep practicing!"
+            } else  {
+                commentLabel.text = "Needs more work, keep practicing!"
+            }
+            
+            self.view.addSubview(commentLabel)
+            
+            
+            // Retake Test Button
+            
+            let button = UIButton(frame: CGRect(x: view.frame.width/2 - 200, y: 900, width: 400, height: 80))
+            button.clipsToBounds = true
+            button.layer.cornerRadius = 40.0
+            button.backgroundColor = Color.lightgrey
+            button.setTitle( "Retake Test", forState: .Normal)
+            button.setTitleColor(Color.white, forState: .Normal)
+            button.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            button.titleLabel?.font = Fonts.headerLarge
+            button.titleLabel?.textAlignment = .Left
+            button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 62, bottom: 0, right: 62)
+            self.button = button
+            self.view.addSubview(button)
+            button.addTarget(self, action:  #selector(handleButton), forControlEvents: .TouchUpInside)
+        }
     }
 
     func handleButton()
