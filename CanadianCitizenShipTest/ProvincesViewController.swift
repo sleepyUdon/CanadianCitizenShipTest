@@ -35,14 +35,14 @@ class ProvincesViewController: UIViewController {
         redtopBar.backgroundColor = Color.red
         view.addSubview(redtopBar)
 
-        let navigationBar = UILabel(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 40))
+        let navigationBar = UILabel(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 30))
         navigationBar.text = "Canadian Citizenship Test"
         navigationBar.textColor = Color.white
         navigationBar.textAlignment = .Center
         navigationBar.backgroundColor = Color.red
         navigationBar.font = Fonts.canada
             view.addSubview(navigationBar)
-            let label = UILabel(frame: CGRect(x: 0, y: 60, width: view.frame.width, height: 30))
+            let label = UILabel(frame: CGRect(x: 0, y: 50, width: view.frame.width, height: 20))
             label.text = "Select a Province"
             label.textAlignment = .Center
             label.font = Fonts.header
@@ -84,7 +84,7 @@ class ProvincesViewController: UIViewController {
         buttonAlberta.addTarget(self, action:  #selector(handleAlbertaButton), forControlEvents: .TouchUpInside)
         
         if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
-            let albertaLabel = UILabel(frame: CGRect(x: horizontalSpacing  - iconSize/2, y: verticalSpacing + iconSize/2 + 10.0, width: iconSize, height: 40.0))
+            let albertaLabel = UILabel(frame: CGRect(x: horizontalSpacing  - iconSize/2, y: verticalSpacing + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             albertaLabel.font = Fonts.provinceName
             albertaLabel.text = "Alberta"
             albertaLabel.textColor = Color.grey
@@ -261,7 +261,7 @@ class ProvincesViewController: UIViewController {
         buttonNS.addTarget(self, action:  #selector(handleNSButton), forControlEvents: .TouchUpInside)
         
         if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
-            let NSLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2  - iconSize/2 - 10.0, y: verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 40.0))
+            let NSLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2  - iconSize/2 - 10.0, y: verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 20.0))
             NSLabel.font = Fonts.provinceName
             NSLabel.numberOfLines = 0
             NSLabel.text = "Nova Scotia"

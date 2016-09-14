@@ -154,9 +154,9 @@ class NumberQuestionsViewController: UIViewController {
         buttonUnlimited.backgroundColor = Color.lightgrey
         buttonUnlimited.layer.cornerRadius = iconSize/2
         buttonUnlimited.titleLabel?.numberOfLines = 0
-        buttonUnlimited.setTitle("Until you feel so Canadian", forState: .Normal)
+        buttonUnlimited.setTitle("150", forState: .Normal)
         buttonUnlimited.setTitleColor(Color.black, forState: UIControlState.Normal)
-        buttonUnlimited.titleLabel!.font = UIFont (name: "Avenir-Heavy", size: 14)
+        buttonUnlimited.titleLabel!.font = Fonts.number
         buttonUnlimited.titleLabel?.textAlignment = .Center
         self.buttonUnlimited = buttonUnlimited
         view.addSubview(buttonUnlimited)

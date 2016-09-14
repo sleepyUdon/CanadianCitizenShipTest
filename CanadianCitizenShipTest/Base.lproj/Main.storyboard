@@ -17,17 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-XM-DfV">
-                                <rect key="frame" x="195" y="83" width="210" height="235"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="235" id="Y6g-cC-ocs"/>
-                                    <constraint firstAttribute="width" constant="210" id="bm3-DH-8YW"/>
-                                    <constraint firstAttribute="height" constant="235" id="fzU-aT-TKv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="tgY-hD-Keg"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canadian Citizenship Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-Lb-jcn">
-                                <rect key="frame" x="229" y="338" width="143" height="132"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Canadian Citizenship Test" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Fy-Lb-jcn">
+                                <rect key="frame" x="229" y="271" width="143" height="132"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="4qI-Qn-eVo"/>
                                     <constraint firstAttribute="height" constant="132" id="8EY-y6-slr"/>
@@ -36,8 +27,8 @@
                                 <color key="textColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moF-Wh-a54">
-                                <rect key="frame" x="225" y="501" width="150" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moF-Wh-a54">
+                                <rect key="frame" x="225" y="434" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6Xi-f6-s7n"/>
                                     <constraint firstAttribute="width" constant="150" id="WcI-ln-GxV"/>
@@ -50,11 +41,26 @@
                                     <action selector="handleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rlu-GY-Yna"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-XM-DfV">
+                                <rect key="frame" x="225" y="101" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="235" id="Y6g-cC-ocs"/>
+                                    <constraint firstAttribute="width" constant="150" id="bm3-DH-8YW"/>
+                                    <constraint firstAttribute="height" constant="150" id="fzU-aT-TKv"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="tgY-hD-Keg"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Y6g-cC-ocs"/>
+                                        <exclude reference="tgY-hD-Keg"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jgo-XM-DfV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Sd-U6-h4Q"/>
-                            <constraint firstItem="jgo-XM-DfV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="Bok-1l-ycM"/>
+                            <constraint firstItem="jgo-XM-DfV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-125" id="Bok-1l-ycM"/>
                             <constraint firstItem="4Fy-Lb-jcn" firstAttribute="top" secondItem="jgo-XM-DfV" secondAttribute="bottom" constant="20" id="NQX-4j-tY0"/>
                             <constraint firstItem="4Fy-Lb-jcn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oxa-Ou-Jee"/>
                             <constraint firstItem="moF-Wh-a54" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nhp-ow-6Ve"/>

@@ -101,14 +101,14 @@ class QuestionViewController: UIViewController {
             
             // Progress Bar Grey
             
-            let progressBarGrey = UIView(frame: CGRect(x: 20, y: 70, width: self.view.frame.width-44, height: 6))
+            let progressBarGrey = UIView(frame: CGRect(x: 20, y: 70, width: self.view.frame.width-44, height: 8.0))
             progressBarGrey.layer.cornerRadius = 3.0
             progressBarGrey.backgroundColor = Color.lightgrey
             self.view.addSubview(progressBarGrey)
             
             // Progress Bar Green
             
-            let progressBarGreen = UIView(frame: CGRect(x: 20, y: 70, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
+            let progressBarGreen = UIView(frame: CGRect(x: 20, y: 70, width: (self.view.frame.width-40)/CGFloat(self.numberOfQuestions) * CGFloat(self.questionNumber), height: 8.0))
             progressBarGreen.backgroundColor = Color.green
             self.progressBarGreen = progressBarGreen
             self.view.addSubview(progressBarGreen)
