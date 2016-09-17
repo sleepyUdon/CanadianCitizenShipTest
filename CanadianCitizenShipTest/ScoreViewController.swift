@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import MessageUI
 
-class ScoreViewController: UIViewController {
+class ScoreViewController: UIViewController, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate {
     
     /// set properties
     
     var label = UILabel()
     var counterView = CounterView()
     var button = UIButton()
+    var sharebutton = UIButton()
     var score : Int = 1
     var numberOfQuestions : Int = 1
 
@@ -97,15 +99,30 @@ class ScoreViewController: UIViewController {
         self.view.addSubview(button)
         button.addTarget(self, action:  #selector(handleButton), forControlEvents: .TouchUpInside)
             
+            // Share with a Friend Button
+            let sharebutton = UIButton(frame: CGRect(x: view.frame.width/2 - 100, y: 500, width: 200, height: 40))
+            sharebutton.clipsToBounds = true
+            sharebutton.layer.cornerRadius = 20.0
+            sharebutton.backgroundColor = Color.lightgrey
+            sharebutton.setTitle( "Refer app to a friend", forState: .Normal)
+            sharebutton.setTitleColor(Color.white, forState: .Normal)
+            sharebutton.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            sharebutton.titleLabel?.font = Fonts.header
+            sharebutton.titleLabel?.textAlignment = .Center
+            sharebutton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+            self.sharebutton = sharebutton
+            self.view.addSubview(sharebutton)
+            sharebutton.addTarget(self, action:  #selector(handleShareButton), forControlEvents: .TouchUpInside)
+    
         } else {
             
-            let counterView = CounterView(frame: CGRect(x: view.bounds.width/2 - 200, y: 200, width: 400, height: 400))
+            let counterView = CounterView(frame: CGRect(x: view.bounds.width/2 - 200, y: 150, width: 400, height: 400))
             counterView.backgroundColor = UIColor.whiteColor()
             self.counterView = counterView
             view.addSubview(counterView)
             
             
-            let label = UILabel(frame: CGRect(x: view.bounds.width/2 - 150, y: 350, width: 300, height: 100))
+            let label = UILabel(frame: CGRect(x: view.bounds.width/2 - 150, y: 300, width: 300, height: 100))
             label.font = Fonts.score
             label.textAlignment = .Center
             self.label = label
@@ -113,14 +130,14 @@ class ScoreViewController: UIViewController {
             
             // Grade Label
             
-            let gradeLabel = UILabel(frame: CGRect(x: view.frame.width/2 - 400, y: 600, width: 800, height: 100))
+            let gradeLabel = UILabel(frame: CGRect(x: view.frame.width/2 - 400, y: 550, width: 800, height: 50))
             let grade = (Float(self.score) / Float(self.numberOfQuestions)) * 200
             gradeLabel.textAlignment = .Center
             gradeLabel.font = Fonts.headerLarge
             gradeLabel.text = String(format:"You scored %.0f %%", grade)
             self.view.addSubview(gradeLabel)
             
-            let commentLabel = UILabel(frame: CGRect(x: 100, y: 700, width: view.bounds.width - 200, height: 180))
+            let commentLabel = UILabel(frame: CGRect(x: 100, y: 600, width: view.bounds.width - 200, height: 100))
             commentLabel.textAlignment = .Center
             commentLabel.font = Fonts.provinceHeaderLarge
             commentLabel.numberOfLines = 0
@@ -139,7 +156,7 @@ class ScoreViewController: UIViewController {
             
             // Retake Test Button
             
-            let button = UIButton(frame: CGRect(x: view.frame.width/2 - 200, y: 900, width: 400, height: 80))
+            let button = UIButton(frame: CGRect(x: view.frame.width/2 - 200, y: 700, width: 400, height: 80))
             button.clipsToBounds = true
             button.layer.cornerRadius = 40.0
             button.backgroundColor = Color.lightgrey
@@ -152,6 +169,21 @@ class ScoreViewController: UIViewController {
             self.button = button
             self.view.addSubview(button)
             button.addTarget(self, action:  #selector(handleButton), forControlEvents: .TouchUpInside)
+            
+            // Share with a Friend Button
+            let sharebutton = UIButton(frame: CGRect(x: view.frame.width/2 - 200, y: 800, width: 400, height: 80))
+            sharebutton.clipsToBounds = true
+            sharebutton.layer.cornerRadius = 40.0
+            sharebutton.backgroundColor = Color.lightgrey
+            sharebutton.setTitle( "Refer app to a friend", forState: .Normal)
+            sharebutton.setTitleColor(Color.white, forState: .Normal)
+            sharebutton.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            sharebutton.titleLabel?.font = Fonts.headerLarge
+            sharebutton.titleLabel?.textAlignment = .Left
+            sharebutton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 62, bottom: 0, right: 62)
+            self.sharebutton = sharebutton
+            self.view.addSubview(sharebutton)
+            sharebutton.addTarget(self, action:  #selector(handleShareButton), forControlEvents: .TouchUpInside)
         }
     }
 
@@ -162,4 +194,44 @@ class ScoreViewController: UIViewController {
         presentViewController(provinceViewController, animated: true, completion: nil)    
     }
 
+    func handleShareButton()
+    {
+        self.sharebutton.backgroundColor = Color.green
+        let alertController = UIAlertController(title: "Refer app to a friend", message: "", preferredStyle: .Alert)
+        
+        // send email
+        let emailAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default) {
+            UIAlertAction in
+            let email = MFMailComposeViewController()
+            email.mailComposeDelegate = self
+            email.setSubject("Canadian Citizenship test")
+            email.setMessageBody("Hi, Check out this app for the Canadian Citizenship Test: https://itunes.apple.com/ca/app/canadian-citizenship-test/id1153888409?mt=8", isHTML: true)
+            self.presentViewController(email, animated: true){
+                self.sharebutton.backgroundColor = Color.lightgrey
+            }
+        }
+        alertController.addAction(emailAction)
+        
+        // cancel
+        let cancelAction = UIAlertAction(title: "No", style: UIAlertActionStyle.Cancel) {
+            UIAlertAction in
+            self.sharebutton.backgroundColor = Color.lightgrey
+        }
+        alertController.addAction(cancelAction)
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
+
+
+
