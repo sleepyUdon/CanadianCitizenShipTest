@@ -89,7 +89,22 @@
             <key>answer</key>
             <string>4</string>
         </dict>
-                
+        
+        <dict>
+            <key>question</key>
+            <string>Give an example of how you can show responsibility by participating in your community</string>
+            <key>ans1</key>
+            <string>Mind your own business</string>
+            <key>ans2</key>
+            <string>Have a party</string>
+            <key>ans3</key>
+            <string>Keep your property tidy</string>
+            <key>ans4</key>
+            <string>Volunteer</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
         <dict>
             <key>question</key>
             <string>Give an example of where English and French have equal status in Canada</string>
@@ -209,6 +224,7 @@
             <key>answer</key>
             <string>3</string>
         </dict>
+        
         <dict>
             <key>question</key>
             <string>How many Canadians have been awarded the Victoria Cross (V.C.), the highest honour available to Canadians?</string>
@@ -301,21 +317,6 @@
         
         <dict>
             <key>question</key>
-            <string>Name six responsibilities of citizenship</string>
-            <key>ans1</key>
-            <string>Getting a job, making money, raising a family, paying taxes, mowing your lawn, voting in provincial elections</string>
-            <key>ans2</key>
-            <string>Voting in municipal elections only, joining a political party, getting a job, obeying the law, driving safely, picking up litter</string>
-            <key>ans3</key>
-            <string>Caring for the environment, not littering, paying taxes, obeying the law, helping others, respecting others</string>
-            <key>ans4</key>
-            <string>Obeying the law, taking responsibility for oneself and one's family, helping others in the community, voting in elections, serving on a jury, protecting and enjoying our heritage and environment</string>
-            <key>answer</key>
-            <string>4</string>
-        </dict>
-        
-        <dict>
-            <key>question</key>
             <string>Name the five regions of Canada</string>
             <key>ans1</key>
             <string>Midwest, North, South, East, Central</string>
@@ -358,6 +359,7 @@
             <key>answer</key>
             <string>1</string>
         </dict>
+        
         <dict>
             <key>question</key>
             <string>Name two key documents that contain our rights and freedoms</string>
@@ -792,6 +794,7 @@
             <key>answer</key>
             <string>3</string>
         </dict>
+        
         <dict>
             <key>question</key>
             <string>What is a major river in Quebec?</string>
@@ -1211,6 +1214,7 @@
             <key>answer</key>
             <string>1</string>
         </dict>
+        
         <dict>
             <key>question</key>
             <string>What year did Newfoundland and Labrador join Canada?</string>
@@ -1330,7 +1334,7 @@
             <key>answer</key>
             <string>2</string>
         </dict>
-                
+        
         <dict>
             <key>question</key>
             <string>Where are the Great Lakes?</string>
@@ -2161,6 +2165,160 @@
             <string>3</string>
         </dict>
         
+        <!-- Update October 11, 2017-->
+        
+        <dict>
+            <key>question</key>
+            <string>What are three responsibilities of citizenship?</string>
+            <key>ans1</key>
+            <string>Being loyal to Canada, recycling newspapers, serving in the navy, army or air force</string>
+            <key>ans2</key>
+            <string>Obeying the law, taking responsibility for oneself and one’s family, serving on a jury</string>
+            <key>ans3</key>
+            <string>Learning both official languages, voting in elections, belonging to a union</string>
+            <key>ans4</key>
+            <string>Buying Canadian products, owning your own business, using less water</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the meaning of the Remembrance Day poppy?</string>
+            <key>ans1</key>
+            <string>To remember our Sovereign, Queen Elizabeth II</string>
+            <key>ans2</key>
+            <string>To celebrate Confederation</string>
+            <key>ans3</key>
+            <string>To honour prime ministers who have died</string>
+            <key>ans4</key>
+            <string>To remember the sacrifice of Canadians who have served or died in wars up to the present day</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How are Members of Parliament chosen?</string>
+            <key>ans1</key>
+            <string>They are appointed by the United Nations</string>
+            <key>ans2</key>
+            <string>They are chosen by the provincial premiers</string>
+            <key>ans3</key>
+            <string>They are elected by voters in their local constituency (riding)</string>
+            <key>ans4</key>
+            <string>They are elected by landowners and police chiefs</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        
+        <dict>
+            <key>question</key>
+            <string>Which region of Canada is known for both its fertile agricultural land and valuable energy resources </string>
+            <key>ans1</key>
+            <string>Prairie provinces</string>
+            <key>ans2</key>
+            <string>Ontario</string>
+            <key>ans3</key>
+            <string>Manitoba</string>
+            <key>ans4</key>
+            <string>British Columbia</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>The French and Aboriginal peoples collaborated to trade which product?</string>
+            <key>ans1</key>
+            <string>Gold</string>
+            <key>ans2</key>
+            <string>Cotton</string>
+            <key>ans3</key>
+            <string>Crops</string>
+            <key>ans4</key>
+            <string>Furs</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When was the latest design of the Canadian flag, raised for the first time in Canada?</string>
+            <key>ans1</key>
+            <string>1985</string>
+            <key>ans2</key>
+            <string>1945</string>
+            <key>ans3</key>
+            <string>1980</string>
+            <key>ans4</key>
+            <string>1965</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string> In 1985 who circled the globe in a wheelchair to raise funds for spinal chord research?</string>
+            <key>ans1</key>
+            <string>Donovan Bailey</string>
+            <key>ans2</key>
+            <string>Rick Hansen</string>
+            <key>ans3</key>
+            <string>Terry Fox</string>
+            <key>ans4</key>
+            <string>Wayne Gretzky</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which two provinces neighbour Saskatchewan?</string>
+            <key>ans1</key>
+            <string>N.W.T. and Manitoba</string>
+            <key>ans2</key>
+            <string>Ontario and Alberta</string>
+            <key>ans3</key>
+            <string>Nunavut and Manitoba</string>
+            <key>ans4</key>
+            <string>Alberta and Manitoba</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which country invaded Canada in June 1812?</string>
+            <key>ans1</key>
+            <string>China</string>
+            <key>ans2</key>
+            <string>United Kingdom</string>
+            <key>ans3</key>
+            <string>U.S.A.</string>
+            <key>ans4</key>
+            <string>France</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        
+        <!-- Alberta-->
+        <dict>
+            <key>question</key>
+            <string>Who is considered the father of Manitoba?</string>
+            <key>ans1</key>
+            <string>John A. Macdonald</string>
+            <key>ans2</key>
+            <string>Sam Steele</string>
+            <key>ans3</key>
+            <string>Alfred Boyd</string>
+            <key>ans4</key>
+            <string>Louis Riel</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
     </array>
 </plist>
-

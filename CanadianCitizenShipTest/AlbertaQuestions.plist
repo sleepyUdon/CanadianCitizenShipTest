@@ -1,2182 +1,2324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<array>
-    <!-- general-->
-    <dict>
-        <key>question</key>
-        <string> After a federal election, which party forms the new government</string>
-        <key>ans1</key>
-        <string>The party with the most elected representatives is invited by the Governor General to become the party in power</string>
-        <key>ans2</key>
-        <string>The Queen herself picks any party to run the government</string>
-        <key>ans3</key>
-        <string>The Governor General proposes a law for elected officials to become the governing body</string>
-        <key>ans4</key>
-        <string>The Premiers of each province pick a party to run the government</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string> A Member of Parliament from Montreal announces that she will spend her weekend in her electoral district. This means she would be:</string>
-        <key>ans1</key>
-        <string>In her office on Parliament Hill</string>
-        <key>ans2</key>
-        <string>Visiting the province of Quebec</string>
-        <key>ans3</key>
-        <string>In the part of Montreal where she was elected</string>
-        <key>ans4</key>
-        <string>Going on a vacation</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string>  Approximately how many Canadians served in the First World War?</string>
-        <key>ans1</key>
-        <string>7000</string>
-        <key>ans2</key>
-        <string>8 million</string>
-        <key>ans3</key>
-        <string>About 60,000</string>
-        <key>ans4</key>
-        <string>More than 600,000</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string>  Canada has three territories and how many provinces?</string>
-        <key>ans1</key>
-        <string>13</string>
-        <key>ans2</key>
-        <string>10</string>
-        <key>ans3</key>
-        <string>3</string>
-        <key>ans4</key>
-        <string>5</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>  Fatima is a new immigrant in Canada. What law allows her to take up job at par with a man?</string>
-        <key>ans1</key>
-        <string>Equality of women and men</string>
-        <key>ans2</key>
-        <string>Equality of all races</string>
-        <key>ans3</key>
-        <string>Equal pay for equal work</string>
-        <key>ans4</key>
-        <string>Equal rights</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>From where does the name "Canada" come from?</string>
-        <key>ans1</key>
-        <string>From the Inuit word meaning country</string>
-        <key>ans2</key>
-        <string>From the French word meaning joining</string>
-        <key>ans3</key>
-        <string>From the Métis word meaning rivers</string>
-        <key>ans4</key>
-        <string>From "Kanata", the Huron-Iroquois word for village</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Give an example of how you can show responsibility by participating in your community</string>
-        <key>ans1</key>
-        <string>Mind your own business</string>
-        <key>ans2</key>
-        <string>Have a party</string>
-        <key>ans3</key>
-        <string>Keep your property tidy</string>
-        <key>ans4</key>
-        <string>Volunteer</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Give an example of where English and French have equal status in Canada</string>
-        <key>ans1</key>
-        <string>In schools</string>
-        <key>ans2</key>
-        <string>In the workplace</string>
-        <key>ans3</key>
-        <string>In the Parliament of Canada</string>
-        <key>ans4</key>
-        <string>At City Hall</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Give the first two lines of Canada's national anthem?</string>
-        <key>ans1</key>
-        <string>O Canada! Our home and native land! True patriot love in all thy sons command</string>
-        <key>ans2</key>
-        <string>O Canada! Our province and native land! True patriot love in all thy sons command</string>
-        <key>ans3</key>
-        <string>O Canada! From far and wide, O Canada, We stand on guard for thee</string>
-        <key>ans4</key>
-        <string>O Canada! We stand on guard for thee</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>How are Members of Parliament chosen?</string>
-        <key>ans1</key>
-        <string>Appointed by the Prime Minister</string>
-        <key>ans2</key>
-        <string>Elected by Canadian citizens</string>
-        <key>ans3</key>
-        <string>Appointed by the Queen</string>
-        <key>ans4</key>
-        <string>Elected by the Provincial Ministers</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>How are Senators chosen?</string>
-        <key>ans1</key>
-        <string>By the Governor General of Canada</string>
-        <key>ans2</key>
-        <string>By the Premiers of all provinces</string>
-        <key>ans3</key>
-        <string>Appointed by the Queen</string>
-        <key>ans4</key>
-        <string>Senators are appointed by the Governor General on the advice of the Prime Minister</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>How does a bill become a law?</string>
-        <key>ans1</key>
-        <string>The Lieutenant Governor must approve the bill</string>
-        <key>ans2</key>
-        <string>Approval by a majority in the House of Commons and Senate and finally the Governor General</string>
-        <key>ans3</key>
-        <string>The Queen must sign the bill</string>
-        <key>ans4</key>
-        <string>Approval by the Members of the Legislative Assembly</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>How is a Cabinet Minister chosen?</string>
-        <key>ans1</key>
-        <string>By the Queen</string>
-        <key>ans2</key>
-        <string> By the voters</string>
-        <key>ans3</key>
-        <string>By other Cabinet Ministers</string>
-        <key>ans4</key>
-        <string>By the Prime Minister</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>How is the government formed after a federal election?</string>
-        <key>ans1</key>
-        <string>The party with the most elected representatives becomes the party in power. The Queen chooses the Prime Minister from this party</string>
-        <key>ans2</key>
-        <string>The party with the most elected representatives becomes the party in power. The leader of this party becomes the Prime Minister</string>
-        <key>ans3</key>
-        <string>The Governor General picks a party and a Prime Minister to run the government</string>
-        <key>ans4</key>
-        <string>Each province elects one representative to form the government. The Queen then chooses the Prime Minister</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>How is the Prime Minister chosen?</string>
-        <key>ans1</key>
-        <string>The Queen appoints the Prime Minister</string>
-        <key>ans2</key>
-        <string>The Governor General with the Senate appoint the Prime Minister</string>
-        <key>ans3</key>
-        <string>The leader of the party with the most elected representatives becomes the Prime Minister</string>
-        <key>ans4</key>
-        <string>The MPs vote on the Prime Minister</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string>How many Canadians have been awarded the Victoria Cross (V.C.), the highest honour available to Canadians?</string>
-        <key>ans1</key>
-        <string>56</string>
-        <key>ans2</key>
-        <string>96</string>
-        <key>ans3</key>
-        <string>1,024</string>
-        <key>ans4</key>
-        <string>42</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>In Canada, are you allowed to question the police about their service or conduct?</string>
-        <key>ans1</key>
-        <string>No, police service and conduct is not open to discussion with Canadians</string>
-        <key>ans2</key>
-        <string>Yes, you can question their service but not their conduct</string>
-        <key>ans3</key>
-        <string>Yes, you can question their conduct but not their service</string>
-        <key>ans4</key>
-        <string>Yes, if you feel the need to</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string> In Canada's justice system what does "presumption of innocence" mean?</string>
-        <key>ans1</key>
-        <string>Everyone is guilty until proven innocent</string>
-        <key>ans2</key>
-        <string>Guilt is decided by public opinion</string>
-        <key>ans3</key>
-        <string> Innocence is decided by public opinion</string>
-        <key>ans4</key>
-        <string>Everyone is innocent until proven guilty</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>In the 1960s, Quebec experienced an era of rapid change. What is this called?</string>
-        <key>ans1</key>
-        <string>The West Movement</string>
-        <key>ans2</key>
-        <string>The Revolution</string>
-        <key>ans3</key>
-        <string>The Quiet Revolution</string>
-        <key>ans4</key>
-        <string>La Francophonie</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>In what industry do most Canadians work?</string>
-        <key>ans1</key>
-        <string>Natural resources</string>
-        <key>ans2</key>
-        <string>Tourism</string>
-        <key>ans3</key>
-        <string>Service</string>
-        <key>ans4</key>
-        <string>Manufacturing</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>In which region do more than half the people in Canada live?</string>
-        <key>ans1</key>
-        <string>Central Canada</string>
-        <key>ans2</key>
-        <string>Prairies</string>
-        <key>ans3</key>
-        <string>Atlantic Canada</string>
-        <key>ans4</key>
-        <string>Northern Canada</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
+    <array>
+        <!-- general-->
+        <dict>
+            <key>question</key>
+            <string> After a federal election, which party forms the new government</string>
+            <key>ans1</key>
+            <string>The party with the most elected representatives is invited by the Governor General to become the party in power</string>
+            <key>ans2</key>
+            <string>The Queen herself picks any party to run the government</string>
+            <key>ans3</key>
+            <string>The Governor General proposes a law for elected officials to become the governing body</string>
+            <key>ans4</key>
+            <string>The Premiers of each province pick a party to run the government</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        <dict>
+            <key>question</key>
+            <string> A Member of Parliament from Montreal announces that she will spend her weekend in her electoral district. This means she would be:</string>
+            <key>ans1</key>
+            <string>In her office on Parliament Hill</string>
+            <key>ans2</key>
+            <string>Visiting the province of Quebec</string>
+            <key>ans3</key>
+            <string>In the part of Montreal where she was elected</string>
+            <key>ans4</key>
+            <string>Going on a vacation</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        <dict>
+            <key>question</key>
+            <string>  Approximately how many Canadians served in the First World War?</string>
+            <key>ans1</key>
+            <string>7000</string>
+            <key>ans2</key>
+            <string>8 million</string>
+            <key>ans3</key>
+            <string>About 60,000</string>
+            <key>ans4</key>
+            <string>More than 600,000</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        <dict>
+            <key>question</key>
+            <string>  Canada has three territories and how many provinces?</string>
+            <key>ans1</key>
+            <string>13</string>
+            <key>ans2</key>
+            <string>10</string>
+            <key>ans3</key>
+            <string>3</string>
+            <key>ans4</key>
+            <string>5</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
         
-    <dict>
-        <key>question</key>
-        <string>Name the five regions of Canada</string>
-        <key>ans1</key>
-        <string>Midwest, North, South, East, Central</string>
-        <key>ans2</key>
-        <string>Maritimes, Ontario, Quebec, Prairies, and British Columbia</string>
-        <key>ans3</key>
-        <string>Atlantic, Central, Prairie, West Coast, and North</string>
-        <key>ans4</key>
-        <string>West, Central, East, Prairies, and Territories</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Name three additional rights protected by the Canadian Charter of Rights and Freedoms</string>
-        <key>ans1</key>
-        <string>Freedom of speech, Right to own land, and Right to a fair trial</string>
-        <key>ans2</key>
-        <string>Mobility rights, Multiculturalism, and Aboriginal Peoples' rights</string>
-        <key>ans3</key>
-        <string>Right to ski anywhere in Canada, Moving rights, and Right to public assembly</string>
-        <key>ans4</key>
-        <string>Right to vote, Right to speak publicly, and Security rights</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Name two fundamental freedoms protected by the Canadian Charter of Rights and Freedoms</string>
-        <key>ans1</key>
-        <string>Freedom of conscience and religion, and Freedom of association</string>
-        <key>ans2</key>
-        <string>Equality rights, and to care for Canada's heritage</string>
-        <key>ans3</key>
-        <string>Basic freedoms, and obeying laws</string>
-        <key>ans4</key>
-        <string>Aboriginal peoples' rights, and to volunteer</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string>Name two key documents that contain our rights and freedoms</string>
-        <key>ans1</key>
-        <string>The Canadian Constitution and English common law</string>
-        <key>ans2</key>
-        <string>Civil code of France and the Canadian Constitution</string>
-        <key>ans3</key>
-        <string>Canadian Charter of Rights and Freedoms and Magna Carta (the Great Charter of Freedoms)</string>
-        <key>ans4</key>
-        <string>Laws passed by Parliament and English common law</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Name two responsibilities of the federal government</string>
-        <key>ans1</key>
-        <string>National defence and firefighting</string>
-        <key>ans2</key>
-        <string>National defence and foreign policy</string>
-        <key>ans3</key>
-        <string>Citizenship and highways</string>
-        <key>ans4</key>
-        <string>Recycling and education</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Name two responsibilities of the provincial and territorial government</string>
-        <key>ans1</key>
-        <string>Citizenship and Foreign Policy</string>
-        <key>ans2</key>
-        <string>Health and Education</string>
-        <key>ans3</key>
-        <string>Defense and Currency</string>
-        <key>ans4</key>
-        <string>Criminal Law and Interprovincial Trade</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>On what date did Nunavut become a territory?</string>
-        <key>ans1</key>
-        <string>July 1st, 1867</string>
-        <key>ans2</key>
-        <string>April 1st, 1999</string>
-        <key>ans3</key>
-        <string>June 24th, 1995</string>
-        <key>ans4</key>
-        <string>March 31st, 1949</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>One third of all Canadians live in which province?</string>
-        <key>ans1</key>
-        <string>Quebec</string>
-        <key>ans2</key>
-        <string>Ontario</string>
-        <key>ans3</key>
-        <string>Northwest Territories</string>
-        <key>ans4</key>
-        <string>Manitoba</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>The Canadian Coat of Arms and motto is "A Mari Usque Ad Mare." This means:</string>
-        <key>ans1</key>
-        <string>From the ocean to the sea</string>
-        <key>ans2</key>
-        <string>From sea to sea</string>
-        <key>ans3</key>
-        <string>From the sea to the ends of the earth</string>
-        <key>ans4</key>
-        <string>From the water to the earth</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the Prairie provinces and their capital cities?</string>
-        <key>ans1</key>
-        <string> Alberta (Edmonton) and Saskatchewan (Regina)</string>
-        <key>ans2</key>
-        <string>Alberta (Edmonton), Saskatchewan (Regina) and Manitoba (Winnipeg)</string>
-        <key>ans3</key>
-        <string>Saskatchewan (Regina) and Manitoba (Winnipeg)</string>
-        <key>ans4</key>
-        <string>Saskatchewan (Regina), Manitoba (Winnipeg) and Ontario (Toronto)</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the provinces of Central Canada and their capital cities?</string>
-        <key>ans1</key>
-        <string>Manitoba (Winnipeg) and Ontario (Toronto)</string>
-        <key>ans2</key>
-        <string>Quebec (Quebec City) and Prince Edward Island (Charlottetown)</string>
-        <key>ans3</key>
-        <string> Ontario (Toronto) and Quebec (Quebec City)</string>
-        <key>ans4</key>
-        <string>Saskatchewan (Regina) and Manitoba Winnipeg)</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the provinces of the Atlantic region and their capital cities?</string>
-        <key>ans1</key>
-        <string>Nova Scotia (Halifax), New Brunswick (Fredericton), Prince Edward Island (Charlottetown) and Quebec (Quebec)</string>
-        <key>ans2</key>
-        <string>Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown)</string>
-        <key>ans3</key>
-        <string>Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Quebec (Quebec)</string>
-        <key>ans4</key>
-        <string>Nova Scotia (Halifax), New Brunswick (Fredericton), Quebec (Quebec City)and Ontario (Toronto)</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the territories of Northern Canada and their capital cities?</string>
-        <key>ans1</key>
-        <string>Alaska (Juneau) and Yukon Territory ( Whitehorse)</string>
-        <key>ans2</key>
-        <string>Northwest Territories (Yellowknife) and Alaska (Juneau)</string>
-        <key>ans3</key>
-        <string>Northwest Territories (Yellowknife)</string>
-        <key>ans4</key>
-        <string>Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit)</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the three levels of government in Canada?</string>
-        <key>ans1</key>
-        <string>Federal, Provincial and Territorial, Municipal (local)</string>
-        <key>ans2</key>
-        <string>Federal, Provincial and City</string>
-        <key>ans3</key>
-        <string>Federal, Territorial and Provincial</string>
-        <key>ans4</key>
-        <string>Federal, State and Local</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the three main groups of Aboriginal peoples?</string>
-        <key>ans1</key>
-        <string>First Nations, Métis and Inuit</string>
-        <key>ans2</key>
-        <string>Acadians, Métis and Inuit</string>
-        <key>ans3</key>
-        <string> United Empire Loyalists, Métis and Inuit</string>
-        <key>ans4</key>
-        <string>Inuit, Métis and Acadians</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the three main types of industry in Canada?</string>
-        <key>ans1</key>
-        <string>Natural resources, tourism and service industries</string>
-        <key>ans2</key>
-        <string>Tourism, services and manufacturing</string>
-        <key>ans3</key>
-        <string>Natural resources, tourism and manufacturing</string>
-        <key>ans4</key>
-        <string>Natural resources, manufacturing and services</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the three parts of Parliament?</string>
-        <key>ans1</key>
-        <string>The Sovereign, Governor General and Prime Minister</string>
-        <key>ans2</key>
-        <string>The House of Commons, the Legislative Assembly and the Senate</string>
-        <key>ans3</key>
-        <string>The Queen, the Legislative Assembly and the Senate</string>
-        <key>ans4</key>
-        <string>The Queen, the House of Commons and the Senate</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What are the two official languages of Canada?</string>
-        <key>ans1</key>
-        <string>English and Métis</string>
-        <key>ans2</key>
-        <string>Inuktitut and French</string>
-        <key>ans3</key>
-        <string>English and French</string>
-        <key>ans4</key>
-        <string>English and Inuktitut</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What country is Canada's largest trading partner?</string>
-        <key>ans1</key>
-        <string>Mexico</string>
-        <key>ans2</key>
-        <string>United States of America</string>
-        <key>ans3</key>
-        <string>China</string>
-        <key>ans4</key>
-        <string>Japan</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What did the Canadian Pacific Railway symbolize?</string>
-        <key>ans1</key>
-        <string>Easy access to the West Coast</string>
-        <key>ans2</key>
-        <string>What can be achieved by working together</string>
-        <key>ans3</key>
-        <string>Unity</string>
-        <key>ans4</key>
-        <string>Ribbons of steel</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What did the Fathers of Confederation do?</string>
-        <key>ans1</key>
-        <string>They worked together to establish a new country, the Dominion of Canada</string>
-        <key>ans2</key>
-        <string>They were explorers who formed an expedition to survey Northern Canada</string>
-        <key>ans3</key>
-        <string>They formed a republic state in Canada</string>
-        <key>ans4</key>
-        <string>They were a group of politicians that tried to unite Canada to the United States</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What do you call a law before it is passed?</string>
-        <key>ans1</key>
-        <string>A New law</string>
-        <key>ans2</key>
-        <string>A Proposed law</string>
-        <key>ans3</key>
-        <string>A Bill</string>
-        <key>ans4</key>
-        <string>A New proposal</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What do you call the Sovereign's representative in the provinces?</string>
-        <key>ans1</key>
-        <string>Premier</string>
-        <key>ans2</key>
-        <string>Member of the Legislative Assembly</string>
-        <key>ans3</key>
-        <string>Lieutenant-Governor</string>
-        <key>ans4</key>
-        <string>Senator</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What do you mark on a federal election ballot?</string>
-        <key>ans1</key>
-        <string>The candidate's name</string>
-        <key>ans2</key>
-        <string>The number for the candidate</string>
-        <key>ans3</key>
-        <string>An "X"</string>
-        <key>ans4</key>
-        <string>The voter's name</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What does Confederation mean?</string>
-        <key>ans1</key>
-        <string>The United States Confederate soldiers came to Canada</string>
-        <key>ans2</key>
-        <string>Joining of communities to become a province</string>
-        <key>ans3</key>
-        <string>Joining of suburbs to form a large city</string>
-        <key>ans4</key>
-        <string>Joining of provinces to make a new country</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What does it mean to say Canada is a constitutional monarchy?</string>
-        <key>ans1</key>
-        <string>The Sovereign (Queen or King) is the law maker of Canada</string>
-        <key>ans2</key>
-        <string>Canada's Head of State is a hereditary Sovereign (Queen or King) who reigns in accordance with the Constitution</string>
-        <key>ans3</key>
-        <string>The Sovereign (Queen or King) represents Canadians in Parliament</string>
-        <key>ans4</key>
-        <string>The sovereign (Queen or King) approves bills before becoming law</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What does the "right to a secret ballot" mean?</string>
-        <key>ans1</key>
-        <string>No one should tell you where to vote</string>
-        <key>ans2</key>
-        <string>A secret vote used by politicians when they are voting on sensitive topics</string>
-        <key>ans3</key>
-        <string>No one can watch your vote and no one should look at how you voted</string>
-        <key>ans4</key>
-        <string>Your right to vote in secret on who to appoint to the Senate</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What does the Canadian flag look like?</string>
-        <key>ans1</key>
-        <string>Red and white with provincial emblems</string>
-        <key>ans2</key>
-        <string>Red and white with a beaver</string>
-        <key>ans3</key>
-        <string>White with a red border on each end and a red maple leaf in the centre</string>
-        <key>ans4</key>
-        <string>Red with a white maple leaf</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What does the term "responsible government" mean?</string>
-        <key>ans1</key>
-        <string>Each person in each electoral district is responsible for voting</string>
-        <key>ans2</key>
-        <string>The Governor General is responsible for the actions of the Prime Minister</string>
-        <key>ans3</key>
-        <string>The ministers of the Crown must have the support of a majority of the elected representatives in order to govern</string>
-        <key>ans4</key>
-        <string>All Canadians are responsible for each other</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What does the word "Inuit" mean?</string>
-        <key>ans1</key>
-        <string>"Eskimo" in Inuktitut language</string>
-        <key>ans2</key>
-        <string> "Home" in English</string>
-        <key>ans3</key>
-        <string>"The people" in the Inuktitut language</string>
-        <key>ans4</key>
-        <string>"The Arctic Land" in Inuktitut language</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What happened at the Battle of the Plains of Abraham?</string>
-        <key>ans1</key>
-        <string>The Voyagers battled with the British for fur trading rights</string>
-        <key>ans2</key>
-        <string>Americans fought the United Empire Loyalists during the American Revolution</string>
-        <key>ans3</key>
-        <string>The British defeated the French marking the end of France's empire in America</string>
-        <key>ans4</key>
-        <string>The French defeated the British in a battle for Quebec</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is a Francophone?</string>
-        <key>ans1</key>
-        <string>A person who speak English as their first language</string>
-        <key>ans2</key>
-        <string>A smartphone designed by the Canadian company RIM</string>
-        <key>ans3</key>
-        <string>A person who speak French as their first language</string>
-        <key>ans4</key>
-        <string>The first phone in Canada, invented by Alexander Graham Bell</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string>What is a major river in Quebec?</string>
-        <key>ans1</key>
-        <string>Fraser River</string>
-        <key>ans2</key>
-        <string>St. Lawrence River</string>
-        <key>ans3</key>
-        <string>Niagara</string>
-        <key>ans4</key>
-        <string>Hudson's Bay</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is a majority government?</string>
-        <key>ans1</key>
-        <string>When the party in power holds about one third of the seats in the House of Commons</string>
-        <key>ans2</key>
-        <string>When the party in power holds about one quarter of the seats in the House of Commons</string>
-        <key>ans3</key>
-        <string>When the part in power holds at least half of the seats in the Senate</string>
-        <key>ans4</key>
-        <string>When the party in power holds at least half of the seats in the House of Commons</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is a voter information card?</string>
-        <key>ans1</key>
-        <string>Tells you who the candidates are in your electoral district</string>
-        <key>ans2</key>
-        <string>Tells you what province to vote in</string>
-        <key>ans3</key>
-        <string>A form that tells you when and where to vote</string>
-        <key>ans4</key>
-        <string>A form that lets you know your voting time</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is Canada's national winter sport?</string>
-        <key>ans1</key>
-        <string>Golf</string>
-        <key>ans2</key>
-        <string>Nordic skiing</string>
-        <key>ans3</key>
-        <string>Lacrosse</string>
-        <key>ans4</key>
-        <string>Hockey</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is Canada's system of government called?</string>
-        <key>ans1</key>
-        <string>Dictatorship</string>
-        <key>ans2</key>
-        <string>Parliamentary government</string>
-        <key>ans3</key>
-        <string>Military Rule</string>
-        <key>ans4</key>
-        <string>Communism</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is meant by the equality of women and men?</string>
-        <key>ans1</key>
-        <string>Men and women are equal under the law</string>
-        <key>ans2</key>
-        <string>Men and women must both do housework</string>
-        <key>ans3</key>
-        <string>Women may now go to school and enter the professional workforce</string>
-        <key>ans4</key>
-        <string>A woman may now become Prime Minister</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the "head tax"?</string>
-        <key>ans1</key>
-        <string>Race-based entry fee charged for Chinese entering Canada</string>
-        <key>ans2</key>
-        <string>Fee charged for anyone entering Canada after 1900</string>
-        <key>ans3</key>
-        <string>A tax imposed on beer beginning in 1867</string>
-        <key>ans4</key>
-        <string>Fee charged for moving westward in the early 1900s</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the capital city of Canada?</string>
-        <key>ans1</key>
-        <string>Ottawa</string>
-        <key>ans2</key>
-        <string>Toronto</string>
-        <key>ans3</key>
-        <string>Montreal</string>
-        <key>ans4</key>
-        <string>Hull</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-
-    <dict>
-        <key>question</key>
-        <string>What is the government of all of Canada called?</string>
-        <key>ans1</key>
-        <string>National assembly</string>
-        <key>ans2</key>
-        <string>Legislature</string>
-        <key>ans3</key>
-        <string>Federal</string>
-        <key>ans4</key>
-        <string>Council</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the highest court in Canada?</string>
-        <key>ans1</key>
-        <string>The Queen's Court</string>
-        <key>ans2</key>
-        <string>The Senate Court of Canada</string>
-        <key>ans3</key>
-        <string>The Supreme Court of Canada</string>
-        <key>ans4</key>
-        <string>The Crown Court of Canada</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the highest military honour a Canadian can receive?</string>
-        <key>ans1</key>
-        <string>Purple Cross</string>
-        <key>ans2</key>
-        <string>Badge of Courage</string>
-        <key>ans3</key>
-        <string>Order of Merit</string>
-        <key>ans4</key>
-        <string>Victoria Cross</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the largest religious affiliation in Canada?</string>
-        <key>ans1</key>
-        <string>Catholic</string>
-        <key>ans2</key>
-        <string>Muslim</string>
-        <key>ans3</key>
-        <string>Jewish</string>
-        <key>ans4</key>
-        <string>Hindu</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the meaning of the Remembrance Day poppy?</string>
-        <key>ans1</key>
-        <string>To remember our Sovereign, Queen Elizabeth II</string>
-        <key>ans2</key>
-        <string>To celebrate Confederation</string>
-        <key>ans3</key>
-        <string>To honour Prime Ministers who have died</string>
-        <key>ans4</key>
-        <string>To remember the sacrifice of Canadians who have served or died in wars up to the present day</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the name of the Royal Anthem of Canada?</string>
-        <key>ans1</key>
-        <string>O Canada</string>
-        <key>ans2</key>
-        <string>God Save the Queen (or King)</string>
-        <key>ans3</key>
-        <string>La Marseillaise</string>
-        <key>ans4</key>
-        <string>The Star-Spangled Banner</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the population of Canada?</string>
-        <key>ans1</key>
-        <string>About 20 million</string>
-        <key>ans2</key>
-        <string>38 million</string>
-        <key>ans3</key>
-        <string>17 million</string>
-        <key>ans4</key>
-        <string>About 34 million</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the role of the courts in Canada?</string>
-        <key>ans1</key>
-        <string>To enforce the law</string>
-        <key>ans2</key>
-        <string>To guide people in our society</string>
-        <key>ans3</key>
-        <string>To settle disputes</string>
-        <key>ans4</key>
-        <string>To express values and beliefs of Canadians</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the role of the Opposition parties?</string>
-        <key>ans1</key>
-        <string>To assist the Prime Minister</string>
-        <key>ans2</key>
-        <string>To sign bills</string>
-        <key>ans3</key>
-        <string>To oppose or try to improve government proposals</string>
-        <key>ans4</key>
-        <string>To put forward bills to be passed</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the significance of the discovery of insulin by Sir Frederick Banting and Charles Best?</string>
-        <key>ans1</key>
-        <string>Insulin is a hormone that permits you to eat anything you wish</string>
-        <key>ans2</key>
-        <string>Insulin has saved 16 million lives worldwide</string>
-        <key>ans3</key>
-        <string>Discovering insulin opened the doors to more discoveries</string>
-        <key>ans4</key>
-        <string>Discovering insulin made Drs. Banting and Best famous</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What part of the Constitution legally protects the basic rights and freedoms of all Canadians?</string>
-        <key>ans1</key>
-        <string>The British Charter of Rights and Freedoms</string>
-        <key>ans2</key>
-        <string>The Canadian Charter of Rights</string>
-        <key>ans3</key>
-        <string>The Canadian Charter of Freedoms</string>
-        <key>ans4</key>
-        <string>The Canadian Charter of Rights and Freedoms</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What percentage of Aboriginal people are First Nations?</string>
-        <key>ans1</key>
-        <string>30%</string>
-        <key>ans2</key>
-        <string>6%</string>
-        <key>ans3</key>
-        <string>50%</string>
-        <key>ans4</key>
-        <string>65%</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What percentage of Aboriginal people are First Nations?</string>
-        <key>ans1</key>
-        <string>30%</string>
-        <key>ans2</key>
-        <string>6%</string>
-        <key>ans3</key>
-        <string>50%</string>
-        <key>ans4</key>
-        <string>65%</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What should you do if you do not receive a voter information card telling you when and where to vote?</string>
-        <key>ans1</key>
-        <string>Go to the police station</string>
-        <key>ans2</key>
-        <string>Call your Member of Parliament</string>
-        <key>ans3</key>
-        <string>Assume you cannot vote</string>
-        <key>ans4</key>
-        <string>Call Elections Canada or visit their website</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What song is Canada's national anthem?</string>
-        <key>ans1</key>
-        <string>God Save the Queen</string>
-        <key>ans2</key>
-        <string>O Canada</string>
-        <key>ans3</key>
-        <string>Star Spangled Banner</string>
-        <key>ans4</key>
-        <string>Amazing Grace</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What three oceans border Canada?</string>
-        <key>ans1</key>
-        <string>Atlantic, Arctic and Bering</string>
-        <key>ans2</key>
-        <string>Atlantic, Arctic and Pacific</string>
-        <key>ans3</key>
-        <string>Pacific, Indian and Atlantic</string>
-        <key>ans4</key>
-        <string>Hudson, Pacific and Atlantic</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What was the "Underground Railroad"?</string>
-        <key>ans1</key>
-        <string>An anti-slavery network that helped thousands of slaves escape the United States and settle in Canada</string>
-        <key>ans2</key>
-        <string>A railroad through the Rockies that was mainly through mountain tunnels</string>
-        <key>ans3</key>
-        <string>A network fur traders used to transport beaver pelts to the United States</string>
-        <key>ans4</key>
-        <string>The first underground subway tunnel in Toronto</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What was the significance of June 6, 1944 invasion of Normandy?</string>
-        <key>ans1</key>
-        <string>It led to the establishment of the Juno Awards</string>
-        <key>ans2</key>
-        <string> It liberated North Africa from Nazi occupation</string>
-        <key>ans3</key>
-        <string>Canadians made a significant contribution to the defeat of Nazism and Fascism in Europe during the Second World War</string>
-        <key>ans4</key>
-        <string>It resulted in the forcible relocation of Canadians of Japanese origin</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What was the Women's Suffrage Movement?</string>
-        <key>ans1</key>
-        <string>The effort by women to achieve the right to vote</string>
-        <key>ans2</key>
-        <string> The effort by women to participate in military service</string>
-        <key>ans3</key>
-        <string>An unsuccessful movement to get husbands to do housework</string>
-        <key>ans4</key>
-        <string>The effort by women to be in Parliament</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What will you promise when you take the Oath of Citizenship?</string>
-        <key>ans1</key>
-        <string>Pledge allegiance to the Queen, observe the laws of Canada and fulfil the duties of a Canadian</string>
-        <key>ans2</key>
-        <string>Pledge to be faithful to the Queen</string>
-        <key>ans3</key>
-        <string>Promise to observe the laws of Canada</string>
-        <key>ans4</key>
-        <string>Fulfil duties as a Canadian citizent</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    <dict>
-        <key>question</key>
-        <string>What year did Newfoundland and Labrador join Canada?</string>
-        <key>ans1</key>
-        <string>1867</string>
-        <key>ans2</key>
-        <string>1955</string>
-        <key>ans3</key>
-        <string>1949</string>
-        <key>ans4</key>
-        <string>1880</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What year was Confederation?</string>
-        <key>ans1</key>
-        <string>1867</string>
-        <key>ans2</key>
-        <string>1871</string>
-        <key>ans3</key>
-        <string>1898</string>
-        <key>ans4</key>
-        <string>1864</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>When asked, who must you tell how you voted in a federal election?</string>
-        <key>ans1</key>
-        <string>Your employer</string>
-        <key>ans2</key>
-        <string>No one</string>
-        <key>ans3</key>
-        <string>A police officer</string>
-        <key>ans4</key>
-        <string>An Elections Canada official</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>When did the British North America Act come into effect?</string>
-        <key>ans1</key>
-        <string>1871</string>
-        <key>ans2</key>
-        <string>1898</string>
-        <key>ans3</key>
-        <string>1867</string>
-        <key>ans4</key>
-        <string>1905</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>When did the Canadian Charter of Rights and Freedoms become part of the Canadian Constitution?</string>
-        <key>ans1</key>
-        <string>1876</string>
-        <key>ans2</key>
-        <string>1905</string>
-        <key>ans3</key>
-        <string>1982</string>
-        <key>ans4</key>
-        <string>1878</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>When is Canada Day and what does it celebrate?</string>
-        <key>ans1</key>
-        <string>June 15 of each year to celebrate the anniversary of Confederation</string>
-        <key>ans2</key>
-        <string>August 8th of each year to celebrate the joining of British Columbia to Confederation</string>
-        <key>ans3</key>
-        <string>We celebrate the anniversary of Confederation July 1st of each year</string>
-        <key>ans4</key>
-        <string>May 21st of each year to remember Queen Victoria</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>When is Remembrance Day celebrated?</string>
-        <key>ans1</key>
-        <string>July 1st</string>
-        <key>ans2</key>
-        <string>October 1st</string>
-        <key>ans3</key>
-        <string>November 11th</string>
-        <key>ans4</key>
-        <string>December 25th</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>When must federal elections be held?</string>
-        <key>ans1</key>
-        <string>About every 4 years</string>
-        <key>ans2</key>
-        <string>On the third Monday in October every four years following the most recent general election</string>
-        <key>ans3</key>
-        <string>Whenever the Prime Minister calls the election</string>
-        <key>ans4</key>
-        <string>When the MPs want a new Prime Minister</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
+        <dict>
+            <key>question</key>
+            <string>  Fatima is a new immigrant in Canada. What law allows her to take up job at par with a man?</string>
+            <key>ans1</key>
+            <string>Equality of women and men</string>
+            <key>ans2</key>
+            <string>Equality of all races</string>
+            <key>ans3</key>
+            <string>Equal pay for equal work</string>
+            <key>ans4</key>
+            <string>Equal rights</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
         
-    <dict>
-        <key>question</key>
-        <string>Where are the Great Lakes?</string>
-        <key>ans1</key>
-        <string>Between Ontario and the United States</string>
-        <key>ans2</key>
-        <string>Manitoba</string>
-        <key>ans3</key>
-        <string>Northern Quebec</string>
-        <key>ans4</key>
-        <string>Atlantic Canada</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Where are the Parliament Buildings located?</string>
-        <key>ans1</key>
-        <string>Ottawa</string>
-        <key>ans2</key>
-        <string>Quebec City</string>
-        <key>ans3</key>
-        <string>Hull</string>
-        <key>ans4</key>
-        <string>Toronto</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Where do most French-speaking Canadians live?</string>
-        <key>ans1</key>
-        <string>Ontario</string>
-        <key>ans2</key>
-        <string>Nova Scotia</string>
-        <key>ans3</key>
-        <string>Quebec</string>
-        <key>ans4</key>
-        <string>Prince Edward Island</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Where does Canada rank in the world's largest countries?</string>
-        <key>ans1</key>
-        <string>First</string>
-        <key>ans2</key>
-        <string>Second</string>
-        <key>ans3</key>
-        <string>Third</string>
-        <key>ans4</key>
-        <string>Fourth</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which Act granted, for the first time in Canada, legislative assemblies elected by the people?</string>
-        <key>ans1</key>
-        <string>The Constitutional Act of 1867</string>
-        <key>ans2</key>
-        <string>The Constitutional Act of 1791</string>
-        <key>ans3</key>
-        <string>The Constitutional Act of 1982</string>
-        <key>ans4</key>
-        <string>The Constitutional Act of 1867</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which animal is an official symbol of Canada?</string>
-        <key>ans1</key>
-        <string>The moose</string>
-        <key>ans2</key>
-        <string>The hawk</string>
-        <key>ans3</key>
-        <string>The beaver</string>
-        <key>ans4</key>
-        <string>The deer</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which country borders Canada on the south?</string>
-        <key>ans1</key>
-        <string>United States of America</string>
-        <key>ans2</key>
-        <string>Central America</string>
-        <key>ans3</key>
-        <string>Mexico</string>
-        <key>ans4</key>
-        <string>Washington</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which federal political party is in power?</string>
-        <key>ans1</key>
-        <string>Green Party</string>
-        <key>ans2</key>
-        <string>New Democratic Party</string>
-        <key>ans3</key>
-        <string> Liberal Party</string>
-        <key>ans4</key>
-        <string>Conservative Party</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which of the following is NOT a feature of Canada's system of government?</string>
-        <key>ans1</key>
-        <string>A federal state</string>
-        <key>ans2</key>
-        <string>Parliamentary democracy</string>
-        <key>ans3</key>
-        <string>Constitutional Monarchy</string>
-        <key>ans4</key>
-        <string>Dictatorship</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which of the following sentences best describes the War of 1812?</string>
-        <key>ans1</key>
-        <string>Napoleon's fleet was defeated by the Royal Navy in the war</string>
-        <key>ans2</key>
-        <string>The USA became independent from the British Empire after the war</string>
-        <key>ans3</key>
-        <string>The USA invaded Canada and was defeated, which ensured that Canada would remain independent of the United States</string>
-        <key>ans4</key>
-        <string>Canada joined the United States after the war</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which of the following statements about residential schools is NOT true?</string>
-        <key>ans1</key>
-        <string> The federal government placed many Aboriginal children in residential schools to educate and assimilate them into mainstream Canadian culture</string>
-        <key>ans2</key>
-        <string>The schools were poorly funded and inflicted hardship on the students</string>
-        <key>ans3</key>
-        <string>The schools were welcomed by the Aboriginal people</string>
-        <key>ans4</key>
-        <string>Aboriginal language and cultural practices were mostly prohibited</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which party becomes the Official Opposition?</string>
-        <key>ans1</key>
-        <string>The party with the second most MPs</string>
-        <key>ans2</key>
-        <string>The party receiving the least votes</string>
-        <key>ans3</key>
-        <string>Any independent candidate</string>
-        <key>ans4</key>
-        <string>The party the Prime Minister selects</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which port is the largest and busiest in Canada?</string>
-        <key>ans1</key>
-        <string>The Port of Halifax</string>
-        <key>ans2</key>
-        <string>The Port of Montreal</string>
-        <key>ans3</key>
-        <string>The Port of Vancouver</string>
-        <key>ans4</key>
-        <string>The Port of Victoria</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which province has its own time zone?</string>
-        <key>ans1</key>
-        <string>British Columbia</string>
-        <key>ans2</key>
-        <string>Newfoundland and Labrador</string>
-        <key>ans3</key>
-        <string>Nunavut</string>
-        <key>ans4</key>
-        <string>Nova Scotia</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which province in Canada is the smallest in land size?</string>
-        <key>ans1</key>
-        <string>Nova Scotia</string>
-        <key>ans2</key>
-        <string>Prince Edward Island</string>
-        <key>ans3</key>
-        <string>Yukon Territory</string>
-        <key>ans4</key>
-        <string>Newfoundland and Labrador</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which province is the main producer of pulp and paper and hydro-electricity?</string>
-        <key>ans1</key>
-        <string>Quebec</string>
-        <key>ans2</key>
-        <string>Ontario</string>
-        <key>ans3</key>
-        <string>British Columbia</string>
-        <key>ans4</key>
-        <string>Manitoba</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which province is the only officially bilingual province?</string>
-        <key>ans1</key>
-        <string>New Brunswick</string>
-        <key>ans2</key>
-        <string>Quebec</string>
-        <key>ans3</key>
-        <string>Ontario</string>
-        <key>ans4</key>
-        <string>Prince Edward Island</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which province was split into two at Confederation?</string>
-        <key>ans1</key>
-        <string>Lower Canada</string>
-        <key>ans2</key>
-        <string>Newfoundland</string>
-        <key>ans3</key>
-        <string>Upper Canada</string>
-        <key>ans4</key>
-        <string>The Province of Canada</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which province was to first to grant voting rights to women?</string>
-        <key>ans1</key>
-        <string>Quebec</string>
-        <key>ans2</key>
-        <string>Ontario</string>
-        <key>ans3</key>
-        <string>Nova Scotia</string>
-        <key>ans4</key>
-        <string>Manitoba</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which provincial flag features the fleur-de-lys?</string>
-        <key>ans1</key>
-        <string>Quebec</string>
-        <key>ans2</key>
-        <string>New Brunswick</string>
-        <key>ans3</key>
-        <string>Manitoba</string>
-        <key>ans4</key>
-        <string>Ontario</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which region covers more than one-third of Canada?</string>
-        <key>ans1</key>
-        <string>Central Canada</string>
-        <key>ans2</key>
-        <string>Prairies</string>
-        <key>ans3</key>
-        <string>Atlantic Canada</string>
-        <key>ans4</key>
-        <string>Northern Territories</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which region is known as the industrial and manufacturing heartland of Canada?
-        </string>
-        <key>ans1</key>
-        <string>Atlantic provinces</string>
-        <key>ans2</key>
-        <string>Prairie provinces</string>
-        <key>ans3</key>
-        <string>Central Canada</string>
-        <key>ans4</key>
-        <string>West Coast</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which region of Canada is known for both its fertile agricultural land and valuable energy resources?</string>
-        <key>ans1</key>
-        <string>British Columbia</string>
-        <key>ans2</key>
-        <string>Prairie provinces</string>
-        <key>ans3</key>
-        <string>Ontario</string>
-        <key>ans4</key>
-        <string>Manitoba</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which three countries are signatories to NAFTA?</string>
-        <key>ans1</key>
-        <string>Canada, the United Kingdom and the United States</string>
-        <key>ans2</key>
-        <string>Canada, the United States and Japan</string>
-        <key>ans3</key>
-        <string>Canada, Mexico and the United States</string>
-        <key>ans4</key>
-        <string>Canada, Denmark and Andorra</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which was the last province to join Canada?</string>
-        <key>ans1</key>
-        <string>Newfoundland</string>
-        <key>ans2</key>
-        <string>Alberta</string>
-        <key>ans3</key>
-        <string>Saskatchewan</string>
-        <key>ans4</key>
-        <string>British Columbia</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who are the Aboriginal peoples of Canada?</string>
-        <key>ans1</key>
-        <string>The first European settlers to arrive in Canada</string>
-        <key>ans2</key>
-        <string>The descendants of the first Australian immigrants to Canada</string>
-        <key>ans3</key>
-        <string>The first people to live in Canada</string>
-        <key>ans4</key>
-        <string>The first settlers of Newfoundland</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    
-    <dict>
-        <key>question</key>
-        <string>Who are the Acadians?</string>
-        <key>ans1</key>
-        <string>Aboriginal people of the arctic</string>
-        <key>ans2</key>
-        <string>French-speaking Catholics living in Ontario</string>
-        <key>ans3</key>
-        <string>The descendants of French colonists who began settling in what are now the Maritime provinces in 1604</string>
-        <key>ans4</key>
-        <string>English speaking refugees who settled in Louisiana</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who are the founding peoples of Canada?</string>
-        <key>ans1</key>
-        <string>Métis, French and British</string>
-        <key>ans2</key>
-        <string>Aboriginal, Métis and British</string>
-        <key>ans3</key>
-        <string>Inuit, Aboriginal and British</string>
-        <key>ans4</key>
-        <string>Aboriginal, French and British</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who are the Métis?</string>
-        <key>ans1</key>
-        <string>The distinct aboriginal people of Atlantic Canada</string>
-        <key>ans2</key>
-        <string>A people of mixed Inuit/First Nations ancestry most of whom live on the Prairies</string>
-        <key>ans3</key>
-        <string>First Nations people speaking the Michif dialect</string>
-        <key>ans4</key>
-        <string>A distinct people of mixed Aboriginal and European ancestry</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who are the Quebecers?</string>
-        <key>ans1</key>
-        <string>European settlers in the 1600s</string>
-        <key>ans2</key>
-        <string>Descendants of the French colonists</string>
-        <key>ans3</key>
-        <string>Descendants of the Anglophones</string>
-        <key>ans4</key>
-        <string>People of Quebec</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who do Canadians vote for in a federal election?</string>
-        <key>ans1</key>
-        <string>The best speaker running in the election</string>
-        <key>ans2</key>
-        <string>A candidate they want to represent them in Parliament</string>
-        <key>ans3</key>
-        <string>Someone to become the Premier</string>
-        <key>ans4</key>
-        <string>All of the candidates in their electoral district</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who do Members of Parliament represent?</string>
-        <key>ans1</key>
-        <string>All of the Canadians living in the north</string>
-        <key>ans2</key>
-        <string>Only Canadians living in Central Canada</string>
-        <key>ans3</key>
-        <string>Everyone who lives in his or her electoral district</string>
-        <key>ans4</key>
-        <string>Canadians living in the province in which he/she was elected</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who had played an important part in building the Canadian Pacific Railway (CPR)?</string>
-        <key>ans1</key>
-        <string>American railroad engineers</string>
-        <key>ans2</key>
-        <string>Acadian railroad workers</string>
-        <key>ans3</key>
-        <string>Chinese railroad workers</string>
-        <key>ans4</key>
-        <string>Afro-American slaves</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who has the right to run as a candidate in federal elections?</string>
-        <key>ans1</key>
-        <string>Anyone</string>
-        <key>ans2</key>
-        <string>A Canadian citizen who is 16 years old</string>
-        <key>ans3</key>
-        <string>Any man who is at least 18 years old</string>
-        <key>ans4</key>
-        <string>Any Canadian citizen who is at least 18 years old</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who has the right to vote in federal elections?</string>
-        <key>ans1</key>
-        <string>A Canadian citizen, 18 years or older, and on voters' list</string>
-        <key>ans2</key>
-        <string>A Canadian citizen, 18 years or older and must work for the federal government</string>
-        <key>ans3</key>
-        <string>A landed immigrant, 18 years old and a memberof the Canadian Forces</string>
-        <key>ans4</key>
-        <string>A Canadian citizen, over 25 years and a member of the Canadian Forces</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who have major responsibilities on First Nations reserves?</string>
-        <key>ans1</key>
-        <string>Band chiefs and councillors</string>
-        <key>ans2</key>
-        <string>Municipal governments</string>
-        <key>ans3</key>
-        <string>Provincial and territorial governments</string>
-        <key>ans4</key>
-        <string>A Federal government</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who is Canada's Head of State?</string>
-        <key>ans1</key>
-        <string>Governor General of Canada</string>
-        <key>ans2</key>
-        <string>Her Majesty Queen Elizabeth II</string>
-        <key>ans3</key>
-        <string>Prime Minister</string>
-        <key>ans4</key>
-        <string>Lieutenant Governor</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who is General Sir Arthur Currie?</string>
-        <key>ans1</key>
-        <string>A military leader of the Métis in the 19th century</string>
-        <key>ans2</key>
-        <string>A great frontier hero</string>
-        <key>ans3</key>
-        <string>An explorer of western Canada</string>
-        <key>ans4</key>
-        <string>Canada's greatest soldier in the First World War</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who is the Head of Government?</string>
-        <key>ans1</key>
-        <string>The President</string>
-        <key>ans2</key>
-        <string>The Queen</string>
-        <key>ans3</key>
-        <string>The Governor General</string>
-        <key>ans4</key>
-        <string>The Prime Minister</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who is the Queen's representative in Canada?</string>
-        <key>ans1</key>
-        <string>Prime Minister of Canada</string>
-        <key>ans2</key>
-        <string>Premier</string>
-        <key>ans3</key>
-        <string>Her Majesty Queen Elizabeth II</string>
-        <key>ans4</key>
-        <string>Governor General of Canada</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who lead an armed uprising and seized Fort Garry?</string>
-        <key>ans1</key>
-        <string>John A. Macdonald</string>
-        <key>ans2</key>
-        <string>Louis Riel</string>
-        <key>ans3</key>
-        <string>Sam Steele</string>
-        <key>ans4</key>
-        <string>George-Étienne Cartier</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who led Quebec into Confederation?</string>
-        <key>ans1</key>
-        <string>Sir Louis-Hippolyte La Fontaine</string>
-        <key>ans2</key>
-        <string>Sir George-Étienne Cartier</string>
-        <key>ans3</key>
-        <string>Sir Wilfrid Laurier</string>
-        <key>ans4</key>
-        <string>Sir John A. Macdonald</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who was Sir Louis-Hippolyte La Fontaine?</string>
-        <key>ans1</key>
-        <string>A champion of democracy and Aboriginal rights</string>
-        <key>ans2</key>
-        <string>A champion of democracy and French language rights and the first leader of a responsible government in the Canadas</string>
-        <key>ans3</key>
-        <string>The first Head of State</string>
-        <key>ans4</key>
-        <string>The first French speaking Prime Minister</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who was Sir Sam Steele?</string>
-        <key>ans1</key>
-        <string>A great frontier hero, Mounted Policeman and soldier of the Queen</string>
-        <key>ans2</key>
-        <string>A military leader of the Métis in the 19th century</string>
-        <key>ans3</key>
-        <string>The first Prime Minister of Canada</string>
-        <key>ans4</key>
-        <string>The Father of Manitoba</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who was the first leader of a responsible government in the Canadas in 1849?</string>
-        <key>ans1</key>
-        <string>Sir John A. Macdonald</string>
-        <key>ans2</key>
-        <string>Robert Baldwin</string>
-        <key>ans3</key>
-        <string>Louis Riel</string>
-        <key>ans4</key>
-        <string>Sir Louis-Hippolyte La Fontaine</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who was the first Prime Minister of Canada?</string>
-        <key>ans1</key>
-        <string>Louis Riel</string>
-        <key>ans2</key>
-        <string>Sir John A. Macdonald</string>
-        <key>ans3</key>
-        <string>Lester B. Pearson</string>
-        <key>ans4</key>
-        <string>Abraham Lincoln</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who were the United Empire Loyalists?</string>
-        <key>ans1</key>
-        <string>Settlers who came to Canada from the United States during the American Revolution</string>
-        <key>ans2</key>
-        <string>Aboriginal peoples</string>
-        <key>ans3</key>
-        <string>Métis</string>
-        <key>ans4</key>
-        <string>Inuit</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who were the Voyagers?</string>
-        <key>ans1</key>
-        <string>Montreal-based traders who travelled by canoe</string>
-        <key>ans2</key>
-        <string>Immigrants to Canada in the 18th Century</string>
-        <key>ans3</key>
-        <string>Explorers searching for the North-West Passage</string>
-        <key>ans4</key>
-        <string>Geographers who first charted the coastline of British Columbia</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Why is the battle of Vimy Ridge important?</string>
-        <key>ans1</key>
-        <string>It was a key position of the German line in Northern Spain</string>
-        <key>ans2</key>
-        <string>Canadian Corps secured its reputation for valour and bravery</string>
-        <key>ans3</key>
-        <string>It was the "hinge" of the German line as it protected the newly constructed Hindenburg line</string>
-        <key>ans4</key>
-        <string>Once Canadians fought at Vimy they knew they would be heading home</string>
-        <key>answer</key>
-        <string>2</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Why is trade with other countries important to Canada?</string>
-        <key>ans1</key>
-        <string>It enhances our standard of living</string>
-        <key>ans2</key>
-        <string>It makes it easier for us to travel to foreign countries</string>
-        <key>ans3</key>
-        <string>It enhances our economy and raises our standard of living</string>
-        <key>ans4</key>
-        <string>It brings in cheaper goods</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    
-    
-    <!-- general 2016-->
-    <dict>
-        <key>question</key>
-        <string>Name all the federal political parties in the House of Commons and their leaders</string>
-        <key>ans1</key>
-        <string>Conservative (Ambrose), NDP (Mulcair), Liberal (Trudeau), Bloc Quebecois (Fortin), Green Party (May)</string>
-        <key>ans2</key>
-        <string>Conservative (Harper), Green (May), Liberal (Trudeau), Bloc Quebecois (Duceppe)</string>
-        <key>ans3</key>
-        <string>NDP (Mulcair), Green (May), Liberal (Rae), Bloc Quebecois (Paillé)</string>
-        <key>ans4</key>
-        <string>Liberal (Ignatieff), Conservative (Ambrose), NDP (Turmel), Green (May)</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the name of the Governor General?</string>
-        <key>ans1</key>
-        <string>David Johnston</string>
-        <key>ans2</key>
-        <string>Elizabeth May</string>
-        <key>ans3</key>
-        <string>Dalton McGuinty</string>
-        <key>ans4</key>
-        <string>Michaëlle Jean</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>What is the name of the Prime Minister of Canada and his/her party?</string>
-        <key>ans1</key>
-        <string>Justin Trudeau (Liberal Party)</string>
-        <key>ans2</key>
-        <string>Stephen Harper (Conservative Party)</string>
-        <key>ans3</key>
-        <string>Thomas Mulcair (New Democratic Party)</string>
-        <key>ans4</key>
-        <string>Christie Clark (Liberal Party)</string>
-        <key>answer</key>
-        <string>1</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Which party is the Official Opposition at the federal level?</string>
-        <key>ans1</key>
-        <string>The New Democratic Party</string>
-        <key>ans2</key>
-        <string>The Liberal Party</string>
-        <key>ans3</key>
-        <string> The Independent Party</string>
-        <key>ans4</key>
-        <string>The Conservative Party</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-    <dict>
-        <key>question</key>
-        <string>Who is the leader of the Federal Official Opposition Party?</string>
-        <key>ans1</key>
-        <string>Thomas Mulcair</string>
-        <key>ans2</key>
-        <string>Stéphane Dion</string>
-        <key>ans3</key>
-        <string>Rona Ambrose</string>
-        <key>ans4</key>
-        <string>Elizabeth May</string>
-        <key>answer</key>
-        <string>3</string>
-    </dict>
-    
-    <!-- Alberta-->
-    <dict>
-        <key>question</key>
-        <string>Who is considered the father of Manitoba?</string>
-        <key>ans1</key>
-        <string>John A. Macdonald</string>
-        <key>ans2</key>
-        <string>Sam Steele</string>
-        <key>ans3</key>
-        <string>Alfred Boyd</string>
-        <key>ans4</key>
-        <string>Louis Riel</string>
-        <key>answer</key>
-        <string>4</string>
-    </dict>
-    
-
-</array>
+        <dict>
+            <key>question</key>
+            <string>From where does the name "Canada" come from?</string>
+            <key>ans1</key>
+            <string>From the Inuit word meaning country</string>
+            <key>ans2</key>
+            <string>From the French word meaning joining</string>
+            <key>ans3</key>
+            <string>From the Métis word meaning rivers</string>
+            <key>ans4</key>
+            <string>From "Kanata", the Huron-Iroquois word for village</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Give an example of how you can show responsibility by participating in your community</string>
+            <key>ans1</key>
+            <string>Mind your own business</string>
+            <key>ans2</key>
+            <string>Have a party</string>
+            <key>ans3</key>
+            <string>Keep your property tidy</string>
+            <key>ans4</key>
+            <string>Volunteer</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Give an example of where English and French have equal status in Canada</string>
+            <key>ans1</key>
+            <string>In schools</string>
+            <key>ans2</key>
+            <string>In the workplace</string>
+            <key>ans3</key>
+            <string>In the Parliament of Canada</string>
+            <key>ans4</key>
+            <string>At City Hall</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Give the first two lines of Canada's national anthem?</string>
+            <key>ans1</key>
+            <string>O Canada! Our home and native land! True patriot love in all thy sons command</string>
+            <key>ans2</key>
+            <string>O Canada! Our province and native land! True patriot love in all thy sons command</string>
+            <key>ans3</key>
+            <string>O Canada! From far and wide, O Canada, We stand on guard for thee</string>
+            <key>ans4</key>
+            <string>O Canada! We stand on guard for thee</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How are Members of Parliament chosen?</string>
+            <key>ans1</key>
+            <string>Appointed by the Prime Minister</string>
+            <key>ans2</key>
+            <string>Elected by Canadian citizens</string>
+            <key>ans3</key>
+            <string>Appointed by the Queen</string>
+            <key>ans4</key>
+            <string>Elected by the Provincial Ministers</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How are Senators chosen?</string>
+            <key>ans1</key>
+            <string>By the Governor General of Canada</string>
+            <key>ans2</key>
+            <string>By the Premiers of all provinces</string>
+            <key>ans3</key>
+            <string>Appointed by the Queen</string>
+            <key>ans4</key>
+            <string>Senators are appointed by the Governor General on the advice of the Prime Minister</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How does a bill become a law?</string>
+            <key>ans1</key>
+            <string>The Lieutenant Governor must approve the bill</string>
+            <key>ans2</key>
+            <string>Approval by a majority in the House of Commons and Senate and finally the Governor General</string>
+            <key>ans3</key>
+            <string>The Queen must sign the bill</string>
+            <key>ans4</key>
+            <string>Approval by the Members of the Legislative Assembly</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How is a Cabinet Minister chosen?</string>
+            <key>ans1</key>
+            <string>By the Queen</string>
+            <key>ans2</key>
+            <string> By the voters</string>
+            <key>ans3</key>
+            <string>By other Cabinet Ministers</string>
+            <key>ans4</key>
+            <string>By the Prime Minister</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How is the government formed after a federal election?</string>
+            <key>ans1</key>
+            <string>The party with the most elected representatives becomes the party in power. The Queen chooses the Prime Minister from this party</string>
+            <key>ans2</key>
+            <string>The party with the most elected representatives becomes the party in power. The leader of this party becomes the Prime Minister</string>
+            <key>ans3</key>
+            <string>The Governor General picks a party and a Prime Minister to run the government</string>
+            <key>ans4</key>
+            <string>Each province elects one representative to form the government. The Queen then chooses the Prime Minister</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How is the Prime Minister chosen?</string>
+            <key>ans1</key>
+            <string>The Queen appoints the Prime Minister</string>
+            <key>ans2</key>
+            <string>The Governor General with the Senate appoint the Prime Minister</string>
+            <key>ans3</key>
+            <string>The leader of the party with the most elected representatives becomes the Prime Minister</string>
+            <key>ans4</key>
+            <string>The MPs vote on the Prime Minister</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How many Canadians have been awarded the Victoria Cross (V.C.), the highest honour available to Canadians?</string>
+            <key>ans1</key>
+            <string>56</string>
+            <key>ans2</key>
+            <string>96</string>
+            <key>ans3</key>
+            <string>1,024</string>
+            <key>ans4</key>
+            <string>42</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>In Canada, are you allowed to question the police about their service or conduct?</string>
+            <key>ans1</key>
+            <string>No, police service and conduct is not open to discussion with Canadians</string>
+            <key>ans2</key>
+            <string>Yes, you can question their service but not their conduct</string>
+            <key>ans3</key>
+            <string>Yes, you can question their conduct but not their service</string>
+            <key>ans4</key>
+            <string>Yes, if you feel the need to</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string> In Canada's justice system what does "presumption of innocence" mean?</string>
+            <key>ans1</key>
+            <string>Everyone is guilty until proven innocent</string>
+            <key>ans2</key>
+            <string>Guilt is decided by public opinion</string>
+            <key>ans3</key>
+            <string> Innocence is decided by public opinion</string>
+            <key>ans4</key>
+            <string>Everyone is innocent until proven guilty</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>In the 1960s, Quebec experienced an era of rapid change. What is this called?</string>
+            <key>ans1</key>
+            <string>The West Movement</string>
+            <key>ans2</key>
+            <string>The Revolution</string>
+            <key>ans3</key>
+            <string>The Quiet Revolution</string>
+            <key>ans4</key>
+            <string>La Francophonie</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>In what industry do most Canadians work?</string>
+            <key>ans1</key>
+            <string>Natural resources</string>
+            <key>ans2</key>
+            <string>Tourism</string>
+            <key>ans3</key>
+            <string>Service</string>
+            <key>ans4</key>
+            <string>Manufacturing</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>In which region do more than half the people in Canada live?</string>
+            <key>ans1</key>
+            <string>Central Canada</string>
+            <key>ans2</key>
+            <string>Prairies</string>
+            <key>ans3</key>
+            <string>Atlantic Canada</string>
+            <key>ans4</key>
+            <string>Northern Canada</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Name the five regions of Canada</string>
+            <key>ans1</key>
+            <string>Midwest, North, South, East, Central</string>
+            <key>ans2</key>
+            <string>Maritimes, Ontario, Quebec, Prairies, and British Columbia</string>
+            <key>ans3</key>
+            <string>Atlantic, Central, Prairie, West Coast, and North</string>
+            <key>ans4</key>
+            <string>West, Central, East, Prairies, and Territories</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Name three additional rights protected by the Canadian Charter of Rights and Freedoms</string>
+            <key>ans1</key>
+            <string>Freedom of speech, Right to own land, and Right to a fair trial</string>
+            <key>ans2</key>
+            <string>Mobility rights, Multiculturalism, and Aboriginal Peoples' rights</string>
+            <key>ans3</key>
+            <string>Right to ski anywhere in Canada, Moving rights, and Right to public assembly</string>
+            <key>ans4</key>
+            <string>Right to vote, Right to speak publicly, and Security rights</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Name two fundamental freedoms protected by the Canadian Charter of Rights and Freedoms</string>
+            <key>ans1</key>
+            <string>Freedom of conscience and religion, and Freedom of association</string>
+            <key>ans2</key>
+            <string>Equality rights, and to care for Canada's heritage</string>
+            <key>ans3</key>
+            <string>Basic freedoms, and obeying laws</string>
+            <key>ans4</key>
+            <string>Aboriginal peoples' rights, and to volunteer</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Name two key documents that contain our rights and freedoms</string>
+            <key>ans1</key>
+            <string>The Canadian Constitution and English common law</string>
+            <key>ans2</key>
+            <string>Civil code of France and the Canadian Constitution</string>
+            <key>ans3</key>
+            <string>Canadian Charter of Rights and Freedoms and Magna Carta (the Great Charter of Freedoms)</string>
+            <key>ans4</key>
+            <string>Laws passed by Parliament and English common law</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Name two responsibilities of the federal government</string>
+            <key>ans1</key>
+            <string>National defence and firefighting</string>
+            <key>ans2</key>
+            <string>National defence and foreign policy</string>
+            <key>ans3</key>
+            <string>Citizenship and highways</string>
+            <key>ans4</key>
+            <string>Recycling and education</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Name two responsibilities of the provincial and territorial government</string>
+            <key>ans1</key>
+            <string>Citizenship and Foreign Policy</string>
+            <key>ans2</key>
+            <string>Health and Education</string>
+            <key>ans3</key>
+            <string>Defense and Currency</string>
+            <key>ans4</key>
+            <string>Criminal Law and Interprovincial Trade</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>On what date did Nunavut become a territory?</string>
+            <key>ans1</key>
+            <string>July 1st, 1867</string>
+            <key>ans2</key>
+            <string>April 1st, 1999</string>
+            <key>ans3</key>
+            <string>June 24th, 1995</string>
+            <key>ans4</key>
+            <string>March 31st, 1949</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>One third of all Canadians live in which province?</string>
+            <key>ans1</key>
+            <string>Quebec</string>
+            <key>ans2</key>
+            <string>Ontario</string>
+            <key>ans3</key>
+            <string>Northwest Territories</string>
+            <key>ans4</key>
+            <string>Manitoba</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>The Canadian Coat of Arms and motto is "A Mari Usque Ad Mare." This means:</string>
+            <key>ans1</key>
+            <string>From the ocean to the sea</string>
+            <key>ans2</key>
+            <string>From sea to sea</string>
+            <key>ans3</key>
+            <string>From the sea to the ends of the earth</string>
+            <key>ans4</key>
+            <string>From the water to the earth</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the Prairie provinces and their capital cities?</string>
+            <key>ans1</key>
+            <string> Alberta (Edmonton) and Saskatchewan (Regina)</string>
+            <key>ans2</key>
+            <string>Alberta (Edmonton), Saskatchewan (Regina) and Manitoba (Winnipeg)</string>
+            <key>ans3</key>
+            <string>Saskatchewan (Regina) and Manitoba (Winnipeg)</string>
+            <key>ans4</key>
+            <string>Saskatchewan (Regina), Manitoba (Winnipeg) and Ontario (Toronto)</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the provinces of Central Canada and their capital cities?</string>
+            <key>ans1</key>
+            <string>Manitoba (Winnipeg) and Ontario (Toronto)</string>
+            <key>ans2</key>
+            <string>Quebec (Quebec City) and Prince Edward Island (Charlottetown)</string>
+            <key>ans3</key>
+            <string> Ontario (Toronto) and Quebec (Quebec City)</string>
+            <key>ans4</key>
+            <string>Saskatchewan (Regina) and Manitoba Winnipeg)</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the provinces of the Atlantic region and their capital cities?</string>
+            <key>ans1</key>
+            <string>Nova Scotia (Halifax), New Brunswick (Fredericton), Prince Edward Island (Charlottetown) and Quebec (Quebec)</string>
+            <key>ans2</key>
+            <string>Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Prince Edward Island (Charlottetown)</string>
+            <key>ans3</key>
+            <string>Newfoundland and Labrador (St. John's), Nova Scotia (Halifax), New Brunswick (Fredericton) and Quebec (Quebec)</string>
+            <key>ans4</key>
+            <string>Nova Scotia (Halifax), New Brunswick (Fredericton), Quebec (Quebec City)and Ontario (Toronto)</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the territories of Northern Canada and their capital cities?</string>
+            <key>ans1</key>
+            <string>Alaska (Juneau) and Yukon Territory ( Whitehorse)</string>
+            <key>ans2</key>
+            <string>Northwest Territories (Yellowknife) and Alaska (Juneau)</string>
+            <key>ans3</key>
+            <string>Northwest Territories (Yellowknife)</string>
+            <key>ans4</key>
+            <string>Yukon Territory (Whitehorse), Northwest Territories (Yellowknife), and Nunavut (Iqaluit)</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the three levels of government in Canada?</string>
+            <key>ans1</key>
+            <string>Federal, Provincial and Territorial, Municipal (local)</string>
+            <key>ans2</key>
+            <string>Federal, Provincial and City</string>
+            <key>ans3</key>
+            <string>Federal, Territorial and Provincial</string>
+            <key>ans4</key>
+            <string>Federal, State and Local</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the three main groups of Aboriginal peoples?</string>
+            <key>ans1</key>
+            <string>First Nations, Métis and Inuit</string>
+            <key>ans2</key>
+            <string>Acadians, Métis and Inuit</string>
+            <key>ans3</key>
+            <string> United Empire Loyalists, Métis and Inuit</string>
+            <key>ans4</key>
+            <string>Inuit, Métis and Acadians</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the three main types of industry in Canada?</string>
+            <key>ans1</key>
+            <string>Natural resources, tourism and service industries</string>
+            <key>ans2</key>
+            <string>Tourism, services and manufacturing</string>
+            <key>ans3</key>
+            <string>Natural resources, tourism and manufacturing</string>
+            <key>ans4</key>
+            <string>Natural resources, manufacturing and services</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the three parts of Parliament?</string>
+            <key>ans1</key>
+            <string>The Sovereign, Governor General and Prime Minister</string>
+            <key>ans2</key>
+            <string>The House of Commons, the Legislative Assembly and the Senate</string>
+            <key>ans3</key>
+            <string>The Queen, the Legislative Assembly and the Senate</string>
+            <key>ans4</key>
+            <string>The Queen, the House of Commons and the Senate</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What are the two official languages of Canada?</string>
+            <key>ans1</key>
+            <string>English and Métis</string>
+            <key>ans2</key>
+            <string>Inuktitut and French</string>
+            <key>ans3</key>
+            <string>English and French</string>
+            <key>ans4</key>
+            <string>English and Inuktitut</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What country is Canada's largest trading partner?</string>
+            <key>ans1</key>
+            <string>Mexico</string>
+            <key>ans2</key>
+            <string>United States of America</string>
+            <key>ans3</key>
+            <string>China</string>
+            <key>ans4</key>
+            <string>Japan</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What did the Canadian Pacific Railway symbolize?</string>
+            <key>ans1</key>
+            <string>Easy access to the West Coast</string>
+            <key>ans2</key>
+            <string>What can be achieved by working together</string>
+            <key>ans3</key>
+            <string>Unity</string>
+            <key>ans4</key>
+            <string>Ribbons of steel</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What did the Fathers of Confederation do?</string>
+            <key>ans1</key>
+            <string>They worked together to establish a new country, the Dominion of Canada</string>
+            <key>ans2</key>
+            <string>They were explorers who formed an expedition to survey Northern Canada</string>
+            <key>ans3</key>
+            <string>They formed a republic state in Canada</string>
+            <key>ans4</key>
+            <string>They were a group of politicians that tried to unite Canada to the United States</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What do you call a law before it is passed?</string>
+            <key>ans1</key>
+            <string>A New law</string>
+            <key>ans2</key>
+            <string>A Proposed law</string>
+            <key>ans3</key>
+            <string>A Bill</string>
+            <key>ans4</key>
+            <string>A New proposal</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What do you call the Sovereign's representative in the provinces?</string>
+            <key>ans1</key>
+            <string>Premier</string>
+            <key>ans2</key>
+            <string>Member of the Legislative Assembly</string>
+            <key>ans3</key>
+            <string>Lieutenant-Governor</string>
+            <key>ans4</key>
+            <string>Senator</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What do you mark on a federal election ballot?</string>
+            <key>ans1</key>
+            <string>The candidate's name</string>
+            <key>ans2</key>
+            <string>The number for the candidate</string>
+            <key>ans3</key>
+            <string>An "X"</string>
+            <key>ans4</key>
+            <string>The voter's name</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What does Confederation mean?</string>
+            <key>ans1</key>
+            <string>The United States Confederate soldiers came to Canada</string>
+            <key>ans2</key>
+            <string>Joining of communities to become a province</string>
+            <key>ans3</key>
+            <string>Joining of suburbs to form a large city</string>
+            <key>ans4</key>
+            <string>Joining of provinces to make a new country</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What does it mean to say Canada is a constitutional monarchy?</string>
+            <key>ans1</key>
+            <string>The Sovereign (Queen or King) is the law maker of Canada</string>
+            <key>ans2</key>
+            <string>Canada's Head of State is a hereditary Sovereign (Queen or King) who reigns in accordance with the Constitution</string>
+            <key>ans3</key>
+            <string>The Sovereign (Queen or King) represents Canadians in Parliament</string>
+            <key>ans4</key>
+            <string>The sovereign (Queen or King) approves bills before becoming law</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What does the "right to a secret ballot" mean?</string>
+            <key>ans1</key>
+            <string>No one should tell you where to vote</string>
+            <key>ans2</key>
+            <string>A secret vote used by politicians when they are voting on sensitive topics</string>
+            <key>ans3</key>
+            <string>No one can watch your vote and no one should look at how you voted</string>
+            <key>ans4</key>
+            <string>Your right to vote in secret on who to appoint to the Senate</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What does the Canadian flag look like?</string>
+            <key>ans1</key>
+            <string>Red and white with provincial emblems</string>
+            <key>ans2</key>
+            <string>Red and white with a beaver</string>
+            <key>ans3</key>
+            <string>White with a red border on each end and a red maple leaf in the centre</string>
+            <key>ans4</key>
+            <string>Red with a white maple leaf</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What does the term "responsible government" mean?</string>
+            <key>ans1</key>
+            <string>Each person in each electoral district is responsible for voting</string>
+            <key>ans2</key>
+            <string>The Governor General is responsible for the actions of the Prime Minister</string>
+            <key>ans3</key>
+            <string>The ministers of the Crown must have the support of a majority of the elected representatives in order to govern</string>
+            <key>ans4</key>
+            <string>All Canadians are responsible for each other</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What does the word "Inuit" mean?</string>
+            <key>ans1</key>
+            <string>"Eskimo" in Inuktitut language</string>
+            <key>ans2</key>
+            <string> "Home" in English</string>
+            <key>ans3</key>
+            <string>"The people" in the Inuktitut language</string>
+            <key>ans4</key>
+            <string>"The Arctic Land" in Inuktitut language</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What happened at the Battle of the Plains of Abraham?</string>
+            <key>ans1</key>
+            <string>The Voyagers battled with the British for fur trading rights</string>
+            <key>ans2</key>
+            <string>Americans fought the United Empire Loyalists during the American Revolution</string>
+            <key>ans3</key>
+            <string>The British defeated the French marking the end of France's empire in America</string>
+            <key>ans4</key>
+            <string>The French defeated the British in a battle for Quebec</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is a Francophone?</string>
+            <key>ans1</key>
+            <string>A person who speak English as their first language</string>
+            <key>ans2</key>
+            <string>A smartphone designed by the Canadian company RIM</string>
+            <key>ans3</key>
+            <string>A person who speak French as their first language</string>
+            <key>ans4</key>
+            <string>The first phone in Canada, invented by Alexander Graham Bell</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is a major river in Quebec?</string>
+            <key>ans1</key>
+            <string>Fraser River</string>
+            <key>ans2</key>
+            <string>St. Lawrence River</string>
+            <key>ans3</key>
+            <string>Niagara</string>
+            <key>ans4</key>
+            <string>Hudson's Bay</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is a majority government?</string>
+            <key>ans1</key>
+            <string>When the party in power holds about one third of the seats in the House of Commons</string>
+            <key>ans2</key>
+            <string>When the party in power holds about one quarter of the seats in the House of Commons</string>
+            <key>ans3</key>
+            <string>When the part in power holds at least half of the seats in the Senate</string>
+            <key>ans4</key>
+            <string>When the party in power holds at least half of the seats in the House of Commons</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is a voter information card?</string>
+            <key>ans1</key>
+            <string>Tells you who the candidates are in your electoral district</string>
+            <key>ans2</key>
+            <string>Tells you what province to vote in</string>
+            <key>ans3</key>
+            <string>A form that tells you when and where to vote</string>
+            <key>ans4</key>
+            <string>A form that lets you know your voting time</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is Canada's national winter sport?</string>
+            <key>ans1</key>
+            <string>Golf</string>
+            <key>ans2</key>
+            <string>Nordic skiing</string>
+            <key>ans3</key>
+            <string>Lacrosse</string>
+            <key>ans4</key>
+            <string>Hockey</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is Canada's system of government called?</string>
+            <key>ans1</key>
+            <string>Dictatorship</string>
+            <key>ans2</key>
+            <string>Parliamentary government</string>
+            <key>ans3</key>
+            <string>Military Rule</string>
+            <key>ans4</key>
+            <string>Communism</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is meant by the equality of women and men?</string>
+            <key>ans1</key>
+            <string>Men and women are equal under the law</string>
+            <key>ans2</key>
+            <string>Men and women must both do housework</string>
+            <key>ans3</key>
+            <string>Women may now go to school and enter the professional workforce</string>
+            <key>ans4</key>
+            <string>A woman may now become Prime Minister</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the "head tax"?</string>
+            <key>ans1</key>
+            <string>Race-based entry fee charged for Chinese entering Canada</string>
+            <key>ans2</key>
+            <string>Fee charged for anyone entering Canada after 1900</string>
+            <key>ans3</key>
+            <string>A tax imposed on beer beginning in 1867</string>
+            <key>ans4</key>
+            <string>Fee charged for moving westward in the early 1900s</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the capital city of Canada?</string>
+            <key>ans1</key>
+            <string>Ottawa</string>
+            <key>ans2</key>
+            <string>Toronto</string>
+            <key>ans3</key>
+            <string>Montreal</string>
+            <key>ans4</key>
+            <string>Hull</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the government of all of Canada called?</string>
+            <key>ans1</key>
+            <string>National assembly</string>
+            <key>ans2</key>
+            <string>Legislature</string>
+            <key>ans3</key>
+            <string>Federal</string>
+            <key>ans4</key>
+            <string>Council</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the highest court in Canada?</string>
+            <key>ans1</key>
+            <string>The Queen's Court</string>
+            <key>ans2</key>
+            <string>The Senate Court of Canada</string>
+            <key>ans3</key>
+            <string>The Supreme Court of Canada</string>
+            <key>ans4</key>
+            <string>The Crown Court of Canada</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the highest military honour a Canadian can receive?</string>
+            <key>ans1</key>
+            <string>Purple Cross</string>
+            <key>ans2</key>
+            <string>Badge of Courage</string>
+            <key>ans3</key>
+            <string>Order of Merit</string>
+            <key>ans4</key>
+            <string>Victoria Cross</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the largest religious affiliation in Canada?</string>
+            <key>ans1</key>
+            <string>Catholic</string>
+            <key>ans2</key>
+            <string>Muslim</string>
+            <key>ans3</key>
+            <string>Jewish</string>
+            <key>ans4</key>
+            <string>Hindu</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the meaning of the Remembrance Day poppy?</string>
+            <key>ans1</key>
+            <string>To remember our Sovereign, Queen Elizabeth II</string>
+            <key>ans2</key>
+            <string>To celebrate Confederation</string>
+            <key>ans3</key>
+            <string>To honour Prime Ministers who have died</string>
+            <key>ans4</key>
+            <string>To remember the sacrifice of Canadians who have served or died in wars up to the present day</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the name of the Royal Anthem of Canada?</string>
+            <key>ans1</key>
+            <string>O Canada</string>
+            <key>ans2</key>
+            <string>God Save the Queen (or King)</string>
+            <key>ans3</key>
+            <string>La Marseillaise</string>
+            <key>ans4</key>
+            <string>The Star-Spangled Banner</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the population of Canada?</string>
+            <key>ans1</key>
+            <string>About 20 million</string>
+            <key>ans2</key>
+            <string>38 million</string>
+            <key>ans3</key>
+            <string>17 million</string>
+            <key>ans4</key>
+            <string>About 34 million</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the role of the courts in Canada?</string>
+            <key>ans1</key>
+            <string>To enforce the law</string>
+            <key>ans2</key>
+            <string>To guide people in our society</string>
+            <key>ans3</key>
+            <string>To settle disputes</string>
+            <key>ans4</key>
+            <string>To express values and beliefs of Canadians</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the role of the Opposition parties?</string>
+            <key>ans1</key>
+            <string>To assist the Prime Minister</string>
+            <key>ans2</key>
+            <string>To sign bills</string>
+            <key>ans3</key>
+            <string>To oppose or try to improve government proposals</string>
+            <key>ans4</key>
+            <string>To put forward bills to be passed</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the significance of the discovery of insulin by Sir Frederick Banting and Charles Best?</string>
+            <key>ans1</key>
+            <string>Insulin is a hormone that permits you to eat anything you wish</string>
+            <key>ans2</key>
+            <string>Insulin has saved 16 million lives worldwide</string>
+            <key>ans3</key>
+            <string>Discovering insulin opened the doors to more discoveries</string>
+            <key>ans4</key>
+            <string>Discovering insulin made Drs. Banting and Best famous</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What part of the Constitution legally protects the basic rights and freedoms of all Canadians?</string>
+            <key>ans1</key>
+            <string>The British Charter of Rights and Freedoms</string>
+            <key>ans2</key>
+            <string>The Canadian Charter of Rights</string>
+            <key>ans3</key>
+            <string>The Canadian Charter of Freedoms</string>
+            <key>ans4</key>
+            <string>The Canadian Charter of Rights and Freedoms</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What percentage of Aboriginal people are First Nations?</string>
+            <key>ans1</key>
+            <string>30%</string>
+            <key>ans2</key>
+            <string>6%</string>
+            <key>ans3</key>
+            <string>50%</string>
+            <key>ans4</key>
+            <string>65%</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What percentage of Aboriginal people are First Nations?</string>
+            <key>ans1</key>
+            <string>30%</string>
+            <key>ans2</key>
+            <string>6%</string>
+            <key>ans3</key>
+            <string>50%</string>
+            <key>ans4</key>
+            <string>65%</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What should you do if you do not receive a voter information card telling you when and where to vote?</string>
+            <key>ans1</key>
+            <string>Go to the police station</string>
+            <key>ans2</key>
+            <string>Call your Member of Parliament</string>
+            <key>ans3</key>
+            <string>Assume you cannot vote</string>
+            <key>ans4</key>
+            <string>Call Elections Canada or visit their website</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What song is Canada's national anthem?</string>
+            <key>ans1</key>
+            <string>God Save the Queen</string>
+            <key>ans2</key>
+            <string>O Canada</string>
+            <key>ans3</key>
+            <string>Star Spangled Banner</string>
+            <key>ans4</key>
+            <string>Amazing Grace</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What three oceans border Canada?</string>
+            <key>ans1</key>
+            <string>Atlantic, Arctic and Bering</string>
+            <key>ans2</key>
+            <string>Atlantic, Arctic and Pacific</string>
+            <key>ans3</key>
+            <string>Pacific, Indian and Atlantic</string>
+            <key>ans4</key>
+            <string>Hudson, Pacific and Atlantic</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What was the "Underground Railroad"?</string>
+            <key>ans1</key>
+            <string>An anti-slavery network that helped thousands of slaves escape the United States and settle in Canada</string>
+            <key>ans2</key>
+            <string>A railroad through the Rockies that was mainly through mountain tunnels</string>
+            <key>ans3</key>
+            <string>A network fur traders used to transport beaver pelts to the United States</string>
+            <key>ans4</key>
+            <string>The first underground subway tunnel in Toronto</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What was the significance of June 6, 1944 invasion of Normandy?</string>
+            <key>ans1</key>
+            <string>It led to the establishment of the Juno Awards</string>
+            <key>ans2</key>
+            <string> It liberated North Africa from Nazi occupation</string>
+            <key>ans3</key>
+            <string>Canadians made a significant contribution to the defeat of Nazism and Fascism in Europe during the Second World War</string>
+            <key>ans4</key>
+            <string>It resulted in the forcible relocation of Canadians of Japanese origin</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What was the Women's Suffrage Movement?</string>
+            <key>ans1</key>
+            <string>The effort by women to achieve the right to vote</string>
+            <key>ans2</key>
+            <string> The effort by women to participate in military service</string>
+            <key>ans3</key>
+            <string>An unsuccessful movement to get husbands to do housework</string>
+            <key>ans4</key>
+            <string>The effort by women to be in Parliament</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What will you promise when you take the Oath of Citizenship?</string>
+            <key>ans1</key>
+            <string>Pledge allegiance to the Queen, observe the laws of Canada and fulfil the duties of a Canadian</string>
+            <key>ans2</key>
+            <string>Pledge to be faithful to the Queen</string>
+            <key>ans3</key>
+            <string>Promise to observe the laws of Canada</string>
+            <key>ans4</key>
+            <string>Fulfil duties as a Canadian citizent</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What year did Newfoundland and Labrador join Canada?</string>
+            <key>ans1</key>
+            <string>1867</string>
+            <key>ans2</key>
+            <string>1955</string>
+            <key>ans3</key>
+            <string>1949</string>
+            <key>ans4</key>
+            <string>1880</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What year was Confederation?</string>
+            <key>ans1</key>
+            <string>1867</string>
+            <key>ans2</key>
+            <string>1871</string>
+            <key>ans3</key>
+            <string>1898</string>
+            <key>ans4</key>
+            <string>1864</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When asked, who must you tell how you voted in a federal election?</string>
+            <key>ans1</key>
+            <string>Your employer</string>
+            <key>ans2</key>
+            <string>No one</string>
+            <key>ans3</key>
+            <string>A police officer</string>
+            <key>ans4</key>
+            <string>An Elections Canada official</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When did the British North America Act come into effect?</string>
+            <key>ans1</key>
+            <string>1871</string>
+            <key>ans2</key>
+            <string>1898</string>
+            <key>ans3</key>
+            <string>1867</string>
+            <key>ans4</key>
+            <string>1905</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When did the Canadian Charter of Rights and Freedoms become part of the Canadian Constitution?</string>
+            <key>ans1</key>
+            <string>1876</string>
+            <key>ans2</key>
+            <string>1905</string>
+            <key>ans3</key>
+            <string>1982</string>
+            <key>ans4</key>
+            <string>1878</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When is Canada Day and what does it celebrate?</string>
+            <key>ans1</key>
+            <string>June 15 of each year to celebrate the anniversary of Confederation</string>
+            <key>ans2</key>
+            <string>August 8th of each year to celebrate the joining of British Columbia to Confederation</string>
+            <key>ans3</key>
+            <string>We celebrate the anniversary of Confederation July 1st of each year</string>
+            <key>ans4</key>
+            <string>May 21st of each year to remember Queen Victoria</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When is Remembrance Day celebrated?</string>
+            <key>ans1</key>
+            <string>July 1st</string>
+            <key>ans2</key>
+            <string>October 1st</string>
+            <key>ans3</key>
+            <string>November 11th</string>
+            <key>ans4</key>
+            <string>December 25th</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When must federal elections be held?</string>
+            <key>ans1</key>
+            <string>About every 4 years</string>
+            <key>ans2</key>
+            <string>On the third Monday in October every four years following the most recent general election</string>
+            <key>ans3</key>
+            <string>Whenever the Prime Minister calls the election</string>
+            <key>ans4</key>
+            <string>When the MPs want a new Prime Minister</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Where are the Great Lakes?</string>
+            <key>ans1</key>
+            <string>Between Ontario and the United States</string>
+            <key>ans2</key>
+            <string>Manitoba</string>
+            <key>ans3</key>
+            <string>Northern Quebec</string>
+            <key>ans4</key>
+            <string>Atlantic Canada</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Where are the Parliament Buildings located?</string>
+            <key>ans1</key>
+            <string>Ottawa</string>
+            <key>ans2</key>
+            <string>Quebec City</string>
+            <key>ans3</key>
+            <string>Hull</string>
+            <key>ans4</key>
+            <string>Toronto</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Where do most French-speaking Canadians live?</string>
+            <key>ans1</key>
+            <string>Ontario</string>
+            <key>ans2</key>
+            <string>Nova Scotia</string>
+            <key>ans3</key>
+            <string>Quebec</string>
+            <key>ans4</key>
+            <string>Prince Edward Island</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Where does Canada rank in the world's largest countries?</string>
+            <key>ans1</key>
+            <string>First</string>
+            <key>ans2</key>
+            <string>Second</string>
+            <key>ans3</key>
+            <string>Third</string>
+            <key>ans4</key>
+            <string>Fourth</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which Act granted, for the first time in Canada, legislative assemblies elected by the people?</string>
+            <key>ans1</key>
+            <string>The Constitutional Act of 1867</string>
+            <key>ans2</key>
+            <string>The Constitutional Act of 1791</string>
+            <key>ans3</key>
+            <string>The Constitutional Act of 1982</string>
+            <key>ans4</key>
+            <string>The Constitutional Act of 1867</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which animal is an official symbol of Canada?</string>
+            <key>ans1</key>
+            <string>The moose</string>
+            <key>ans2</key>
+            <string>The hawk</string>
+            <key>ans3</key>
+            <string>The beaver</string>
+            <key>ans4</key>
+            <string>The deer</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which country borders Canada on the south?</string>
+            <key>ans1</key>
+            <string>United States of America</string>
+            <key>ans2</key>
+            <string>Central America</string>
+            <key>ans3</key>
+            <string>Mexico</string>
+            <key>ans4</key>
+            <string>Washington</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which federal political party is in power?</string>
+            <key>ans1</key>
+            <string>Green Party</string>
+            <key>ans2</key>
+            <string>New Democratic Party</string>
+            <key>ans3</key>
+            <string> Liberal Party</string>
+            <key>ans4</key>
+            <string>Conservative Party</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which of the following is NOT a feature of Canada's system of government?</string>
+            <key>ans1</key>
+            <string>A federal state</string>
+            <key>ans2</key>
+            <string>Parliamentary democracy</string>
+            <key>ans3</key>
+            <string>Constitutional Monarchy</string>
+            <key>ans4</key>
+            <string>Dictatorship</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which of the following sentences best describes the War of 1812?</string>
+            <key>ans1</key>
+            <string>Napoleon's fleet was defeated by the Royal Navy in the war</string>
+            <key>ans2</key>
+            <string>The USA became independent from the British Empire after the war</string>
+            <key>ans3</key>
+            <string>The USA invaded Canada and was defeated, which ensured that Canada would remain independent of the United States</string>
+            <key>ans4</key>
+            <string>Canada joined the United States after the war</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which of the following statements about residential schools is NOT true?</string>
+            <key>ans1</key>
+            <string> The federal government placed many Aboriginal children in residential schools to educate and assimilate them into mainstream Canadian culture</string>
+            <key>ans2</key>
+            <string>The schools were poorly funded and inflicted hardship on the students</string>
+            <key>ans3</key>
+            <string>The schools were welcomed by the Aboriginal people</string>
+            <key>ans4</key>
+            <string>Aboriginal language and cultural practices were mostly prohibited</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which party becomes the Official Opposition?</string>
+            <key>ans1</key>
+            <string>The party with the second most MPs</string>
+            <key>ans2</key>
+            <string>The party receiving the least votes</string>
+            <key>ans3</key>
+            <string>Any independent candidate</string>
+            <key>ans4</key>
+            <string>The party the Prime Minister selects</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which port is the largest and busiest in Canada?</string>
+            <key>ans1</key>
+            <string>The Port of Halifax</string>
+            <key>ans2</key>
+            <string>The Port of Montreal</string>
+            <key>ans3</key>
+            <string>The Port of Vancouver</string>
+            <key>ans4</key>
+            <string>The Port of Victoria</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which province has its own time zone?</string>
+            <key>ans1</key>
+            <string>British Columbia</string>
+            <key>ans2</key>
+            <string>Newfoundland and Labrador</string>
+            <key>ans3</key>
+            <string>Nunavut</string>
+            <key>ans4</key>
+            <string>Nova Scotia</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which province in Canada is the smallest in land size?</string>
+            <key>ans1</key>
+            <string>Nova Scotia</string>
+            <key>ans2</key>
+            <string>Prince Edward Island</string>
+            <key>ans3</key>
+            <string>Yukon Territory</string>
+            <key>ans4</key>
+            <string>Newfoundland and Labrador</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which province is the main producer of pulp and paper and hydro-electricity?</string>
+            <key>ans1</key>
+            <string>Quebec</string>
+            <key>ans2</key>
+            <string>Ontario</string>
+            <key>ans3</key>
+            <string>British Columbia</string>
+            <key>ans4</key>
+            <string>Manitoba</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which province is the only officially bilingual province?</string>
+            <key>ans1</key>
+            <string>New Brunswick</string>
+            <key>ans2</key>
+            <string>Quebec</string>
+            <key>ans3</key>
+            <string>Ontario</string>
+            <key>ans4</key>
+            <string>Prince Edward Island</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which province was split into two at Confederation?</string>
+            <key>ans1</key>
+            <string>Lower Canada</string>
+            <key>ans2</key>
+            <string>Newfoundland</string>
+            <key>ans3</key>
+            <string>Upper Canada</string>
+            <key>ans4</key>
+            <string>The Province of Canada</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which province was to first to grant voting rights to women?</string>
+            <key>ans1</key>
+            <string>Quebec</string>
+            <key>ans2</key>
+            <string>Ontario</string>
+            <key>ans3</key>
+            <string>Nova Scotia</string>
+            <key>ans4</key>
+            <string>Manitoba</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which provincial flag features the fleur-de-lys?</string>
+            <key>ans1</key>
+            <string>Quebec</string>
+            <key>ans2</key>
+            <string>New Brunswick</string>
+            <key>ans3</key>
+            <string>Manitoba</string>
+            <key>ans4</key>
+            <string>Ontario</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which region covers more than one-third of Canada?</string>
+            <key>ans1</key>
+            <string>Central Canada</string>
+            <key>ans2</key>
+            <string>Prairies</string>
+            <key>ans3</key>
+            <string>Atlantic Canada</string>
+            <key>ans4</key>
+            <string>Northern Territories</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which region is known as the industrial and manufacturing heartland of Canada?
+            </string>
+            <key>ans1</key>
+            <string>Atlantic provinces</string>
+            <key>ans2</key>
+            <string>Prairie provinces</string>
+            <key>ans3</key>
+            <string>Central Canada</string>
+            <key>ans4</key>
+            <string>West Coast</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which region of Canada is known for both its fertile agricultural land and valuable energy resources?</string>
+            <key>ans1</key>
+            <string>British Columbia</string>
+            <key>ans2</key>
+            <string>Prairie provinces</string>
+            <key>ans3</key>
+            <string>Ontario</string>
+            <key>ans4</key>
+            <string>Manitoba</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which three countries are signatories to NAFTA?</string>
+            <key>ans1</key>
+            <string>Canada, the United Kingdom and the United States</string>
+            <key>ans2</key>
+            <string>Canada, the United States and Japan</string>
+            <key>ans3</key>
+            <string>Canada, Mexico and the United States</string>
+            <key>ans4</key>
+            <string>Canada, Denmark and Andorra</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which was the last province to join Canada?</string>
+            <key>ans1</key>
+            <string>Newfoundland</string>
+            <key>ans2</key>
+            <string>Alberta</string>
+            <key>ans3</key>
+            <string>Saskatchewan</string>
+            <key>ans4</key>
+            <string>British Columbia</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who are the Aboriginal peoples of Canada?</string>
+            <key>ans1</key>
+            <string>The first European settlers to arrive in Canada</string>
+            <key>ans2</key>
+            <string>The descendants of the first Australian immigrants to Canada</string>
+            <key>ans3</key>
+            <string>The first people to live in Canada</string>
+            <key>ans4</key>
+            <string>The first settlers of Newfoundland</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        
+        <dict>
+            <key>question</key>
+            <string>Who are the Acadians?</string>
+            <key>ans1</key>
+            <string>Aboriginal people of the arctic</string>
+            <key>ans2</key>
+            <string>French-speaking Catholics living in Ontario</string>
+            <key>ans3</key>
+            <string>The descendants of French colonists who began settling in what are now the Maritime provinces in 1604</string>
+            <key>ans4</key>
+            <string>English speaking refugees who settled in Louisiana</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who are the founding peoples of Canada?</string>
+            <key>ans1</key>
+            <string>Métis, French and British</string>
+            <key>ans2</key>
+            <string>Aboriginal, Métis and British</string>
+            <key>ans3</key>
+            <string>Inuit, Aboriginal and British</string>
+            <key>ans4</key>
+            <string>Aboriginal, French and British</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who are the Métis?</string>
+            <key>ans1</key>
+            <string>The distinct aboriginal people of Atlantic Canada</string>
+            <key>ans2</key>
+            <string>A people of mixed Inuit/First Nations ancestry most of whom live on the Prairies</string>
+            <key>ans3</key>
+            <string>First Nations people speaking the Michif dialect</string>
+            <key>ans4</key>
+            <string>A distinct people of mixed Aboriginal and European ancestry</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who are the Quebecers?</string>
+            <key>ans1</key>
+            <string>European settlers in the 1600s</string>
+            <key>ans2</key>
+            <string>Descendants of the French colonists</string>
+            <key>ans3</key>
+            <string>Descendants of the Anglophones</string>
+            <key>ans4</key>
+            <string>People of Quebec</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who do Canadians vote for in a federal election?</string>
+            <key>ans1</key>
+            <string>The best speaker running in the election</string>
+            <key>ans2</key>
+            <string>A candidate they want to represent them in Parliament</string>
+            <key>ans3</key>
+            <string>Someone to become the Premier</string>
+            <key>ans4</key>
+            <string>All of the candidates in their electoral district</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who do Members of Parliament represent?</string>
+            <key>ans1</key>
+            <string>All of the Canadians living in the north</string>
+            <key>ans2</key>
+            <string>Only Canadians living in Central Canada</string>
+            <key>ans3</key>
+            <string>Everyone who lives in his or her electoral district</string>
+            <key>ans4</key>
+            <string>Canadians living in the province in which he/she was elected</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who had played an important part in building the Canadian Pacific Railway (CPR)?</string>
+            <key>ans1</key>
+            <string>American railroad engineers</string>
+            <key>ans2</key>
+            <string>Acadian railroad workers</string>
+            <key>ans3</key>
+            <string>Chinese railroad workers</string>
+            <key>ans4</key>
+            <string>Afro-American slaves</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who has the right to run as a candidate in federal elections?</string>
+            <key>ans1</key>
+            <string>Anyone</string>
+            <key>ans2</key>
+            <string>A Canadian citizen who is 16 years old</string>
+            <key>ans3</key>
+            <string>Any man who is at least 18 years old</string>
+            <key>ans4</key>
+            <string>Any Canadian citizen who is at least 18 years old</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who has the right to vote in federal elections?</string>
+            <key>ans1</key>
+            <string>A Canadian citizen, 18 years or older, and on voters' list</string>
+            <key>ans2</key>
+            <string>A Canadian citizen, 18 years or older and must work for the federal government</string>
+            <key>ans3</key>
+            <string>A landed immigrant, 18 years old and a memberof the Canadian Forces</string>
+            <key>ans4</key>
+            <string>A Canadian citizen, over 25 years and a member of the Canadian Forces</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who have major responsibilities on First Nations reserves?</string>
+            <key>ans1</key>
+            <string>Band chiefs and councillors</string>
+            <key>ans2</key>
+            <string>Municipal governments</string>
+            <key>ans3</key>
+            <string>Provincial and territorial governments</string>
+            <key>ans4</key>
+            <string>A Federal government</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who is Canada's Head of State?</string>
+            <key>ans1</key>
+            <string>Governor General of Canada</string>
+            <key>ans2</key>
+            <string>Her Majesty Queen Elizabeth II</string>
+            <key>ans3</key>
+            <string>Prime Minister</string>
+            <key>ans4</key>
+            <string>Lieutenant Governor</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who is General Sir Arthur Currie?</string>
+            <key>ans1</key>
+            <string>A military leader of the Métis in the 19th century</string>
+            <key>ans2</key>
+            <string>A great frontier hero</string>
+            <key>ans3</key>
+            <string>An explorer of western Canada</string>
+            <key>ans4</key>
+            <string>Canada's greatest soldier in the First World War</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who is the Head of Government?</string>
+            <key>ans1</key>
+            <string>The President</string>
+            <key>ans2</key>
+            <string>The Queen</string>
+            <key>ans3</key>
+            <string>The Governor General</string>
+            <key>ans4</key>
+            <string>The Prime Minister</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who is the Queen's representative in Canada?</string>
+            <key>ans1</key>
+            <string>Prime Minister of Canada</string>
+            <key>ans2</key>
+            <string>Premier</string>
+            <key>ans3</key>
+            <string>Her Majesty Queen Elizabeth II</string>
+            <key>ans4</key>
+            <string>Governor General of Canada</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who lead an armed uprising and seized Fort Garry?</string>
+            <key>ans1</key>
+            <string>John A. Macdonald</string>
+            <key>ans2</key>
+            <string>Louis Riel</string>
+            <key>ans3</key>
+            <string>Sam Steele</string>
+            <key>ans4</key>
+            <string>George-Étienne Cartier</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who led Quebec into Confederation?</string>
+            <key>ans1</key>
+            <string>Sir Louis-Hippolyte La Fontaine</string>
+            <key>ans2</key>
+            <string>Sir George-Étienne Cartier</string>
+            <key>ans3</key>
+            <string>Sir Wilfrid Laurier</string>
+            <key>ans4</key>
+            <string>Sir John A. Macdonald</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who was Sir Louis-Hippolyte La Fontaine?</string>
+            <key>ans1</key>
+            <string>A champion of democracy and Aboriginal rights</string>
+            <key>ans2</key>
+            <string>A champion of democracy and French language rights and the first leader of a responsible government in the Canadas</string>
+            <key>ans3</key>
+            <string>The first Head of State</string>
+            <key>ans4</key>
+            <string>The first French speaking Prime Minister</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who was Sir Sam Steele?</string>
+            <key>ans1</key>
+            <string>A great frontier hero, Mounted Policeman and soldier of the Queen</string>
+            <key>ans2</key>
+            <string>A military leader of the Métis in the 19th century</string>
+            <key>ans3</key>
+            <string>The first Prime Minister of Canada</string>
+            <key>ans4</key>
+            <string>The Father of Manitoba</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who was the first leader of a responsible government in the Canadas in 1849?</string>
+            <key>ans1</key>
+            <string>Sir John A. Macdonald</string>
+            <key>ans2</key>
+            <string>Robert Baldwin</string>
+            <key>ans3</key>
+            <string>Louis Riel</string>
+            <key>ans4</key>
+            <string>Sir Louis-Hippolyte La Fontaine</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who was the first Prime Minister of Canada?</string>
+            <key>ans1</key>
+            <string>Louis Riel</string>
+            <key>ans2</key>
+            <string>Sir John A. Macdonald</string>
+            <key>ans3</key>
+            <string>Lester B. Pearson</string>
+            <key>ans4</key>
+            <string>Abraham Lincoln</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who were the United Empire Loyalists?</string>
+            <key>ans1</key>
+            <string>Settlers who came to Canada from the United States during the American Revolution</string>
+            <key>ans2</key>
+            <string>Aboriginal peoples</string>
+            <key>ans3</key>
+            <string>Métis</string>
+            <key>ans4</key>
+            <string>Inuit</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who were the Voyagers?</string>
+            <key>ans1</key>
+            <string>Montreal-based traders who travelled by canoe</string>
+            <key>ans2</key>
+            <string>Immigrants to Canada in the 18th Century</string>
+            <key>ans3</key>
+            <string>Explorers searching for the North-West Passage</string>
+            <key>ans4</key>
+            <string>Geographers who first charted the coastline of British Columbia</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Why is the battle of Vimy Ridge important?</string>
+            <key>ans1</key>
+            <string>It was a key position of the German line in Northern Spain</string>
+            <key>ans2</key>
+            <string>Canadian Corps secured its reputation for valour and bravery</string>
+            <key>ans3</key>
+            <string>It was the "hinge" of the German line as it protected the newly constructed Hindenburg line</string>
+            <key>ans4</key>
+            <string>Once Canadians fought at Vimy they knew they would be heading home</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Why is trade with other countries important to Canada?</string>
+            <key>ans1</key>
+            <string>It enhances our standard of living</string>
+            <key>ans2</key>
+            <string>It makes it easier for us to travel to foreign countries</string>
+            <key>ans3</key>
+            <string>It enhances our economy and raises our standard of living</string>
+            <key>ans4</key>
+            <string>It brings in cheaper goods</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        
+        
+        <!-- general 2016-->
+        <dict>
+            <key>question</key>
+            <string>Name all the federal political parties in the House of Commons and their leaders</string>
+            <key>ans1</key>
+            <string>Conservative (Ambrose), NDP (Mulcair), Liberal (Trudeau), Bloc Quebecois (Fortin), Green Party (May)</string>
+            <key>ans2</key>
+            <string>Conservative (Harper), Green (May), Liberal (Trudeau), Bloc Quebecois (Duceppe)</string>
+            <key>ans3</key>
+            <string>NDP (Mulcair), Green (May), Liberal (Rae), Bloc Quebecois (Paillé)</string>
+            <key>ans4</key>
+            <string>Liberal (Ignatieff), Conservative (Ambrose), NDP (Turmel), Green (May)</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the name of the Governor General?</string>
+            <key>ans1</key>
+            <string>David Johnston</string>
+            <key>ans2</key>
+            <string>Elizabeth May</string>
+            <key>ans3</key>
+            <string>Dalton McGuinty</string>
+            <key>ans4</key>
+            <string>Michaëlle Jean</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the name of the Prime Minister of Canada and his/her party?</string>
+            <key>ans1</key>
+            <string>Justin Trudeau (Liberal Party)</string>
+            <key>ans2</key>
+            <string>Stephen Harper (Conservative Party)</string>
+            <key>ans3</key>
+            <string>Thomas Mulcair (New Democratic Party)</string>
+            <key>ans4</key>
+            <string>Christie Clark (Liberal Party)</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which party is the Official Opposition at the federal level?</string>
+            <key>ans1</key>
+            <string>The New Democratic Party</string>
+            <key>ans2</key>
+            <string>The Liberal Party</string>
+            <key>ans3</key>
+            <string> The Independent Party</string>
+            <key>ans4</key>
+            <string>The Conservative Party</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Who is the leader of the Federal Official Opposition Party?</string>
+            <key>ans1</key>
+            <string>Thomas Mulcair</string>
+            <key>ans2</key>
+            <string>Stéphane Dion</string>
+            <key>ans3</key>
+            <string>Rona Ambrose</string>
+            <key>ans4</key>
+            <string>Elizabeth May</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        <!-- Update October 11, 2017-->
+        
+        <dict>
+            <key>question</key>
+            <string>What are three responsibilities of citizenship?</string>
+            <key>ans1</key>
+            <string>Being loyal to Canada, recycling newspapers, serving in the navy, army or air force</string>
+            <key>ans2</key>
+            <string>Obeying the law, taking responsibility for oneself and one’s family, serving on a jury</string>
+            <key>ans3</key>
+            <string>Learning both official languages, voting in elections, belonging to a union</string>
+            <key>ans4</key>
+            <string>Buying Canadian products, owning your own business, using less water</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>What is the meaning of the Remembrance Day poppy?</string>
+            <key>ans1</key>
+            <string>To remember our Sovereign, Queen Elizabeth II</string>
+            <key>ans2</key>
+            <string>To celebrate Confederation</string>
+            <key>ans3</key>
+            <string>To honour prime ministers who have died</string>
+            <key>ans4</key>
+            <string>To remember the sacrifice of Canadians who have served or died in wars up to the present day</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>How are Members of Parliament chosen?</string>
+            <key>ans1</key>
+            <string>They are appointed by the United Nations</string>
+            <key>ans2</key>
+            <string>They are chosen by the provincial premiers</string>
+            <key>ans3</key>
+            <string>They are elected by voters in their local constituency (riding)</string>
+            <key>ans4</key>
+            <string>They are elected by landowners and police chiefs</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        
+        <dict>
+            <key>question</key>
+            <string>Which region of Canada is known for both its fertile agricultural land and valuable energy resources </string>
+            <key>ans1</key>
+            <string>Prairie provinces</string>
+            <key>ans2</key>
+            <string>Ontario</string>
+            <key>ans3</key>
+            <string>Manitoba</string>
+            <key>ans4</key>
+            <string>British Columbia</string>
+            <key>answer</key>
+            <string>1</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>The French and Aboriginal peoples collaborated to trade which product?</string>
+            <key>ans1</key>
+            <string>Gold</string>
+            <key>ans2</key>
+            <string>Cotton</string>
+            <key>ans3</key>
+            <string>Crops</string>
+            <key>ans4</key>
+            <string>Furs</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>When was the latest design of the Canadian flag, raised for the first time in Canada?</string>
+            <key>ans1</key>
+            <string>1985</string>
+            <key>ans2</key>
+            <string>1945</string>
+            <key>ans3</key>
+            <string>1980</string>
+            <key>ans4</key>
+            <string>1965</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string> In 1985 who circled the globe in a wheelchair to raise funds for spinal chord research?</string>
+            <key>ans1</key>
+            <string>Donovan Bailey</string>
+            <key>ans2</key>
+            <string>Rick Hansen</string>
+            <key>ans3</key>
+            <string>Terry Fox</string>
+            <key>ans4</key>
+            <string>Wayne Gretzky</string>
+            <key>answer</key>
+            <string>2</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which two provinces neighbour Saskatchewan?</string>
+            <key>ans1</key>
+            <string>N.W.T. and Manitoba</string>
+            <key>ans2</key>
+            <string>Ontario and Alberta</string>
+            <key>ans3</key>
+            <string>Nunavut and Manitoba</string>
+            <key>ans4</key>
+            <string>Alberta and Manitoba</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+        <dict>
+            <key>question</key>
+            <string>Which country invaded Canada in June 1812?</string>
+            <key>ans1</key>
+            <string>China</string>
+            <key>ans2</key>
+            <string>United Kingdom</string>
+            <key>ans3</key>
+            <string>U.S.A.</string>
+            <key>ans4</key>
+            <string>France</string>
+            <key>answer</key>
+            <string>3</string>
+        </dict>
+        
+        
+        <!-- Alberta-->
+        <dict>
+            <key>question</key>
+            <string>Who is considered the father of Manitoba?</string>
+            <key>ans1</key>
+            <string>John A. Macdonald</string>
+            <key>ans2</key>
+            <string>Sam Steele</string>
+            <key>ans3</key>
+            <string>Alfred Boyd</string>
+            <key>ans4</key>
+            <string>Louis Riel</string>
+            <key>answer</key>
+            <string>4</string>
+        </dict>
+        
+    </array>
 </plist>

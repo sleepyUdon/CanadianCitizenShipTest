@@ -27,9 +27,9 @@ class ProvincesViewController: UIViewController {
     func prepareView()
         
     {
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.white
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
 
         let redtopBar = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 20))
         redtopBar.backgroundColor = Color.red
@@ -38,13 +38,13 @@ class ProvincesViewController: UIViewController {
         let navigationBar = UILabel(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 30))
         navigationBar.text = "Canadian Citizenship Test"
         navigationBar.textColor = Color.white
-        navigationBar.textAlignment = .Center
+        navigationBar.textAlignment = .center
         navigationBar.backgroundColor = Color.red
         navigationBar.font = Fonts.canada
             view.addSubview(navigationBar)
             let label = UILabel(frame: CGRect(x: 0, y: 50, width: view.frame.width, height: 20))
             label.text = "Select a Province"
-            label.textAlignment = .Center
+            label.textAlignment = .center
             label.font = Fonts.header
             view.addSubview(label)
 
@@ -56,13 +56,13 @@ class ProvincesViewController: UIViewController {
             let navigationBar = UILabel(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 60))
             navigationBar.text = "Canadian Citizenship Test"
             navigationBar.textColor = Color.white
-            navigationBar.textAlignment = .Center
+            navigationBar.textAlignment = .center
             navigationBar.backgroundColor = Color.red
             navigationBar.font = Fonts.canadaLarge
             view.addSubview(navigationBar)
             let label = UILabel(frame: CGRect(x: 0, y: 60, width: view.frame.width, height: 100))
             label.text = "Select a Province"
-            label.textAlignment = .Center
+            label.textAlignment = .center
             label.font = Fonts.headerLarge
             view.addSubview(label)
 
@@ -79,23 +79,23 @@ class ProvincesViewController: UIViewController {
         
         let AlbertaImage: UIImage? = UIImage(named:"Alberta.png")
         let buttonAlberta = UIButton(frame: CGRect(x: horizontalSpacing  - iconSize/2, y: verticalSpacing - iconSize/2 , width: iconSize, height: iconSize))
-        buttonAlberta.setImage(AlbertaImage, forState: .Normal)
+        buttonAlberta.setImage(AlbertaImage, for: UIControlState())
         view.addSubview(buttonAlberta)
-        buttonAlberta.addTarget(self, action:  #selector(handleAlbertaButton), forControlEvents: .TouchUpInside)
+        buttonAlberta.addTarget(self, action:  #selector(handleAlbertaButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let albertaLabel = UILabel(frame: CGRect(x: horizontalSpacing  - iconSize/2, y: verticalSpacing + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             albertaLabel.font = Fonts.provinceName
             albertaLabel.text = "Alberta"
             albertaLabel.textColor = Color.grey
-            albertaLabel.textAlignment = .Center
+            albertaLabel.textAlignment = .center
             view.addSubview(albertaLabel)
         } else {
             let albertaLabel = UILabel(frame: CGRect(x: horizontalSpacing  - iconSize/2, y: verticalSpacing + iconSize/2 + 10.0, width: iconSize, height: 60.0))
             albertaLabel.font = Fonts.provinceNameLarge
             albertaLabel.text = "Alberta"
             albertaLabel.textColor = Color.grey
-            albertaLabel.textAlignment = .Center
+            albertaLabel.textAlignment = .center
             view.addSubview(albertaLabel)
         }
 
@@ -103,17 +103,17 @@ class ProvincesViewController: UIViewController {
 
         let BritishColumbiaImage: UIImage? = UIImage(named:"British Columbia.png")
         let buttonBritishColumbia = UIButton(frame: CGRect(x: horizontalSpacing * 2  - iconSize/2, y:  verticalSpacing - iconSize/2, width: iconSize, height: iconSize))
-        buttonBritishColumbia.setImage(BritishColumbiaImage, forState: .Normal)
+        buttonBritishColumbia.setImage(BritishColumbiaImage, for: UIControlState())
         view.addSubview(buttonBritishColumbia)
-        buttonBritishColumbia.addTarget(self, action:  #selector(handleBritishColumbiaButton), forControlEvents: .TouchUpInside)
+        buttonBritishColumbia.addTarget(self, action:  #selector(handleBritishColumbiaButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let BritishColumbiaLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2 - 10.0 - iconSize/2, y:  verticalSpacing + iconSize/2 + 10.0, width: iconSize + 20.0, height: 40.0))
             BritishColumbiaLabel.font = Fonts.provinceName
             BritishColumbiaLabel.text = "British Columbia"
             BritishColumbiaLabel.numberOfLines = 0
             BritishColumbiaLabel.textColor = Color.grey
-            BritishColumbiaLabel.textAlignment = .Center
+            BritishColumbiaLabel.textAlignment = .center
             view.addSubview(BritishColumbiaLabel)
         } else {
             let BritishColumbiaLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2 - 10.0 - iconSize/2, y:  verticalSpacing + iconSize/2 + 10.0, width: iconSize + 20.0, height: 60.0))
@@ -121,7 +121,7 @@ class ProvincesViewController: UIViewController {
             BritishColumbiaLabel.text = "British Columbia"
             BritishColumbiaLabel.numberOfLines = 0
             BritishColumbiaLabel.textColor = Color.grey
-            BritishColumbiaLabel.textAlignment = .Center
+            BritishColumbiaLabel.textAlignment = .center
             view.addSubview(BritishColumbiaLabel)
         }
         
@@ -129,23 +129,23 @@ class ProvincesViewController: UIViewController {
         
         let ManitobaImage: UIImage? = UIImage(named:"Manitoba.png")
         let buttonManitoba = UIButton(frame: CGRect(x: horizontalSpacing * 3 - iconSize/2, y: verticalSpacing - iconSize/2, width: iconSize, height: iconSize))
-        buttonManitoba.setImage(ManitobaImage, forState: .Normal)
+        buttonManitoba.setImage(ManitobaImage, for: UIControlState())
         view.addSubview(buttonManitoba)
-        buttonManitoba.addTarget(self, action:  #selector(handleManitobaButton), forControlEvents: .TouchUpInside)
+        buttonManitoba.addTarget(self, action:  #selector(handleManitobaButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let manitobaLabel = UILabel(frame: CGRect(x: horizontalSpacing * 3 - iconSize/2 - 10.0, y: verticalSpacing + iconSize/2 + 10.0, width: iconSize + 20.0, height: 20.0))
             manitobaLabel.font = Fonts.provinceName
             manitobaLabel.text = "Manitoba"
             manitobaLabel.textColor = Color.grey
-            manitobaLabel.textAlignment = .Center
+            manitobaLabel.textAlignment = .center
             view.addSubview(manitobaLabel)
         } else {
             let manitobaLabel = UILabel(frame: CGRect(x: horizontalSpacing * 3 - iconSize/2 - 10.0, y: verticalSpacing + iconSize/2 + 10.0, width: iconSize + 20.0, height: 60.0))
             manitobaLabel.font = Fonts.provinceNameLarge
             manitobaLabel.text = "Manitoba"
             manitobaLabel.textColor = Color.grey
-            manitobaLabel.textAlignment = .Center
+            manitobaLabel.textAlignment = .center
             view.addSubview(manitobaLabel)
         }
         
@@ -153,17 +153,17 @@ class ProvincesViewController: UIViewController {
 
         let NFLmage: UIImage? = UIImage(named:"NewfoundlandLabrador.png")
         let buttonNFL = UIButton(frame: CGRect(x: horizontalSpacing - iconSize/2, y:  verticalSpacing * 2 - iconSize/2, width: iconSize, height: iconSize))
-        buttonNFL.setImage(NFLmage, forState: .Normal)
+        buttonNFL.setImage(NFLmage, for: UIControlState())
         view.addSubview(buttonNFL)
-        buttonNFL.addTarget(self, action:  #selector(handleNFLButton), forControlEvents: .TouchUpInside)
+        buttonNFL.addTarget(self, action:  #selector(handleNFLButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let NFLLabel = UILabel(frame: CGRect(x: horizontalSpacing  - 45, y:  verticalSpacing * 2 + iconSize/2 + 10.0, width: 90.0, height: 40.0))
             NFLLabel.text = "Newfoundland and Labrador"
             NFLLabel.font = Fonts.provinceName
             NFLLabel.numberOfLines = 0
             NFLLabel.textColor = Color.grey
-            NFLLabel.textAlignment = .Center
+            NFLLabel.textAlignment = .center
             view.addSubview(NFLLabel)
         } else {
             let NFLLabel = UILabel(frame: CGRect(x: horizontalSpacing  - 45, y:  verticalSpacing * 2 + iconSize/2 + 10.0, width: 90.0, height: 60.0))
@@ -171,7 +171,7 @@ class ProvincesViewController: UIViewController {
             NFLLabel.font = Fonts.provinceNameLarge
             NFLLabel.numberOfLines = 0
             NFLLabel.textColor = Color.grey
-            NFLLabel.textAlignment = .Center
+            NFLLabel.textAlignment = .center
             view.addSubview(NFLLabel)
         }
         
@@ -179,17 +179,17 @@ class ProvincesViewController: UIViewController {
         
         let NBImage: UIImage? = UIImage(named:"New Brunswick.png")
         let buttonNB = UIButton(frame: CGRect(x: horizontalSpacing * 2 - iconSize/2, y:  verticalSpacing  * 2 - iconSize/2, width: iconSize, height: iconSize))
-        buttonNB.setImage(NBImage, forState: .Normal)
+        buttonNB.setImage(NBImage, for: UIControlState())
         view.addSubview(buttonNB)
-        buttonNB.addTarget(self, action:  #selector(handleNBButton), forControlEvents: .TouchUpInside)
+        buttonNB.addTarget(self, action:  #selector(handleNBButton), for: .touchUpInside)
 
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let NBLLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2 - iconSize/2 - 10.0, y:verticalSpacing * 2 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 40.0))
             NBLLabel.font = Fonts.provinceName
             NBLLabel.numberOfLines = 0
             NBLLabel.text = "New Brunswick"
             NBLLabel.textColor = Color.grey
-            NBLLabel.textAlignment = .Center
+            NBLLabel.textAlignment = .center
             view.addSubview(NBLLabel)
         } else {
             let NBLLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2 - iconSize/2 - 10.0, y:verticalSpacing * 2 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 60.0))
@@ -197,7 +197,7 @@ class ProvincesViewController: UIViewController {
             NBLLabel.numberOfLines = 0
             NBLLabel.text = "New Brunswick"
             NBLLabel.textColor = Color.grey
-            NBLLabel.textAlignment = .Center
+            NBLLabel.textAlignment = .center
             view.addSubview(NBLLabel)
         }
         
@@ -205,17 +205,17 @@ class ProvincesViewController: UIViewController {
 
         let NTImage: UIImage? = UIImage(named:"NorthernTerritories.png")
         let buttonNT = UIButton(frame: CGRect(x: horizontalSpacing * 3  - iconSize/2, y:  verticalSpacing * 2 - iconSize/2, width: iconSize, height: iconSize))
-        buttonNT.setImage(NTImage, forState: .Normal)
+        buttonNT.setImage(NTImage, for: UIControlState())
         view.addSubview(buttonNT)
-        buttonNT.addTarget(self, action:  #selector(handleNTButton), forControlEvents: .TouchUpInside)
+        buttonNT.addTarget(self, action:  #selector(handleNTButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let NTLLabel = UILabel(frame: CGRect(x: horizontalSpacing * 3  - iconSize/2 - 10.0, y:verticalSpacing * 2 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 40.0))
             NTLLabel.font = Fonts.provinceName
             NTLLabel.numberOfLines = 0
             NTLLabel.text = "Northern Territories"
             NTLLabel.textColor = Color.grey
-            NTLLabel.textAlignment = .Center
+            NTLLabel.textAlignment = .center
             view.addSubview(NTLLabel)
 
         } else {
@@ -224,7 +224,7 @@ class ProvincesViewController: UIViewController {
             NTLLabel.numberOfLines = 0
             NTLLabel.text = "Northern Territories"
             NTLLabel.textColor = Color.grey
-            NTLLabel.textAlignment = .Center
+            NTLLabel.textAlignment = .center
             view.addSubview(NTLLabel)
         }
         
@@ -232,15 +232,15 @@ class ProvincesViewController: UIViewController {
 
         let NunavutImage: UIImage? = UIImage(named:"Nunavut.png")
         let buttonNunavut = UIButton(frame: CGRect(x: horizontalSpacing  - iconSize/2, y:  verticalSpacing * 3 - iconSize/2, width: iconSize, height: iconSize))
-        buttonNunavut.setImage(NunavutImage, forState: .Normal)
+        buttonNunavut.setImage(NunavutImage, for: UIControlState())
         view.addSubview(buttonNunavut)
-        buttonNunavut.addTarget(self, action:  #selector(handleNunavutButton), forControlEvents: .TouchUpInside)
+        buttonNunavut.addTarget(self, action:  #selector(handleNunavutButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let NunavutLLabel = UILabel(frame: CGRect(x: horizontalSpacing  - iconSize/2, y: verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             NunavutLLabel.text = "Nunavut"
             NunavutLLabel.textColor = Color.grey
-            NunavutLLabel.textAlignment = .Center
+            NunavutLLabel.textAlignment = .center
             view.addSubview(NunavutLLabel)
             NunavutLLabel.font = Fonts.provinceName
         } else {
@@ -248,7 +248,7 @@ class ProvincesViewController: UIViewController {
             NunavutLLabel.font = Fonts.provinceNameLarge
             NunavutLLabel.text = "Nunavut"
             NunavutLLabel.textColor = Color.grey
-            NunavutLLabel.textAlignment = .Center
+            NunavutLLabel.textAlignment = .center
             view.addSubview(NunavutLLabel)
         }
         
@@ -256,17 +256,17 @@ class ProvincesViewController: UIViewController {
 
         let NSImage: UIImage? = UIImage(named:"NovaScotia.png")
         let buttonNS = UIButton(frame: CGRect(x: horizontalSpacing * 2  - iconSize/2, y:  verticalSpacing * 3 - iconSize/2, width: iconSize, height: iconSize))
-        buttonNS.setImage(NSImage, forState: .Normal)
+        buttonNS.setImage(NSImage, for: UIControlState())
         view.addSubview(buttonNS)
-        buttonNS.addTarget(self, action:  #selector(handleNSButton), forControlEvents: .TouchUpInside)
+        buttonNS.addTarget(self, action:  #selector(handleNSButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let NSLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2  - iconSize/2 - 10.0, y: verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 20.0))
             NSLabel.font = Fonts.provinceName
             NSLabel.numberOfLines = 0
             NSLabel.text = "Nova Scotia"
             NSLabel.textColor = Color.grey
-            NSLabel.textAlignment = .Center
+            NSLabel.textAlignment = .center
             view.addSubview(NSLabel)
         } else {
             let NSLabel = UILabel(frame: CGRect(x: horizontalSpacing * 2  - iconSize/2 - 10.0, y: verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize + 20.0, height: 40.0))
@@ -274,7 +274,7 @@ class ProvincesViewController: UIViewController {
             NSLabel.numberOfLines = 0
             NSLabel.text = "Nova Scotia"
             NSLabel.textColor = Color.grey
-            NSLabel.textAlignment = .Center
+            NSLabel.textAlignment = .center
             view.addSubview(NSLabel)
         }
         
@@ -282,23 +282,23 @@ class ProvincesViewController: UIViewController {
 
         let OntarioImage: UIImage? = UIImage(named:"Ontario.png")
         let buttonOntario = UIButton(frame: CGRect(x: horizontalSpacing * 3 - iconSize/2, y:verticalSpacing * 3 - iconSize/2, width: iconSize, height: iconSize))
-        buttonOntario.setImage(OntarioImage, forState: .Normal)
+        buttonOntario.setImage(OntarioImage, for: UIControlState())
         view.addSubview(buttonOntario)
-        buttonOntario.addTarget(self, action:  #selector(handleOntarioButton), forControlEvents: .TouchUpInside)
+        buttonOntario.addTarget(self, action:  #selector(handleOntarioButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let OntarioLabel = UILabel(frame: CGRect(x: horizontalSpacing * 3 - iconSize/2, y:  verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             OntarioLabel.font = Fonts.provinceName
             OntarioLabel.text = "Ontario"
             OntarioLabel.textColor = Color.grey
-            OntarioLabel.textAlignment = .Center
+            OntarioLabel.textAlignment = .center
             view.addSubview(OntarioLabel)
         } else {
             let OntarioLabel = UILabel(frame: CGRect(x: horizontalSpacing * 3 - iconSize/2, y:  verticalSpacing * 3 + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             OntarioLabel.font = Fonts.provinceNameLarge
             OntarioLabel.text = "Ontario"
             OntarioLabel.textColor = Color.grey
-            OntarioLabel.textAlignment = .Center
+            OntarioLabel.textAlignment = .center
             view.addSubview(OntarioLabel)
         }
         
@@ -306,23 +306,23 @@ class ProvincesViewController: UIViewController {
 
         let YukonImage: UIImage? = UIImage(named:"Yukon.png")
         let buttonYukon = UIButton(frame: CGRect(x: horizontalSpacing - iconSize/2, y: verticalSpacing * 4 - iconSize/2, width: iconSize, height: iconSize))
-        buttonYukon.setImage(YukonImage, forState: .Normal)
+        buttonYukon.setImage(YukonImage, for: UIControlState())
         view.addSubview(buttonYukon)
-        buttonYukon.addTarget(self, action:  #selector(handleYukonButton), forControlEvents: .TouchUpInside)
+        buttonYukon.addTarget(self, action:  #selector(handleYukonButton), for: .touchUpInside)
         
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
             let YukonLabel = UILabel(frame: CGRect(x: horizontalSpacing - iconSize/2, y: verticalSpacing * 4 + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             YukonLabel.font = Fonts.provinceName
             YukonLabel.text = "Yukon"
             YukonLabel.textColor = Color.grey
-            YukonLabel.textAlignment = .Center
+            YukonLabel.textAlignment = .center
             view.addSubview(YukonLabel)
         } else {
             let YukonLabel = UILabel(frame: CGRect(x: horizontalSpacing - iconSize/2, y: verticalSpacing * 4 + iconSize/2 + 10.0, width: iconSize, height: 20.0))
             YukonLabel.font = Fonts.provinceNameLarge
             YukonLabel.text = "Yukon"
             YukonLabel.textColor = Color.grey
-            YukonLabel.textAlignment = .Center
+            YukonLabel.textAlignment = .center
             view.addSubview(YukonLabel)
         }
     }
@@ -335,8 +335,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Alberta"
         self.province = "Alberta"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
 
     func handleBritishColumbiaButton()
@@ -344,8 +344,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "British Columbia"
         self.province = "BritishColumbia"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleManitobaButton()
@@ -353,8 +353,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Manitoba"
         self.province = "Manitoba"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNFLButton()
@@ -362,8 +362,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Newfoundland and Labrador"
         self.province = "NewfoundlandLabrador"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNBButton()
@@ -371,8 +371,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "New Brunswick"
         self.province = "NewBrunswick"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNTButton()
@@ -380,8 +380,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Northern Territories"
         self.province = "NorthernTerritories"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNunavutButton()
@@ -389,8 +389,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Nunavut"
         self.province = "Nunavut"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleNSButton()
@@ -398,8 +398,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Nova Scotia"
         self.province = "NovaScotia"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleOntarioButton()
@@ -407,8 +407,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Ontario"
         self.province = "Ontario"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
     }
     
     func handleYukonButton()
@@ -416,8 +416,8 @@ class ProvincesViewController: UIViewController {
         let numberQuestionVC = NumberQuestionsViewController()
         numberQuestionVC.province = "Yukon"
         self.province = "Yukon"
-        NSUserDefaults.standardUserDefaults().setValue(self.province, forKeyPath: "Province")
-        presentViewController(numberQuestionVC, animated: true, completion: nil)
+        UserDefaults.standard.setValue(self.province, forKeyPath: "Province")
+        present(numberQuestionVC, animated: true, completion: nil)
 
     }
     

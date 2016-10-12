@@ -15,10 +15,10 @@ class CounterView: UIView {
     var outlineColor: UIColor = Color.green
     var counterColor: UIColor = Color.lightgrey
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
-        let counter = NSUserDefaults.standardUserDefaults().integerForKey("userScore")
-        let numberOfQuestions = NSUserDefaults.standardUserDefaults().integerForKey("numberOfQuestions")
+        let counter = UserDefaults.standard.integer(forKey: "userScore")
+        let numberOfQuestions = UserDefaults.standard.integer(forKey: "numberOfQuestions")
 
         let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
         let radius: CGFloat = max(bounds.width, bounds.height)
@@ -51,14 +51,14 @@ class CounterView: UIView {
                                        clockwise: true)
         
         /// Draw the inner arc of progress path
-        outlinePath.addArcWithCenter(center,
+        outlinePath.addArc(withCenter: center,
                                      radius: bounds.width/2 - arcWidth + 2.5,
                                      startAngle: outlineEndAngle,
                                      endAngle: startAngle,
                                      clockwise: false)
         
         /// Close progress path
-        outlinePath.closePath()
+        outlinePath.close()
         Color.green.setFill()
         outlineColor.setStroke()
         outlinePath.lineWidth = 5.0
