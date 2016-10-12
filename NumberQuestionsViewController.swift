@@ -25,7 +25,7 @@ class NumberQuestionsViewController: UIViewController {
     var landscapeImage = UIImage()
 
     
-    /// ViewDid Load
+
     override func viewDidLoad() {
     prepareView()
     }
@@ -164,6 +164,16 @@ class NumberQuestionsViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        // Prepare Buttons
+
+        self.button10.backgroundColor = Color.lightgrey
+        self.button20.backgroundColor = Color.lightgrey
+        self.button30.backgroundColor = Color.lightgrey
+        self.button50.backgroundColor = Color.lightgrey
+        self.button100.backgroundColor = Color.lightgrey
+        self.buttonUnlimited.backgroundColor = Color.lightgrey
+
         
         // Landscape Image
         

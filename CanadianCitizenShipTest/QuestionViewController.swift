@@ -79,6 +79,7 @@ class QuestionViewController: UIViewController {
     {
         self.title = "Canadian Citizenship Test"
         view.backgroundColor = UIColor.white
+        
     }
     
     
@@ -117,6 +118,14 @@ class QuestionViewController: UIViewController {
             let questionIndex = currentQuestionsArray[questionNumber-1]
             self.questionIndex = questionIndex
             
+            // Close Button
+            
+            let cancelButton = UIButton(frame: CGRect(x: self.view.frame.width - 50, y: 30, width: 40, height: 40))
+            cancelButton.setImage(#imageLiteral(resourceName: "Stop"), for: .normal)
+            self.view.addSubview(cancelButton)
+            cancelButton.addTarget(self, action:  #selector(handleCancelButton), for: .touchUpInside)
+
+
             // Questions label
             
             let questionlabel = UITextView(frame: CGRect(x: 20, y: 80, width: self.view.frame.width-44, height: 150))
@@ -723,6 +732,12 @@ class QuestionViewController: UIViewController {
             self.button4Selected = false
         }
         
+    }
+    
+    
+    func handleCancelButton()
+    {
+        dismiss(animated: true, completion: nil)
     }
     
 }
