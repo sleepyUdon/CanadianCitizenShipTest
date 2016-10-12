@@ -29,7 +29,7 @@ class QuestionViewController: UIViewController {
     
     var numberOfQuestions = 1
     
-    var questionsArray:NSArray!
+    var questionsArray:[[String:String]]!
     var currentQuestionsArray = [Int]()
     var plistPath:String!
     var plistPathInDocument:String = String()
@@ -50,10 +50,10 @@ class QuestionViewController: UIViewController {
     /// load Plist
     
     func preparePlistForUse(){
-        let province = NSUserDefaults.standardUserDefaults().valueForKey("Province") as! String
-        let questionsPath = NSBundle.mainBundle().pathForResource("\(province)"+"Questions", ofType: "plist")
+        let province = UserDefaults.standard.value(forKey: "Province") as! String
+        let questionsPath = Bundle.main.path(forResource: "\(province)"+"Questions", ofType: "plist")
         if let arrayOfItems = NSArray(contentsOfFile: questionsPath!) {
-            self.questionsArray = arrayOfItems
+            self.questionsArray = arrayOfItems as! [[String:String]]
 
             //pick random items from array
             var i = 0
@@ -78,7 +78,7 @@ class QuestionViewController: UIViewController {
     func prepareView()
     {
         self.title = "Canadian Citizenship Test"
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = UIColor.white
     }
     
     
@@ -86,13 +86,13 @@ class QuestionViewController: UIViewController {
 
     func prepareQuestions()
     {
-        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
 
         if self.questionNumber <= numberOfQuestions {
             // Question index
             
             let label = UITextView(frame: CGRect(x: 20, y: 30, width: 200, height: 30))
-            label.editable = false
+            label.isEditable = false
             label.text = "Question "+"\(questionNumber)"+"/"+"\(numberOfQuestions)"
             label.font = Fonts.header
             self.label = label
@@ -120,8 +120,8 @@ class QuestionViewController: UIViewController {
             // Questions label
             
             let questionlabel = UITextView(frame: CGRect(x: 20, y: 80, width: self.view.frame.width-44, height: 150))
-            questionlabel.editable = false
-            if let question = questionsArray[self.questionIndex]["question"] as! String! {
+            questionlabel.isEditable = false
+            if let question = questionsArray[self.questionIndex]["question"] as String! {
                 questionlabel.text = "\(question)"}
             questionlabel.font = Fonts.header
             self.questionlabel = questionlabel
@@ -130,96 +130,96 @@ class QuestionViewController: UIViewController {
             // Button 1
             
             let button1 = UIButton(frame: CGRect(x: 20, y: 180, width: self.view.frame.width-44, height: 70))
-            button1.titleLabel?.textAlignment = .Center
+            button1.titleLabel?.textAlignment = .center
             button1.clipsToBounds = true
             button1.layer.cornerRadius = 10.0
             button1.backgroundColor = Color.lightgrey
-            if let ans1 = questionsArray[self.questionIndex]["ans1"] as! String! {
-                button1.setTitle( "\(ans1)", forState: .Normal)}
-            button1.setTitleColor(Color.black, forState: .Normal)
-            button1.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            if let ans1 = questionsArray[self.questionIndex]["ans1"] as String! {
+                button1.setTitle( "\(ans1)", for: UIControlState())}
+            button1.setTitleColor(Color.black, for: UIControlState())
+            button1.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
             button1.titleLabel?.font = Fonts.answers
             button1.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             self.button1 = button1
             self.view.addSubview(button1)
-            button1.addTarget(self, action:  #selector(handleButton1), forControlEvents: .TouchUpInside)
+            button1.addTarget(self, action:  #selector(handleButton1), for: .touchUpInside)
             
             // Button 2
             
             let button2 = UIButton(frame: CGRect(x: 20, y: 260, width: self.view.frame.width-40, height: 70))
-            button2.titleLabel?.textAlignment = .Center
+            button2.titleLabel?.textAlignment = .center
             button2.clipsToBounds = true
             button2.layer.cornerRadius = 10.0
             button2.backgroundColor = Color.lightgrey
-            if let ans2 = questionsArray[self.questionIndex]["ans2"] as! String! {
-                button2.setTitle( "\(ans2)", forState: .Normal)}
-            button2.setTitleColor(Color.black, forState: .Normal)
-            button2.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            if let ans2 = questionsArray[self.questionIndex]["ans2"] as String! {
+                button2.setTitle( "\(ans2)", for: UIControlState())}
+            button2.setTitleColor(Color.black, for: UIControlState())
+            button2.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
             button2.titleLabel?.font = Fonts.answers
             button2.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             self.button2 = button2
             self.view.addSubview(button2)
-            button2.addTarget(self, action:  #selector(handleButton2), forControlEvents: .TouchUpInside)
+            button2.addTarget(self, action:  #selector(handleButton2), for: .touchUpInside)
             
             // Button 3
             
             let button3 = UIButton(frame: CGRect(x: 20, y: 340, width: self.view.frame.width-40, height: 70))
-            button3.titleLabel?.textAlignment = .Center
+            button3.titleLabel?.textAlignment = .center
             button3.clipsToBounds = true
             button3.layer.cornerRadius = 10.0
             button3.backgroundColor = Color.lightgrey
-            if let ans3 = questionsArray[self.questionIndex]["ans3"] as! String! {
-                button3.setTitle( "\(ans3)", forState: .Normal)}
-            button3.setTitleColor(Color.black, forState: .Normal)
-            button3.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            if let ans3 = questionsArray[self.questionIndex]["ans3"] as String! {
+                button3.setTitle( "\(ans3)", for: UIControlState())}
+            button3.setTitleColor(Color.black, for: UIControlState())
+            button3.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
             button3.titleLabel?.font = Fonts.answers
             button3.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             self.button3 = button3
             self.view.addSubview(button3)
-            button3.addTarget(self, action:  #selector(handleButton3), forControlEvents: .TouchUpInside)
+            button3.addTarget(self, action:  #selector(handleButton3), for: .touchUpInside)
             
             // Button 4
             
             let button4 = UIButton(frame: CGRect(x: 20, y: 420, width: self.view.frame.width-40, height: 70))
-            button4.titleLabel?.textAlignment = .Center
+            button4.titleLabel?.textAlignment = .center
             button4.clipsToBounds = true
             button4.layer.cornerRadius = 10.0
             button4.backgroundColor = Color.lightgrey
-            if let ans4 = questionsArray[self.questionIndex]["ans4"] as! String! {
-                button4.setTitle( "\(ans4)", forState: .Normal)}
-            button4.setTitleColor(Color.black, forState: .Normal)
-            button4.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            if let ans4 = questionsArray[self.questionIndex]["ans4"] as String! {
+                button4.setTitle( "\(ans4)", for: UIControlState())}
+            button4.setTitleColor(Color.black, for: UIControlState())
+            button4.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
             button4.titleLabel?.font = Fonts.answers
             button4.titleEdgeInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
             self.button4 = button4
             self.view.addSubview(button4)
-            button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchUpInside)
+            button4.addTarget(self, action:  #selector(handleButton4), for: .touchUpInside)
             
             // Check Button
             
             let checkButton = UIButton(frame: CGRect(x: 20, y: 500, width: 150, height: 40))
             checkButton.clipsToBounds = true
             checkButton.layer.cornerRadius = 10.0
-            checkButton.setTitle("Check", forState: .Normal)
+            checkButton.setTitle("Check", for: UIControlState())
             checkButton.titleLabel?.font = Fonts.header
             checkButton.backgroundColor = Color.lightgrey
             checkButton.alpha = 0
             self.checkButton = checkButton
             self.view.addSubview(checkButton)
-            checkButton.addTarget(self, action:  #selector(handleCheckButton), forControlEvents: .TouchUpInside)
+            checkButton.addTarget(self, action:  #selector(handleCheckButton), for: .touchUpInside)
             
             // Next Button
             
             let nextButton = UIButton(frame: CGRect(x: 216, y: 500, width: view.bounds.width - 216 - 20, height: 40))
             nextButton.clipsToBounds = true
             nextButton.layer.cornerRadius = 10.0
-            nextButton.setTitle("Next", forState: .Normal)
+            nextButton.setTitle("Next", for: UIControlState())
             nextButton.titleLabel?.font = Fonts.header
             nextButton.backgroundColor = Color.lightgrey
             nextButton.alpha = 0
             self.nextButton = nextButton
             self.view.addSubview(nextButton)
-            nextButton.addTarget(self, action:  #selector(handleNextButton), forControlEvents: .TouchUpInside)
+            nextButton.addTarget(self, action:  #selector(handleNextButton), for: .touchUpInside)
         }
         } else
             
@@ -229,7 +229,7 @@ class QuestionViewController: UIViewController {
                 // Question index
                 
                 let label = UITextView(frame: CGRect(x: 40, y: 60, width: 400, height: 60))
-                label.editable = false
+                label.isEditable = false
                 label.text = "Question "+"\(questionNumber)"+"/"+"\(numberOfQuestions)"
                 label.font = Fonts.headerLarge
                 self.label = label
@@ -257,8 +257,8 @@ class QuestionViewController: UIViewController {
                 // Questions label
                 
                 let questionlabel = UITextView(frame: CGRect(x: 40, y: 160, width: self.view.frame.width-88, height: 300))
-                questionlabel.editable = false
-                if let question = questionsArray[self.questionIndex]["question"] as! String! {
+                questionlabel.isEditable = false
+                if let question = questionsArray[self.questionIndex]["question"] as String! {
                     questionlabel.text = "\(question)"}
                 questionlabel.font = Fonts.headerLarge
                 self.questionlabel = questionlabel
@@ -267,96 +267,96 @@ class QuestionViewController: UIViewController {
                 // Button 1
                 
                 let button1 = UIButton(frame: CGRect(x: 40, y: 280, width: self.view.frame.width-88, height: 140))
-                button1.titleLabel?.textAlignment = .Center
+                button1.titleLabel?.textAlignment = .center
                 button1.clipsToBounds = true
                 button1.layer.cornerRadius = 20.0
                 button1.backgroundColor = Color.lightgrey
-                if let ans1 = questionsArray[self.questionIndex]["ans1"] as! String! {
-                    button1.setTitle( "\(ans1)", forState: .Normal)}
-                button1.setTitleColor(Color.black, forState: .Normal)
-                button1.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                if let ans1 = questionsArray[self.questionIndex]["ans1"] as String! {
+                    button1.setTitle( "\(ans1)", for: UIControlState())}
+                button1.setTitleColor(Color.black, for: UIControlState())
+                button1.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
                 button1.titleLabel?.font = Fonts.answersLarge
                 button1.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
                 self.button1 = button1
                 self.view.addSubview(button1)
-                button1.addTarget(self, action:  #selector(handleButton1), forControlEvents: .TouchUpInside)
+                button1.addTarget(self, action:  #selector(handleButton1), for: .touchUpInside)
                 
                 // Button 2
                 
                 let button2 = UIButton(frame: CGRect(x: 40, y: 440, width: self.view.frame.width-80, height: 140))
-                button2.titleLabel?.textAlignment = .Center
+                button2.titleLabel?.textAlignment = .center
                 button2.clipsToBounds = true
                 button2.layer.cornerRadius = 20.0
                 button2.backgroundColor = Color.lightgrey
-                if let ans2 = questionsArray[self.questionIndex]["ans2"] as! String! {
-                    button2.setTitle( "\(ans2)", forState: .Normal)}
-                button2.setTitleColor(Color.black, forState: .Normal)
-                button2.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                if let ans2 = questionsArray[self.questionIndex]["ans2"] as String! {
+                    button2.setTitle( "\(ans2)", for: UIControlState())}
+                button2.setTitleColor(Color.black, for: UIControlState())
+                button2.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
                 button2.titleLabel?.font = Fonts.answersLarge
                 button2.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
                 self.button2 = button2
                 self.view.addSubview(button2)
-                button2.addTarget(self, action:  #selector(handleButton2), forControlEvents: .TouchUpInside)
+                button2.addTarget(self, action:  #selector(handleButton2), for: .touchUpInside)
                 
                 // Button 3
                 
                 let button3 = UIButton(frame: CGRect(x: 40, y: 600, width: self.view.frame.width-80, height: 140))
-                button3.titleLabel?.textAlignment = .Center
+                button3.titleLabel?.textAlignment = .center
                 button3.clipsToBounds = true
                 button3.layer.cornerRadius = 20.0
                 button3.backgroundColor = Color.lightgrey
-                if let ans3 = questionsArray[self.questionIndex]["ans3"] as! String! {
-                    button3.setTitle( "\(ans3)", forState: .Normal)}
-                button3.setTitleColor(Color.black, forState: .Normal)
-                button3.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                if let ans3 = questionsArray[self.questionIndex]["ans3"] as String! {
+                    button3.setTitle( "\(ans3)", for: UIControlState())}
+                button3.setTitleColor(Color.black, for: UIControlState())
+                button3.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
                 button3.titleLabel?.font = Fonts.answersLarge
                 button3.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
                 self.button3 = button3
                 self.view.addSubview(button3)
-                button3.addTarget(self, action:  #selector(handleButton3), forControlEvents: .TouchUpInside)
+                button3.addTarget(self, action:  #selector(handleButton3), for: .touchUpInside)
                 
                 // Button 4
                 
                 let button4 = UIButton(frame: CGRect(x: 40, y: 760, width: self.view.frame.width-80, height: 140))
-                button4.titleLabel?.textAlignment = .Center
+                button4.titleLabel?.textAlignment = .center
                 button4.clipsToBounds = true
                 button4.layer.cornerRadius = 20.0
                 button4.backgroundColor = Color.lightgrey
-                if let ans4 = questionsArray[self.questionIndex]["ans4"] as! String! {
-                    button4.setTitle( "\(ans4)", forState: .Normal)}
-                button4.setTitleColor(Color.black, forState: .Normal)
-                button4.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+                if let ans4 = questionsArray[self.questionIndex]["ans4"] as String! {
+                    button4.setTitle( "\(ans4)", for: UIControlState())}
+                button4.setTitleColor(Color.black, for: UIControlState())
+                button4.titleLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
                 button4.titleLabel?.font = Fonts.answersLarge
                 button4.titleEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
                 self.button4 = button4
                 self.view.addSubview(button4)
-                button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchUpInside)
+                button4.addTarget(self, action:  #selector(handleButton4), for: .touchUpInside)
                 
                 // Check Button
                 
                 let checkButton = UIButton(frame: CGRect(x: 40, y: 920, width: 300, height: 80))
                 checkButton.clipsToBounds = true
                 checkButton.layer.cornerRadius = 20.0
-                checkButton.setTitle("Check", forState: .Normal)
+                checkButton.setTitle("Check", for: UIControlState())
                 checkButton.titleLabel?.font = Fonts.headerLarge
                 checkButton.backgroundColor = Color.lightgrey
                 checkButton.alpha = 0
                 self.checkButton = checkButton
                 self.view.addSubview(checkButton)
-                checkButton.addTarget(self, action:  #selector(handleCheckButton), forControlEvents: .TouchUpInside)
+                checkButton.addTarget(self, action:  #selector(handleCheckButton), for: .touchUpInside)
                 
                 // Next Button
                 
                 let nextButton = UIButton(frame: CGRect(x: 380, y: 920, width: view.bounds.width - 300 - 120, height: 80))
                 nextButton.clipsToBounds = true
                 nextButton.layer.cornerRadius = 20.0
-                nextButton.setTitle("Next", forState: .Normal)
+                nextButton.setTitle("Next", for: UIControlState())
                 nextButton.titleLabel?.font = Fonts.headerLarge
                 nextButton.backgroundColor = Color.lightgrey
                 nextButton.alpha = 0
                 self.nextButton = nextButton
                 self.view.addSubview(nextButton)
-                nextButton.addTarget(self, action:  #selector(handleNextButton), forControlEvents: .TouchUpInside)
+                nextButton.addTarget(self, action:  #selector(handleNextButton), for: .touchUpInside)
             }
         }
     }
@@ -370,10 +370,10 @@ class QuestionViewController: UIViewController {
             
             // reset buttons
             
-            self.button1.enabled = true
-            self.button2.enabled = true
-            self.button3.enabled = true
-            self.button4.enabled = true
+            self.button1.isEnabled = true
+            self.button2.isEnabled = true
+            self.button3.isEnabled = true
+            self.button4.isEnabled = true
             
             self.button1Selected = false
             self.button2Selected = false
@@ -385,7 +385,7 @@ class QuestionViewController: UIViewController {
             self.button3.backgroundColor = Color.lightgrey
             self.button4.backgroundColor = Color.lightgrey
             
-            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
 
             self.button1.titleLabel?.font = Fonts.answers
             self.button2.titleLabel?.font = Fonts.answers
@@ -399,14 +399,14 @@ class QuestionViewController: UIViewController {
             }
             
 
-            self.button1.setTitleColor(Color.black, forState:.Normal)
-            self.button2.setTitleColor(Color.black, forState:.Normal)
-            self.button3.setTitleColor(Color.black, forState:.Normal)
-            self.button4.setTitleColor(Color.black, forState:.Normal)
+            self.button1.setTitleColor(Color.black, for:UIControlState())
+            self.button2.setTitleColor(Color.black, for:UIControlState())
+            self.button3.setTitleColor(Color.black, for:UIControlState())
+            self.button4.setTitleColor(Color.black, for:UIControlState())
             
             self.checkButton.backgroundColor = Color.lightgrey
             self.checkButtonSelected = false
-            self.checkButton.setTitle("Check", forState: .Normal)
+            self.checkButton.setTitle("Check", for: UIControlState())
             
             self.nextButton.backgroundColor = Color.lightgrey
 
@@ -416,7 +416,7 @@ class QuestionViewController: UIViewController {
             self.label.text = "Question "+"\(self.questionNumber)"+"/"+"\(self.numberOfQuestions)"
             
             // Progress Bar Green
-            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+            if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
 
                 let progressBarGreen = UIView(frame: CGRect(x: 20, y: 70, width: (self.view.frame.width-40)/CGFloat(numberOfQuestions) * CGFloat(questionNumber), height: 8.0))
                 progressBarGreen.backgroundColor = Color.green
@@ -435,35 +435,35 @@ class QuestionViewController: UIViewController {
             
             // Questions label
             
-            if let question = questionsArray[self.questionIndex]["question"] as! String! {
+            if let question = questionsArray[self.questionIndex]["question"] as String! {
                 self.questionlabel.text = "\(question)"
             }
             
             // Button 1
             
-            if let ans1 = questionsArray[self.questionIndex]["ans1"] as! String! {
-                self.button1.setTitle( "\(ans1)", forState: .Normal)}
-            button1.addTarget(self, action:  #selector(handleButton1), forControlEvents: .TouchUpInside)
+            if let ans1 = questionsArray[self.questionIndex]["ans1"] as String! {
+                self.button1.setTitle( "\(ans1)", for: UIControlState())}
+            button1.addTarget(self, action:  #selector(handleButton1), for: .touchUpInside)
             
             
             // Button 2
             
-            if let ans2 = questionsArray[self.questionIndex]["ans2"] as! String! {
-                button2.setTitle( "\(ans2)", forState: .Normal)}
-            button2.addTarget(self, action:  #selector(handleButton2), forControlEvents: .TouchUpInside)
+            if let ans2 = questionsArray[self.questionIndex]["ans2"] as String! {
+                button2.setTitle( "\(ans2)", for: UIControlState())}
+            button2.addTarget(self, action:  #selector(handleButton2), for: .touchUpInside)
             
             // Button 3
             
-            if let ans3 = questionsArray[self.questionIndex]["ans3"] as! String! {
-                button3.setTitle( "\(ans3)", forState: .Normal)}
-            button3.setTitleColor(Color.black, forState: .Normal)
-            button3.addTarget(self, action:  #selector(handleButton3), forControlEvents: .TouchUpInside)
+            if let ans3 = questionsArray[self.questionIndex]["ans3"] as String! {
+                button3.setTitle( "\(ans3)", for: UIControlState())}
+            button3.setTitleColor(Color.black, for: UIControlState())
+            button3.addTarget(self, action:  #selector(handleButton3), for: .touchUpInside)
             
             // Button 4
             
-            if let ans4 = questionsArray[self.questionIndex]["ans4"] as! String! {
-                button4.setTitle( "\(ans4)", forState: .Normal)}
-            button4.addTarget(self, action:  #selector(handleButton4), forControlEvents: .TouchUpInside)
+            if let ans4 = questionsArray[self.questionIndex]["ans4"] as String! {
+                button4.setTitle( "\(ans4)", for: UIControlState())}
+            button4.addTarget(self, action:  #selector(handleButton4), for: .touchUpInside)
         }
             
         else {
@@ -471,10 +471,10 @@ class QuestionViewController: UIViewController {
             scoreViewController.score = self.score
             scoreViewController.numberOfQuestions = self.numberOfQuestions
             
-            NSUserDefaults.standardUserDefaults().setInteger(self.score, forKey: "userScore")
-            NSUserDefaults.standardUserDefaults().setInteger(self.numberOfQuestions, forKey: "numberOfQuestions")
+            UserDefaults.standard.set(self.score, forKey: "userScore")
+            UserDefaults.standard.set(self.numberOfQuestions, forKey: "numberOfQuestions")
             
-            presentViewController(scoreViewController, animated: true, completion: nil)
+            present(scoreViewController, animated: true, completion: nil)
         }
     }
 
@@ -505,19 +505,19 @@ class QuestionViewController: UIViewController {
         
         //check if answer is correct
         
-        if let correctAnswer = questionsArray[self.questionIndex]["answer"] as! String!  {
+        if let correctAnswer = questionsArray[self.questionIndex]["answer"] as String!  {
             if (self.button1Selected == true && correctAnswer == "1")
                 || (self.button2Selected == true && correctAnswer == "2")
                 || (self.button3Selected == true && correctAnswer == "3")
                 || (self.button4Selected == true && correctAnswer == "4")
             {
-                self.button1.enabled = false
-                self.button2.enabled = false
-                self.button3.enabled = false
-                self.button4.enabled = false
+                self.button1.isEnabled = false
+                self.button2.isEnabled = false
+                self.button3.isEnabled = false
+                self.button4.isEnabled = false
                 
                 self.checkButton.backgroundColor = Color.green
-                self.checkButton.setTitle("Correct!", forState: .Normal)
+                self.checkButton.setTitle("Correct!", for: UIControlState())
                 self.score = self.score + 1
                 
                 self.nextButton.alpha = 1
@@ -528,33 +528,33 @@ class QuestionViewController: UIViewController {
 
 
                 self.checkButton.backgroundColor =  Color.red
-                self.button1.enabled = false
-                self.button2.enabled = false
-                self.button3.enabled = false
-                self.button4.enabled = false
-                self.checkButton.setTitle("Incorrect!", forState: .Normal)
+                self.button1.isEnabled = false
+                self.button2.isEnabled = false
+                self.button3.isEnabled = false
+                self.button4.isEnabled = false
+                self.checkButton.setTitle("Incorrect!", for: UIControlState())
                 self.nextButton.alpha = 1
                 
-                if let answer = questionsArray[self.questionIndex]["answer"] as! String! {
+                if let answer = questionsArray[self.questionIndex]["answer"] as String! {
                     
                     if answer == "1" {
                         if self.button1Selected == true
                         {self.button1.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                             
                         else if self.button2Selected == true
                         {self.button2.backgroundColor = Color.red
-                            self.button2.setTitleColor(Color.black, forState: .Normal)}
+                            self.button2.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button3Selected == true
                         {self.button3.backgroundColor = Color.red
-                            self.button3.setTitleColor(Color.black, forState: .Normal)}
+                            self.button3.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button4Selected == true
                         {self.button4.backgroundColor = Color.red
-                            self.button4.setTitleColor(Color.black, forState: .Normal)}
+                            self.button4.setTitleColor(Color.black, for: UIControlState())}
                         
-                        self.button1.setTitleColor(Color.red, forState: .Normal)
+                        self.button1.setTitleColor(Color.red, for: UIControlState())
                         self.button1.titleLabel!.font = Fonts.wrongAnswers
-                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
                             self.button1.titleLabel?.font = Fonts.answers}
                         else {
                             self.button1.titleLabel?.font = Fonts.answersLarge}
@@ -563,20 +563,20 @@ class QuestionViewController: UIViewController {
                     if answer == "2" {
                         if self.button1Selected == true
                         {self.button1.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button2Selected == true
                         {self.button2.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button3Selected == true
                         {self.button3.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button4Selected == true
                         {self.button4.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         
-                        self.button2.setTitleColor(Color.red, forState: .Normal)
+                        self.button2.setTitleColor(Color.red, for: UIControlState())
                         self.button2.titleLabel!.font = Fonts.wrongAnswers
-                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
                             self.button2.titleLabel?.font = Fonts.answers}
                         else {
                             self.button2.titleLabel?.font = Fonts.answersLarge}
@@ -585,20 +585,20 @@ class QuestionViewController: UIViewController {
                     if answer == "3" {
                         if self.button1Selected == true
                         {self.button1.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button2Selected == true
                         {self.button2.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button3Selected == true
                         {self.button3.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button4Selected == true
                         {self.button4.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         
-                        self.button3.setTitleColor(Color.red, forState: .Normal)
+                        self.button3.setTitleColor(Color.red, for: UIControlState())
                         self.button3.titleLabel!.font = Fonts.wrongAnswers
-                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
                             self.button3.titleLabel?.font = Fonts.answers}
                         else {
                             self.button3.titleLabel?.font = Fonts.answersLarge}
@@ -607,20 +607,20 @@ class QuestionViewController: UIViewController {
                     if answer == "4" {
                         if self.button1Selected == true
                         {self.button1.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button2Selected == true
                         {self.button2.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button3Selected == true
                         {self.button3.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         else if self.button4Selected == true
                         {self.button4.backgroundColor = Color.red
-                            self.button1.setTitleColor(Color.black, forState: .Normal)}
+                            self.button1.setTitleColor(Color.black, for: UIControlState())}
                         
-                        self.button4.setTitleColor(Color.red, forState: .Normal)
+                        self.button4.setTitleColor(Color.red, for: UIControlState())
                         self.button4.titleLabel!.font = Fonts.wrongAnswers
-                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone {
+                        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.phone {
                             self.button4.titleLabel?.font = Fonts.answers}
                         else {
                             self.button4.titleLabel?.font = Fonts.answersLarge}

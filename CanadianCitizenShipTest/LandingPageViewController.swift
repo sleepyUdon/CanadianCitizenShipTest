@@ -18,14 +18,14 @@ class LandingPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.button.layer.cornerRadius = 20.0
-        self.button.layer.borderColor = Color.white.CGColor
+        self.button.layer.borderColor = Color.white.cgColor
         self.button.layer.borderWidth = 2.0
 
 
     }
 
-    @IBAction func handleButton(sender: AnyObject) {
+    @IBAction func handleButton(_ sender: AnyObject) {
         let provincesViewController = ProvincesViewController()
-        presentViewController(provincesViewController, animated: true, completion: nil)
+        present(provincesViewController, animated: true, completion: nil)
     }
 }
