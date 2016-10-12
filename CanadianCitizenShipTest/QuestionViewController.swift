@@ -120,8 +120,8 @@ class QuestionViewController: UIViewController {
             
             // Close Button
             
-            let cancelButton = UIButton(frame: CGRect(x: self.view.frame.width - 50, y: 30, width: 40, height: 40))
-            cancelButton.setImage(#imageLiteral(resourceName: "Stop"), for: .normal)
+            let cancelButton = UIButton(frame: CGRect(x: self.view.frame.width - 40, y: 40, width: 15, height: 15))
+            cancelButton.setBackgroundImage(#imageLiteral(resourceName: "Stop"), for: .normal)
             self.view.addSubview(cancelButton)
             cancelButton.addTarget(self, action:  #selector(handleCancelButton), for: .touchUpInside)
 
@@ -263,6 +263,14 @@ class QuestionViewController: UIViewController {
                 let questionIndex = currentQuestionsArray[questionNumber-1]
                 self.questionIndex = questionIndex
                 
+                // Close Button
+                
+                let cancelButton = UIButton(frame: CGRect(x: self.view.frame.width - 80, y: 60, width: 30, height: 30))
+                cancelButton.setBackgroundImage(#imageLiteral(resourceName: "Stop"), for: .normal)
+                self.view.addSubview(cancelButton)
+                cancelButton.addTarget(self, action:  #selector(handleCancelButton), for: .touchUpInside)
+                
+
                 // Questions label
                 
                 let questionlabel = UITextView(frame: CGRect(x: 40, y: 160, width: self.view.frame.width-88, height: 300))
