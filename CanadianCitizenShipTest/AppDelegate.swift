@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        window!.rootViewController = landingPageViewController
 //        window!.makeKeyAndVisible()
-//
+      Fabric.with([Crashlytics.self])
         return true
     }
 
